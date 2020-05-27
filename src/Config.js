@@ -79,7 +79,7 @@ export const ProjectJazzmanItems = [
 export const ProjectSketchItems = [
   {
     thumbnail: "/images/project/sketch/sketch-main.jpg",
-    img: "/images/project/sketch/sketch-main.jpg",
+    img: "/images/project/sketch/sketch-main-full.jpg",
     "alt": "Some Girl",
     title: "Some Girl",
     tags: "30x20cm"

@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 import SocialMediaList from "./SocialMediaList";
+import './hero.css';
 
 export default class Hero extends Component {
   render() {
     return (
-        <section className="hero_warp inner_banner" style={{backgroundImage: `url(${this.props.img})`}}>
+        <section className="hero_warp inner_banner hero_warp_page" style={{backgroundImage: `url(${this.props.img})`}}>
           <div className="container">
             <div className="row d-flex align-items-center">
               <div className="col-md-12 col-12">
