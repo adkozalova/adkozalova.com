@@ -1,0 +1,29 @@
+.page_rewards {
+    padding: 60px 0 65px;
+    color: #333333;
+    font-family: "futuraheavy";
+}
+
+.page_rewards h2 {
+    font-size: 35px;
+    line-height: 80px;
+}
+
+.page_rewards h3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.page_rewards p.country {
+    color: #171819;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin: 25px 0;
+}
+
+.page_rewards .row {
+    padding-bottom: 42px;
+    border-bottom: 1px solid #e6e9f1;
+}
