@@ -54,8 +54,9 @@
 
 .rewards_wrap .user_img_slider .user_slider_item .img_wrap {
     display: block;
-    max-width: 80px;
+    /*max-width: 80px;*/
     width: auto;
+    height: 80px;
     border-radius: 10%;
     margin: 25px auto;
     transform: scale(1);
@@ -74,7 +75,7 @@
 
 .rewards_wrap .user_img_slider .user_slider_item .img_wrap img {
     display: inline-block;
-    width: 100%;
+    /*width: 150px;*/
     height: auto;
 }
 

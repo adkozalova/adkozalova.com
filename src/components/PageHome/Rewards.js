@@ -25,10 +25,11 @@ export default class Rewards extends Component {
       ref: slider => (this.imageSlider = slider),
       dots: false,
       arrows: false,
-      autoplay: true,
+      // autoplay: true,
       infinite: true,
       vertical: true,
       centerMode: true,
+      centerPadding: 0,
       verticalSwiping: true,
       focusOnSelect: true,
       speed: 3000,
@@ -40,7 +41,9 @@ export default class Rewards extends Component {
       ref: slider => (this.descriptionSlider = slider),
       dots: false,
       arrows: false,
-      speed: 2000
+      speed: 3000,
+      slidesToShow: 1,
+      slidesToScroll: 1
     };
     const {
       rewards

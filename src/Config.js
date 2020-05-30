@@ -42,10 +42,10 @@ export const ProjectBlackAndWhiteItems = [
     tags: "80x70cm"
   },
   {
-    thumbnail: "/images/project/black-and-white/7.jpg",
-    img: "/images/project/black-and-white/7-full.jpg",
-    title: "Name 7",
-    tags: "Oil, canvas"
+    thumbnail: "/images/project/black-and-white/near-the-window.jpg",
+    img: "/images/project/black-and-white/near-the-window-full.jpg",
+    title: "Near the window, 2020",
+    tags: "100x120cm"
   },
   {
     thumbnail: "/images/project/black-and-white/bright-moment.jpg",
@@ -73,26 +73,71 @@ export const ProjectJazzmanItems = [
     img: "/images/project/jazzman/allegro-full.jpg",
     title: "Allegro, 2020",
     tags: "60x80cm"
-  }
+  },
+  {
+    thumbnail: "/images/project/jazzman/guitarist.jpg",
+    img: "/images/project/jazzman/guitarist-full.jpg",
+    title: "Guitarist, 2018",
+    tags: "60x80cm"
+  },
+  {
+    thumbnail: "/images/project/jazzman/saxophonist.jpg",
+    img: "/images/project/jazzman/saxophonist-full.jpg",
+    title: "Saxophonist, 2018",
+    tags: "60x80cm"
+  },
+  {
+    thumbnail: "/images/project/jazzman/trumpeter.jpg",
+    img: "/images/project/jazzman/trumpeter-full.jpg",
+    title: "Trumpeter, 2018",
+    tags: "60x70cm"
+  },
 ];
 
 export const ProjectSketchItems = [
   {
     thumbnail: "/images/project/sketch/sketch-main.jpg",
     img: "/images/project/sketch/sketch-main-full.jpg",
-    "alt": "Some Girl",
-    title: "Some Girl",
-    tags: "30x20cm"
-  }
+    title: "Sketch",
+    tags: "A4"
+  },
 ];
 
 export const ProjectWatercolorItems = [
   {
-    thumbnail: "/images/project/watercolor/watercolor-main.jpg",
-    img: "/images/project/watercolor/watercolor-main-full.jpg",
+    thumbnail: "/images/project/watercolor/cappuccino.jpg",
+    img: "/images/project/watercolor/cappuccino-full.jpg",
+    title: "Cappuccino, 2020",
+    tags: "24x19cm"
+  },
+  {
+    thumbnail: "/images/project/watercolor/vernal.jpg",
+    img: "/images/project/watercolor/vernal-full.jpg",
+    title: "Vernal, 2020",
+    tags: "16x18cm"
+  },
+  {
+    thumbnail: "/images/project/watercolor/with-chamomile.jpg",
+    img: "/images/project/watercolor/with-chamomile-full.jpg",
+    title: "Chamomile, 2020",
+    tags: "23x15cm"
+  },
+  {
+    thumbnail: "/images/project/watercolor/jazzman.jpg",
+    img: "/images/project/watercolor/jazzman-full.jpg",
+    title: "Jazzman, 2020",
+    tags: "28x36cm"
+  },
+];
+
+
+export const ProjectEarlyWorksItems = [
+  {
+    thumbnail: "/images/project/sketch/sketch-main.jpg",
+    img: "/images/project/sketch/sketch-main-full.jpg",
     title: "Some Girl",
-    tags: "50x20cm"
-  }
+    tags: "30x20cm"
+  },
 ];
 // End Projects
 

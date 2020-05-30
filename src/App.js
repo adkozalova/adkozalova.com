@@ -100,7 +100,7 @@ export default class App extends Component {
               <Route path="/about">
                 <Hero
                     title="About Me"
-                    description="In the art must be a mystery"
+                    description="Pictorial art is a frozen unique moment"
                     img="/images/page-hero-bg.jpg"
                 />
                 <PageAboutContent/>
