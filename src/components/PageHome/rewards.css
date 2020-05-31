@@ -1,5 +1,3 @@
-/* start rewards_wrap */
-
 .rewards_wrap {
     background: url(/images/rewards/reward_bg.jpg) no-repeat scroll top left/cover;
     position: relative;
@@ -24,7 +22,7 @@
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 50%, transparent 50%);
 }
 
-.rewards_wrap .test_left .test_title {
+.rewards_wrap .rewards_left .rewards_title {
     color: #fff;
     font-size: 90px;
     font-weight: normal;
@@ -37,7 +35,7 @@
     width: 100%;
 }
 
-.rewards_wrap .test_left .test_title:before {
+.rewards_wrap .rewards_left .rewards_title:before {
     position: absolute;
     content: "";
     bottom: 20px;
@@ -47,53 +45,22 @@
     background: #ffffff;
 }
 
-/*images*/
-.rewards_wrap .user_img_slider .user_slider_item {
-    padding: 40px 0;
+/*slider*/
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+.rewards_wrap .rewards_slider .img_wrap {
+    float: left;
 }
 
-.rewards_wrap .user_img_slider .user_slider_item .img_wrap {
-    display: block;
-    /*max-width: 80px;*/
-    width: auto;
-    height: 80px;
-    border-radius: 10%;
-    margin: 25px auto;
-    transform: scale(1);
-    transition: all 0.5s;
-    cursor: pointer;
-    overflow: hidden;
+.rewards_wrap .rewards_slider .description_wrap {
+    float: left;
 }
 
-.rewards_wrap .user_img_slider .user_slider_item .img_wrap:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #0006;
-}
-
-.rewards_wrap .user_img_slider .user_slider_item .img_wrap img {
-    display: inline-block;
-    /*width: 150px;*/
-    height: auto;
-}
-
-.rewards_wrap .user_img_slider .slick-active.slick-center .img_wrap {
-    transform: scale(2);
-    pointer-events: none;
-}
-
-.rewards_wrap .user_img_slider .slick-active.slick-center .img_wrap:before {
-    display: none;
-}
-
-/*descriptions*/
-.rewards_wrap .test_details_slider .test_details_slider_item {
-    padding: 0 15px;
-}
-
-.rewards_wrap .test_details_slider .test_details_slider_item .slider_title {
+.rewards_wrap .rewards_slider .description_wrap .title {
     color: #fff;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -102,7 +69,7 @@
     margin-bottom: 25px;
 }
 
-.rewards_wrap .test_details_slider .test_details_slider_item p {
+.rewards_wrap .rewards_slider .description_wrap .description {
     color: #c1c1c1;
     font-size: 16px;
     line-height: 30px;
@@ -111,7 +78,7 @@
     margin-bottom: 30px;
 }
 
-.rewards_wrap .test_details_slider .test_details_slider_item .autor_name {
+.rewards_wrap .rewards_slider .description_wrap .country {
     color: #fff;
     font-size: 16px;
     line-height: 26px;
@@ -119,7 +86,7 @@
     font-weight: 500;
 }
 
-.rewards_wrap .test_details_slider .test_details_slider_item .autor_title {
+.rewards_wrap .rewards_slider .description_wrap .year {
     color: #c1c1c1;
     font-size: 13px;
     line-height: 26px;

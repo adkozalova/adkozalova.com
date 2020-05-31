@@ -52,9 +52,7 @@ export default class App extends Component {
   render() {
     return (
         <div id="top">
-
           <Header/>
-
           <Router>
             <Switch>
               <Route path="/watercolor">
@@ -124,7 +122,6 @@ export default class App extends Component {
               </Route>
             </Switch>
           </Router>
-
           <Footer/>
           <GoToTop/>
         </div>

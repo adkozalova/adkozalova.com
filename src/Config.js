@@ -96,8 +96,8 @@ export const ProjectJazzmanItems = [
 
 export const ProjectSketchItems = [
   {
-    thumbnail: "/images/project/sketch/sketch-main.jpg",
-    img: "/images/project/sketch/sketch-main-full.jpg",
+    thumbnail: "/images/project/sketch/sketch-1.jpg",
+    img: "/images/project/sketch/sketch-1-full.jpg",
     title: "Sketch",
     tags: "A4"
   },
