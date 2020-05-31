@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import './../../assets/css/slick.min.css';
 import './rewards.css';
-import {Link} from "react-router-dom";
 
 export default class Rewards extends Component {
 
@@ -28,7 +27,7 @@ export default class Rewards extends Component {
             <div className="row align-items-center">
               <div className="col-lg-5 col-md-12 col-sm-12 col-12">
                 <div className="rewards_left">
-                  <Link to={'/rewards'}><h2 className="rewards_title wow fadeInUp">Rewards</h2></Link>
+                  <a href="/rewards"><h2 className="rewards_title wow fadeInUp">Rewards</h2></a>
                 </div>
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-12">
@@ -45,7 +44,7 @@ export default class Rewards extends Component {
                       return (
                           <div className="row" key={key}>
                             <div className="col-md-4 img_wrap">
-                              <Link to={"/rewards"}><img className="img-fluid img-thumbnail" src={src} alt={title}/></Link>
+                              <a href="/rewards"><img className="img-fluid img-thumbnail" src={src} alt={title}/></a>
                             </div>
                             <div className="col-md-8 description_wrap">
                               <h3 className="title">{title}</h3>

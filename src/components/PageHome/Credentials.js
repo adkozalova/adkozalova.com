@@ -63,7 +63,12 @@ export default class Credentials extends Component {
 
                   <div className="tab-pane fade" id="SoloExhibitions">
                     <ul>
-                      <li><span>2019</span>INSHE ART / Kyiv Fortress Museum - Kyiv, Ukraine</li>
+                      <li><span>2019</span><a
+                          href="https://inshe.org/inshe-art-personalnaya-vystavka-rabot-art-professionala-viktorii-adkozalovoj/"
+                          target={"_blank"} rel="noopener noreferrer"
+                      >
+                        INSHE ART / Kyiv Fortress Museum - Kyiv, Ukraine
+                      </a></li>
                     </ul>
                   </div>
 
