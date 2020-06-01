@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import './../../assets/css/slick.min.css';
 import './rewards.css';
+import Country from "../Common/Country";
 
 export default class Rewards extends Component {
 
@@ -49,7 +50,7 @@ export default class Rewards extends Component {
                             <div className="col-md-8 description_wrap">
                               <h3 className="title">{title}</h3>
                               <p className="description">{description}</p>
-                              <h5 className="country">{country}</h5>
+                              <h5 className="country">{country.map(countryCode => <Country code={countryCode}/>)}</h5>
                               <h6 className="year">{year}</h6>
                             </div>
                           </div>

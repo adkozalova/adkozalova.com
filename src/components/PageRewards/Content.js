@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import * as Config from './../../Config';
 import './content.css';
 import Modal from "../Common/Modal";
+import Country from "../Common/Country";
 
 export default class Content extends Component {
   constructor(props) {
@@ -51,7 +52,7 @@ export default class Content extends Component {
                         <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
                           <h2>{title}</h2>
                           <h3>{description}</h3>
-                          <p className="country">{country}</p>
+                          <p className="country">{country.map(countryCode => <Country code={countryCode}/>)}</p>
                           <p className="year">{year}</p>
                         </div>
                       </div>
@@ -61,7 +62,7 @@ export default class Content extends Component {
                         <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-right">
                           <h2>{title}</h2>
                           <h3>{description}</h3>
-                          <p className="country">{country}</p>
+                          <p className="country">{country.map(countryCode => <Country code={countryCode}/>)}</p>
                           <p className="year">{year}</p>
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">

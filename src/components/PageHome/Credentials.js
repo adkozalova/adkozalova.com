@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 import "./credentials.css";
+import Country from "../Common/Country";
 
 export default class Credentials extends Component {
   render() {
@@ -109,13 +110,13 @@ export default class Credentials extends Component {
 
                   <div className="tab-pane fade" id="PrivateCollections">
                     <ul>
-                      <li>Hong Kong</li>
-                      <li>Finland</li>
-                      <li>Hungary</li>
-                      <li>Germany</li>
-                      <li>Poland</li>
-                      <li>Russia</li>
-                      <li>Ukraine</li>
+                      <li><Country code="hk"/></li>
+                      <li><Country code="fi"/></li>
+                      <li><Country code="hu"/></li>
+                      <li><Country code="de"/></li>
+                      <li><Country code="pl"/></li>
+                      <li><Country code="ua"/></li>
+                      <li><Country code="ru"/></li>
                     </ul>
                   </div>
 

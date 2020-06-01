@@ -147,84 +147,84 @@ export const RewardItems = [
     src: "/images/rewards/reward-2.jpg",
     title: "Certificate",
     description: "Participant of the art exhibition - UAFRA 'Look through the backstage'",
-    country: "Ukraine",
+    country: ["ua"],
     year: "Feb - Mar 2020"
   },
   {
     src: "/images/rewards/reward-8.jpg",
     title: "Diploma",
     description: "Blessing for the efforts and labors of the Holy Church",
-    country: "Ukraine",
+    country: ["ua"],
     year: "Feb 2020"
   },
   {
     src: "/images/rewards/reward-3.jpg",
     title: "International Certificate",
     description: "Participant of the international art exhibition ART-PROFESSIONAL",
-    country: "Ukraine, USA, Mexico, Canada, Cyprus, China, Japan",
+    country: ["ua", "us", "ca", "mx", "cy", "ch", "jp"],
     year: "Jun 2019 - Sep 2020"
   },
   {
     src: "/images/rewards/reward-4.jpg",
     title: "International First Prize Diploma",
     description: "INSHE ART International competition of professional and amateur artists",
-    country: "Ukraine",
+    country: ["ua"],
     year: "Nov 2019"
   },
   {
     src: "/images/rewards/reward-5.jpg",
     title: "Certificate",
     description: "Participant of the art exhibition - INSHE ZHITTIA 'Without Borders'",
-    country: "Ukraine",
+    country: ["ua"],
     year: "Nov 2019"
   },
   {
     src: "/images/rewards/reward-6.jpg",
     title: "International Solo Exhibition Diploma",
     description: "International solo exhibition, INSHE ART",
-    country: "Ukraine",
+    country: ["ua"],
     year: "Mar 2019"
   },
   {
     src: "/images/rewards/reward-1.jpg",
     title: "Certificate",
     description: "INTERNATIONAL ART EXHIBITIONS ART - PROFESSIONAL",
-    country: "Ukraine, USA, Canada, Mexico, Portugal, Spain, Italy, France, Germany, Hungary",
+    country: ["ua", "us", "ca", "mx", "pt", "es", "it", "fr", "gr", "hu"],
     year: "Jan - May 2019"
   },
   {
     src: "/images/rewards/reward-9.jpg",
     title: "Certificate",
     description: "Participant of the art exhibition - Agenda",
-    country: "Ukraine",
+    country: ["ua"],
     year: "Jul 2019"
   },
   {
     src: "/images/rewards/reward-10.jpg",
     title: "Certificate",
     description: "Participant of the international art exhibition",
-    country: "Ukraine, USA, Canada, Mexico, Portugal, Spain, Italy, France, Germany, Hungary",
+    country: ["ua", "us", "ca", "mx", "pt", "es", "it", "fr", "gr", "hu"],
     year: "Jan - May 2019"
   },
   {
     src: "/images/rewards/reward-7.jpg",
     title: "Certificate",
     description: "Participant of the 'Blockchain Art Hackathon 2.0'",
-    country: "Ukraine",
+    country: ["ua"],
     year: "2018"
   },
   {
     src: "/images/rewards/reward-11.jpg",
     title: "Diploma",
     description: "Participant of the art exhibition - Infinity Of The Dreams",
-    country: "Ukraine",
+    country: ["ua"],
     year: "May 2018"
   },
   {
     src: "/images/rewards/reward-12.jpg",
     title: "International First Prize Diploma",
     description: "International exhibition - Ukrainian Art Week XV",
-    country: "Ukraine",
+    country: ["ua"],
     year: "Mar 2018"
   },
 ];
