@@ -12,7 +12,7 @@ export default class About extends Component {
                   <div className="bg_text">
                     <h1 className="bg_strock_text" data-parallax='{"x": -150}'>About</h1>
                   </div>
-                  <h4 className="wow fadeInUp" data-wow-delay="0.5s">
+                  <h4>
                     I’m Viktoria, a <a href="https://en.wikipedia.org/wiki/Artist" target={"_blank"} rel="noopener noreferrer">professional artist</a> based in
                     Ukraine.<br/>
                     Specialize in <a href="https://en.wikipedia.org/wiki/Symbolism_(arts)" target={"_blank"} rel="noopener noreferrer">symbolism</a> and <a
