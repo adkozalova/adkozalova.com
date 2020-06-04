@@ -102,7 +102,8 @@ export default class App extends Component {
                     img="/images/page-hero-bg.jpg"
                 />
                 <PageAboutContent/>
-                <Partners/>
+                <PageHomeRewards/>
+                <PageHomeCredentials/>
               </Route>
               <Route path="/contacts">
                 <Hero
@@ -117,7 +118,7 @@ export default class App extends Component {
                 <PageHomeProjects/>
                 <PageHomeAbout/>
                 <PageHomeCredentials/>
-                <PageHomeRewards rewards={Config.RewardItems}/>
+                <PageHomeRewards/>
                 <Partners/>
               </Route>
             </Switch>

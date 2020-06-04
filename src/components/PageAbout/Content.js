@@ -34,27 +34,25 @@ export default class Content extends Component {
                 <div className="blog_content blog_single_content">
                   <div className="blog_single_item">
 
-                    <h3 className="blog_inner_title">Business is the activity of making one’s</h3>
-                    <p>Filix was outstanding! I was looking for a professional to design and develop my new website for my recipe blog. I searched for long,
-                      failed to choose a suitable lne until I found Filix. I searched for long, failed to choose a suitable lne until I found Filix.</p>
+                    <h3 className="blog_inner_title">Victoria Adkozalova - Ukrainian artist, works in the symbolism style</h3>
 
-                    <p>Filix was outstanding! I was looking for a professional to design and develop my new website for my recipe blog. I searched for long,
-                      failed to choose a suitable lne until I found Filix. I searched for </p>
+                    <p>Victoria was born on 3 October, 1987 in Feodosia.</p>
 
-                    <div className="blog_simg_img">
-                      <img src="/images/about/post_single_img.jpg" className="img-fluid" alt="img"/>
-                    </div>
+                    <p>From early childhood, she beloved fine art and artistic creativity. One of the sources of her inspiration were landscapes painted from
+                      nature of the native Crimea.</p>
 
-                    <h3 className="blog_inner_title">The Reward System</h3>
-                    <p>Filix was outstanding! I was looking for a professional to design and develop my new website for my recipe blog. I searched for long,
-                      failed to choose a suitable lne until I found Filix. I searched for long, failed to choose a suitable lne until I found Filix. </p>
+                    <p>In 2002, Victoria graduated from the Aivazovsky Art School, taking the first step in her career.</p>
 
-                    <blockquote>
-                      <p>“If you want to succeed, surround yourself with the right kind of people who will support and encourage you all the way.”</p>
-                    </blockquote>
+                    <p>The next stage in the formation of Victoria was at the Kherson National Technical University, where she studied design and painting under
+                      the guidance of the famous Ukrainian artist Galina Sorokhan.<br/>
+                      In her student years, Victoria tirelessly shows her creative abilities, taking part in various art exhibitions.</p>
 
-                    <p>I was looking for a professional to design and develop my new website for my recipe blog. I searched for long, failed to choose a
-                      suitable lne until I found Filix. I searched for long, failed to choose a suitable lne until I found Filix.</p>
+                    <p>Since 2009, she has been actively engaged in profession art activities and studied at the National Pedagogical University named after
+                      Drahomanov with a degree in Musical Art.</p>
+
+                    <p>Victoria is a participant and winner of various art exhibitions, many of which were organized outside of Ukraine. The theme of the
+                      exhibitions is also diverse, which allows us to talk about Victoria as a multifaceted, comprehensively developed artist, familiar with the
+                      fullness of the visual genres.</p>
 
                   </div>
                 </div>

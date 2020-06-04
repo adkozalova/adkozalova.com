@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import './../../assets/css/slick.min.css';
 import './rewards.css';
 import Country from "../Common/Country";
+import * as Config from './../../Config';
 
 export default class Rewards extends Component {
 
@@ -16,9 +17,6 @@ export default class Rewards extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
-    const {
-      rewards
-    } = this.props;
     return (
         <section className="rewards_wrap">
           <div className="bg_text">
@@ -34,7 +32,7 @@ export default class Rewards extends Component {
               <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                 <div className="rewards_slider">
                   <Slider {...sliderSettings}>
-                    {rewards.map((reward, key) => {
+                    {Config.RewardItems.map((reward, key) => {
                       const {
                         src,
                         title,
