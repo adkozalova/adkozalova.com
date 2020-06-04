@@ -89,7 +89,7 @@
     .about_wrap {
         padding: 100px 0;
     }
-    .capabiliti_wrap {
+    .credentials_wrap {
         padding-bottom: 20px;
         padding-top: 100px;
     }
@@ -153,12 +153,12 @@
         padding: 60px 0;
     }
     .about_wrap .about_title,
-    .capabiliti_wrap .capabiliti_title,
+    .credentials_wrap .credentials_title,
     .rewards_wrap .test_left .test_title {
         font-size: 70px;
         margin-bottom: 30px;
     }
-    .capabiliti_wrap .capabiliti_tab li a {
+    .credentials_wrap .credentials_tab li a {
         font-size: 20px;
         line-height: 36px;
     }
@@ -204,7 +204,7 @@
         font-size: 14px;
         line-height: 22px;
     }
-    .capabiliti_wrap .capabiliti_tab_content .tab-pane .service_item .content a h4 {
+    .credentials_wrap .credentials_tab_content .tab-pane .service_item .content a h4 {
         line-height: 22px;
         margin-bottom: 10px;
         font-size: 16px;
@@ -222,7 +222,7 @@
         font-size: 24px;
         line-height: 50px;
     }
-    .capabiliti_wrap {
+    .credentials_wrap {
         padding-top: 60px;
     }
     .rewards_wrap {
@@ -254,6 +254,7 @@
     .hero_warp {
         background-size: cover;
         background-attachment: scroll;
+        background-position: 75% 0%;
     }
     .project_summary_list li {
         font-size: 16px;
@@ -280,7 +281,7 @@
     .somethings_interesting_wrap .interesting_item .interesting_content p a {
         margin-top: 5px;
     }
-    .capabiliti_wrap .capabiliti_tab_content .tab-pane .service_item {
+    .credentials_wrap .credentials_tab_content .tab-pane .service_item {
         margin-bottom: 45px;
     }
     .about_wrap .about_content h4 a:before {
@@ -352,8 +353,8 @@
         line-height: 24px;
     }
     .about_wrap .about_title,
-    .capabiliti_wrap .capabiliti_title,
-    .rewards_wrap .test_left .test_title {
+    .credentials_wrap .credentials_title,
+    .rewards_wrap .rewards_left .rewards_title {
         font-size: 60px;
     }
     
@@ -361,13 +362,13 @@
         font-size: 24px;
         line-height: 44px;
     }
-    .capabiliti_wrap .capabiliti_tab {
+    .credentials_wrap .credentials_tab {
         margin-bottom: 50px;
     }
     .rewards_wrap .client_user_img .user_slider_item {
         margin-bottom: 25px;
     }
-    .capabiliti_wrap .capabiliti_tab li a {
+    .credentials_wrap .credentials_tab li a {
         font-size: 20px;
         line-height: 40px;
     }
@@ -453,8 +454,8 @@
 @media (max-width: 990px) and (min-width: 800px) {
      
     .hero_warp .banner_content .banner_title {
-        font-size: 100px;
-        line-height: 85px;
+        font-size: 65px;
+        line-height: 65px;
     } 
     .portfolio_item .exp {
         right: -80px;
@@ -467,11 +468,11 @@
 @media (max-width: 767px) {
     
     .hero_warp .banner_content .banner_title {
-        font-size: 100px;
-        line-height: 85px;
+        font-size: 65px;
+        line-height: 65px;
     } 
     .hero_warp .banner_content .banner_title br {
-        display: none;
+        /*display: none;*/
     }
     .blog_single_content .blog_single_item {
         padding-bottom: 0;
@@ -489,7 +490,7 @@
     .portfolio_item .exp span.exp_hover {
         padding: 5px 8px;
     }
-    .capabiliti_wrap .capabiliti_tab_content .tab-pane .tabPara {
+    .credentials_wrap .credentials_tab_content .tab-pane .tabPara {
         padding-right: 0;
     }
     header.header .navbar .hamburger .bar_icon {
@@ -549,7 +550,7 @@
         font-size: 30px;
     }
     .about_wrap .about_title,
-    .capabiliti_wrap .capabiliti_title,
+    .credentials_wrap .credentials_title,
     .rewards_wrap .test_left .test_title {
         font-size: 36px;
     }
@@ -574,7 +575,7 @@
     header.header .navbar .hamburger .bar_icon {
         margin-left: 10px;
     }
-    .capabiliti_wrap .capabiliti_tab_content .tab-pane .service_item {
+    .credentials_wrap .credentials_tab_content .tab-pane .service_item {
         margin-bottom: 50px;
     }
     .rewards_wrap {
@@ -626,7 +627,7 @@
 
 @media (max-width: 576px) {
     
-    .capabiliti_wrap .capabiliti_title:before,
+    .credentials_wrap .credentials_title:before,
     .about_wrap .about_title:before,
     .rewards_wrap .test_left .test_title:before {
         display: none;

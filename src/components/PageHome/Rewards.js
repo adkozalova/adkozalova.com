@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
 import './../../assets/css/slick.min.css';
-import './rewards.css';
 import Country from "../Common/Country";
 import * as Config from './../../Config';
 

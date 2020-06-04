@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 
-import "./credentials.css";
 import Country from "../Common/Country";
 
 export default class Credentials extends Component {

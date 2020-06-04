@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import * as Config from './../../Config';
-import './content.css';
 import Modal from "../Common/Modal";
 import Country from "../Common/Country";
 

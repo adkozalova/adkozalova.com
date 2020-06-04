@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import SocialMediaList from "./SocialMediaList";
-import './hero.css';
 
 export default class Hero extends Component {
   render() {

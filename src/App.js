@@ -8,6 +8,10 @@ import './assets/css/themify-icons.css';
 import './assets/css/elegant-icon-style.css';
 import './assets/css/wow.css';
 import './assets/css/style.css';
+import './assets/css/components/rewards-content.css';
+import './assets/css/components/rewards.css';
+import './assets/css/components/credentials.css';
+import './assets/css/components/hero.css';
 import './assets/css/responsive.css';
 // components
 import * as Config from './Config';
