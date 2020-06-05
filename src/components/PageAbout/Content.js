@@ -12,14 +12,14 @@ export default class Content extends Component {
                 <div className="blog_sidebar">
                   <div className="widget sidebar-widget widget_about">
                     <div className="sidebar_about_img text-center">
-                      <img src="/images/about/author.jpg" alt="img" className="img-fluid"/>
+                      <img src="/images/about/author.jpg" alt="Viktoria Adkozalova Photo" className="img-fluid"/>
                     </div>
                     <div className="sidebar_about_content">
                       <h4 className="text-center sidebar_ab_title">Viktoria Adkozalova</h4>
                       <p className="text-center sidebar_ab_details">On my works you won't find specific persons, but instead everyone can find their friends,
                         neighbors or even some moments from your own life.</p>
                       <div className="sign text-center">
-                        <img src="/images/about/author-signature.png" alt="img" className="img-fluid"/>
+                        <img src="/images/about/author-signature.png" alt="Viktoria Adkozalova Signature" className="img-fluid"/>
                       </div>
                     </div>
                     <div className="follow">

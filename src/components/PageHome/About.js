@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 
 export default class About extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class About extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <a href="/about"><h2 className="about_title wow fadeInUp">About Me</h2></a>
+                <Link to="/about"><h2 className="about_title wow fadeInUp">About Me</h2></Link>
                 <div className="about_content">
                   <div className="bg_text">
                     <h1 className="bg_strock_text" data-parallax='{"x": -150}'>About</h1>

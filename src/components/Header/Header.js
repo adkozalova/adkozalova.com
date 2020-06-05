@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 import ContactList from "../Common/ContactList";
 import SocialMediaList from "../Common/SocialMediaList";
 
@@ -21,7 +22,7 @@ export default class Header extends Component {
             <div className="row">
               <div className="col-lg-12 col-12">
                 <nav className="navbar">
-                  <a className="navbar-brand logo" href="/"><span className="logo_text">Adkozalova</span></a>
+                  <Link to="/" className="navbar-brand logo" ><span className="logo_text">Adkozalova</span></Link>
                   <button
                       className="navbar-toggler hamburger"
                       type="button"
@@ -40,19 +41,19 @@ export default class Header extends Component {
                   <div className="opnen_menu">
                     <div className="header_main_menu">
                       <ul className="menu_item">
-                        <li><a href="/">Home</a></li>
+                        <li><Link to="/" onClick={this.onMenuClick}>Home</Link></li>
                         <li className="submenu">
-                          <a href="/#projects">Projects</a>
+                          <Link to="/" onClick={this.onMenuClick}>Projects</Link>
                           <ul className="submenu_item">
-                            <li><a href="/black-and-white">Black & White</a></li>
-                            <li><a href="/jazzman">Jazzman</a></li>
-                            <li><a href="/watercolor">Watercolor</a></li>
-                            <li><a href="/sketch">Sketch</a></li>
+                            <li><Link to="/black-and-white" onClick={this.onMenuClick}>Black & White</Link></li>
+                            <li><Link to="/jazzman" onClick={this.onMenuClick}>Jazzman</Link></li>
+                            <li><Link to="/watercolor" onClick={this.onMenuClick}>Watercolor</Link></li>
+                            <li><Link to="/sketch" onClick={this.onMenuClick}>Sketch</Link></li>
                           </ul>
                         </li>
-                        <li><a href="/rewards">Rewards</a></li>
-                        <li><a href="/about">About me</a></li>
-                        <li><a href="/contacts">Contacts</a></li>
+                        <li><Link to="/rewards" onClick={this.onMenuClick}>Rewards</Link></li>
+                        <li><Link to="/about" onClick={this.onMenuClick}>About me</Link></li>
+                        <li><Link to="/contacts" onClick={this.onMenuClick}>Contacts</Link></li>
                       </ul>
                     </div>
                   </div>

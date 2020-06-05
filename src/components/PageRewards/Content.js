@@ -44,7 +44,7 @@ export default class Content extends Component {
               const isLast = Config.RewardItems.length === key + 1;
               return !(key % 2)
                   ? (
-                      <div className="row justify-content-center mb-5" id={"#reward-" + key} key={key}>
+                      <div className="row justify-content-center mb-5" key={key}>
                         <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                           <img src={src} alt={title} className="img-fluid" onClick={() => this.openModal(src, title)}/>
                         </div>
@@ -57,7 +57,7 @@ export default class Content extends Component {
                       </div>
                   )
                   : (
-                      <div className="row justify-content-center mb-5" id={"#reward-" + key} key={key} style={isLast ? {borderStyle: "none"} : {}}>
+                      <div className="row justify-content-center mb-5" key={key} style={isLast ? {borderStyle: "none"} : {}}>
                         <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-right">
                           <h2>{title}</h2>
                           <h3>{description}</h3>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {HashRouter as Router, Route, Switch} from "react-router-dom";
 // css
 import './assets/css/bootstrap.css';
 import './assets/css/font-awesome.min.css';
@@ -15,6 +15,7 @@ import './assets/css/components/hero.css';
 import './assets/css/responsive.css';
 // components
 import * as Config from './Config';
+import ScrollToTop from "./components/Common/ScrollToTop";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Partners from './components/Common/Partners';
@@ -56,8 +57,9 @@ export default class App extends Component {
   render() {
     return (
         <div id="top">
-          <Header/>
           <Router>
+            <ScrollToTop>
+            <Header/>
             <Switch>
               <Route path="/watercolor">
                 <Hero
@@ -126,6 +128,7 @@ export default class App extends Component {
                 <Partners/>
               </Route>
             </Switch>
+            </ScrollToTop>
           </Router>
           <Footer/>
           <GoToTop/>

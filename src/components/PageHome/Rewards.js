@@ -25,7 +25,7 @@ export default class Rewards extends Component {
             <div className="row align-items-center">
               <div className="col-lg-5 col-md-12 col-sm-12 col-12">
                 <div className="rewards_left">
-                  <a href="/rewards"><h2 className="rewards_title wow fadeInUp">Rewards</h2></a>
+                  <a href="/#/rewards"><h2 className="rewards_title wow fadeInUp">Rewards</h2></a>
                 </div>
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-12">
@@ -42,7 +42,7 @@ export default class Rewards extends Component {
                       return (
                           <div className="row" key={key}>
                             <div className="col-md-4 img_wrap">
-                              <a href="/rewards"><img className="img-fluid img-thumbnail" src={src} alt={title}/></a>
+                              <a href="/#/rewards"><img className="img-fluid img-thumbnail" src={src} alt={title}/></a>
                             </div>
                             <div className="col-md-8 description_wrap">
                               <h3 className="title">{title}</h3>
