@@ -54,14 +54,32 @@ export const ProjectBlackAndWhiteItems = [
     tags: "120x100cm"
   },
   {
+    thumbnail: "/images/project/black-and-white/a-girl-in-tram.jpg",
+    img: "/images/project/black-and-white/a-girl-in-tram-full.jpg",
+    title: "A girl in tram, 2019",
+    tags: "120x100cm"
+  },
+  {
     thumbnail: "/images/project/black-and-white/beyond.jpg",
     img: "/images/project/black-and-white/beyond-full.jpg",
     title: "Beyond, 2020",
     tags: "100x80cm"
-  }
+  },
+  {
+    thumbnail: "/images/project/black-and-white/dolce.jpg",
+    img: "/images/project/black-and-white/dolce-full.jpg",
+    title: "Dolce, 2020",
+    tags: "Acrylic, 100x120cm"
+  },
 ];
 
 export const ProjectJazzmanItems = [
+  {
+    thumbnail: "/images/project/jazzman/childhood-jazz.jpg",
+    img: "/images/project/jazzman/childhood-jazz-full.jpg",
+    title: "Childhood jazz, 2020",
+    tags: "50x80cm"
+  },
   {
     thumbnail: "/images/project/jazzman/pianist.jpg",
     img: "/images/project/jazzman/pianist-full.jpg",
