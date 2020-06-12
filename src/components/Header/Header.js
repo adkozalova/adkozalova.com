@@ -43,7 +43,7 @@ export default class Header extends Component {
                       <ul className="menu_item">
                         <li><Link to="/" onClick={this.onMenuClick}>Home</Link></li>
                         <li className="submenu">
-                          <Link to="/" onClick={this.onMenuClick}>Projects</Link>
+                          <Link to="/">Projects</Link>
                           <ul className="submenu_item">
                             <li><Link to="/black-and-white" onClick={this.onMenuClick}>Black & White</Link></li>
                             <li><Link to="/jazzman" onClick={this.onMenuClick}>Jazzman</Link></li>
