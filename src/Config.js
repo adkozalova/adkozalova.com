@@ -15,61 +15,61 @@ export const ProjectBlackAndWhiteItems = [
     thumbnail: "/images/project/black-and-white/peace.jpg",
     img: "/images/project/black-and-white/peace-full.jpg",
     title: "Peace, 2019",
-    tags: "100x120cm"
+    tags: "oil, 100x120cm"
   },
   {
     thumbnail: "/images/project/black-and-white/a-dream.jpg",
     img: "/images/project/black-and-white/a-dream-full.jpg",
     title: "A dream, 2019",
-    tags: "95x70cm"
+    tags: "oil, 95x70cm"
   },
   {
     thumbnail: "/images/project/black-and-white/near-window.jpg",
     img: "/images/project/black-and-white/near-window-full.jpg",
     title: "Near window, 2019",
-    tags: "100x110cm"
+    tags: "oil, 100x110cm"
   },
   {
     thumbnail: "/images/project/black-and-white/meeting.jpg",
     img: "/images/project/black-and-white/meeting-full.jpg",
     title: "Meeting, 2019",
-    tags: "70x80cm"
+    tags: "oil, 70x80cm"
   },
   {
     thumbnail: "/images/project/black-and-white/relaxation.jpg",
     img: "/images/project/black-and-white/relaxation-full.jpg",
     title: "Relaxation, 2019",
-    tags: "80x70cm"
+    tags: "oil, 80x70cm"
   },
   {
     thumbnail: "/images/project/black-and-white/near-the-window.jpg",
     img: "/images/project/black-and-white/near-the-window-full.jpg",
     title: "Near the window, 2020",
-    tags: "100x120cm"
+    tags: "oil, 100x120cm"
   },
   {
     thumbnail: "/images/project/black-and-white/bright-moment.jpg",
     img: "/images/project/black-and-white/bright-moment-full.jpg",
     title: "Bright moment, 2019",
-    tags: "120x100cm"
+    tags: "oil, 120x100cm"
   },
   {
     thumbnail: "/images/project/black-and-white/a-girl-in-tram.jpg",
     img: "/images/project/black-and-white/a-girl-in-tram-full.jpg",
     title: "A girl in tram, 2019",
-    tags: "120x100cm"
+    tags: "oil, 120x100cm"
   },
   {
     thumbnail: "/images/project/black-and-white/beyond.jpg",
     img: "/images/project/black-and-white/beyond-full.jpg",
     title: "Beyond, 2020",
-    tags: "100x80cm"
+    tags: "oil, 100x80cm"
   },
   {
     thumbnail: "/images/project/black-and-white/dolce.jpg",
     img: "/images/project/black-and-white/dolce-full.jpg",
     title: "Dolce, 2020",
-    tags: "Acrylic, 100x120cm"
+    tags: "acrylic, 100x120cm"
   },
 ];
 
@@ -78,37 +78,37 @@ export const ProjectJazzmanItems = [
     thumbnail: "/images/project/jazzman/childhood-jazz.jpg",
     img: "/images/project/jazzman/childhood-jazz-full.jpg",
     title: "Childhood jazz, 2020",
-    tags: "50x80cm"
+    tags: "oil, 50x80cm"
   },
   {
     thumbnail: "/images/project/jazzman/pianist.jpg",
     img: "/images/project/jazzman/pianist-full.jpg",
     title: "Pianist, 2020",
-    tags: "50x60cm"
+    tags: "oil, 50x60cm"
   },
   {
     thumbnail: "/images/project/jazzman/allegro.jpg",
     img: "/images/project/jazzman/allegro-full.jpg",
     title: "Allegro, 2020",
-    tags: "60x80cm"
+    tags: "oil, 60x80cm"
   },
   {
     thumbnail: "/images/project/jazzman/guitarist.jpg",
     img: "/images/project/jazzman/guitarist-full.jpg",
     title: "Guitarist, 2018",
-    tags: "60x80cm"
+    tags: "oil, 60x80cm"
   },
   {
     thumbnail: "/images/project/jazzman/saxophonist.jpg",
     img: "/images/project/jazzman/saxophonist-full.jpg",
     title: "Saxophonist, 2018",
-    tags: "60x80cm"
+    tags: "oil, 60x80cm"
   },
   {
     thumbnail: "/images/project/jazzman/trumpeter.jpg",
     img: "/images/project/jazzman/trumpeter-full.jpg",
     title: "Trumpeter, 2018",
-    tags: "60x70cm"
+    tags: "oil, 60x70cm"
   },
 ];
 

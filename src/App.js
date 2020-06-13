@@ -16,12 +16,12 @@ import './assets/css/responsive.css';
 // components
 import * as Config from './Config';
 import ScrollToTop from "./components/Common/ScrollToTop";
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import HeaderMenu from './components/Common/HeaderMenu';
+import Footer from './components/Common/Footer';
 import Partners from './components/Common/Partners';
 import Hero from "./components/Common/Hero";
 import Gallery from "./components/Common/Gallery";
-import Contact from "./components/Contact/Contact";
+import Contact from "./components/PageContact/Contact";
 import GoToTop from "./components/Common/GoToTop";
 
 import PageHomeHero from './components/PageHome/Hero';
@@ -59,7 +59,7 @@ export default class App extends Component {
         <div id="top">
           <Router>
             <ScrollToTop>
-            <Header/>
+            <HeaderMenu/>
             <Switch>
               <Route path="/watercolor">
                 <Hero
@@ -72,7 +72,7 @@ export default class App extends Component {
               <Route path="/black-and-white">
                 <Hero
                     title="Black & White"
-                    description="Symbolism style. Author's technique. Oil, canvas."
+                    description="Symbolism style. Author's technique. Oil, acrylic, canvas."
                     img="/images/project/black-and-white/black-and-white-bg.jpg"
                 />
                 <Gallery items={Config.ProjectBlackAndWhiteItems}/>
@@ -88,7 +88,7 @@ export default class App extends Component {
               <Route path="/jazzman">
                 <Hero
                     title="Jazzman"
-                    description="Modern art. Author's technique. Oil, canvas."
+                    description="Modern art. Author's technique. Oil, acrylic, canvas."
                     img="/images/project/jazzman/jazzman-bg.jpg"
                 />
                 <Gallery items={Config.ProjectJazzmanItems}/>

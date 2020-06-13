@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import SocialMediaList from "../Common/SocialMediaList";
-import ContactList from "../Common/ContactList";
+import SocialMediaList from "./SocialMediaList";
+import ContactList from "./ContactList";
 
 export default class Footer extends Component {
   render() {

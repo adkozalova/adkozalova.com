@@ -8,15 +8,17 @@ export default class Gallery extends Component {
     this.state = {
       isOpen: false,
       img: null,
-      title: null
+      title: null,
+      tags: null,
     };
   }
 
-  openModal = (img, title) => {
+  openModal = (img, title, tags) => {
     this.setState({
       isOpen: true,
       img: img,
       title: title,
+      tags: tags,
     });
   }
 
@@ -25,6 +27,7 @@ export default class Gallery extends Component {
       isOpen: false,
       img: null,
       title: null,
+      tags: null,
     });
   }
 
@@ -47,15 +50,15 @@ export default class Gallery extends Component {
                     <div className="col-md-4 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus_3" key={key}>
                       <div className="portfolio_item">
                         <div className="port_img tilt">
-                          <img src={thumbnail} alt={title} className="img-fluid cursor-pointer" onClick={() => this.openModal(img, title)}/>
+                          <img src={thumbnail} alt={title} className="img-fluid cursor-pointer" onClick={() => this.openModal(img, title, tags)}/>
                         </div>
-                        <div className="exp cursor-pointer" onClick={() => this.openModal(img, title)}>
+                        <div className="exp cursor-pointer" onClick={() => this.openModal(img, title, tags)}>
                           <span className="exp_inner">
                             <span className="exp_hover">Explore</span>
                           </span>
                         </div>
                         <div className="port_text">
-                          <div className="cursor-pointer" onClick={() => this.openModal(img, title)}>
+                          <div className="cursor-pointer" onClick={() => this.openModal(img, title, tags)}>
                             <h3 className="port_title">{title}</h3>
                           </div>
                           <p className="catagory">- {tags}</p>
@@ -68,7 +71,7 @@ export default class Gallery extends Component {
                   isOpen={this.state.isOpen}
                   onClose={this.closeModal}
                   img={this.state.img}
-                  title={this.state.title}
+                  title={this.state.title + " | " + this.state.tags}
               />
             </div>
           </div>

@@ -46,7 +46,7 @@ export default class Content extends Component {
                   ? (
                       <div className="row justify-content-center mb-5" key={key}>
                         <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                          <img src={src} alt={title} className="img-fluid" onClick={() => this.openModal(src, title)}/>
+                          <img src={src} alt={title} className="img-fluid img-thumbnail" onClick={() => this.openModal(src, title)}/>
                         </div>
                         <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
                           <h2>{title}</h2>
@@ -65,7 +65,7 @@ export default class Content extends Component {
                           <p className="year">{year}</p>
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                          <img src={src} alt={title} className="img-fluid" onClick={() => this.openModal(src, title)}/>
+                          <img src={src} alt={title} className="img-fluid img-thumbnail" onClick={() => this.openModal(src, title)}/>
                         </div>
                       </div>
                   )

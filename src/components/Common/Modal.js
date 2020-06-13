@@ -42,7 +42,7 @@ export default class Modal extends React.Component {
             style={{
               overlay: {
                 position: 'fixed',
-                zIndex: 1050,
+                zIndex: 1100,
                 top: 0,
                 left: 0,
                 right: 0,
@@ -51,6 +51,7 @@ export default class Modal extends React.Component {
               },
               content: {
                 position: 'absolute',
+                zIndex: 1101,
                 top: '50%',
                 left: '50%',
                 right: 'auto',
@@ -64,6 +65,11 @@ export default class Modal extends React.Component {
               }
             }}
         >
+          <span
+              className="cursor-pointer"
+              style={{position: 'absolute', right: '0', color: '#fff', fontSize:'40px', fontWeight: '100' }}
+              onClick={this.closeModal}
+          >×</span>
           <img
               className="img-fluid"
               style={{display: 'block', width: 'auto', maxHeight: '100%'}}

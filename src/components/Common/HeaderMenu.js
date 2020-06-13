@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import {Link} from "react-router-dom";
-import ContactList from "../Common/ContactList";
-import SocialMediaList from "../Common/SocialMediaList";
+import ContactList from "./ContactList";
+import SocialMediaList from "./SocialMediaList";
 
-export default class Header extends Component {
+export default class HeaderMenu extends Component {
 
   constructor(props) {
     super(props);
@@ -11,9 +11,20 @@ export default class Header extends Component {
   }
 
   onMenuClick = (e) => {
-    if (e.target.className === 'not-hide-on-click') {
+    let targetClassName = e.target.className;
+
+    // ignore
+    if (targetClassName === 'not-hide-on-click') {
       return;
     }
+
+    // close
+    if (targetClassName === 'logo_text') {
+      this.setState({isMenuOpen: false});
+      document.querySelector('body').style.overflowY = 'auto';
+      return;
+    }
+
     this.setState({isMenuOpen: !this.state.isMenuOpen});
     document.querySelector('body').style.overflowY = !this.state.isMenuOpen ? 'hidden' : 'auto';
   }
@@ -25,7 +36,9 @@ export default class Header extends Component {
             <div className="row">
               <div className="col-lg-12 col-12">
                 <nav className="navbar">
-                  <Link to="/" className="navbar-brand logo"><span className="logo_text">Adkozalova</span></Link>
+                  <Link to="/" className="navbar-brand logo">
+                    <span className="logo_text">Adkozalova</span>
+                  </Link>
                   <button
                       className="navbar-toggler hamburger"
                       type="button"

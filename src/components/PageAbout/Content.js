@@ -12,7 +12,7 @@ export default class Content extends Component {
                 <div className="blog_sidebar">
                   <div className="widget sidebar-widget widget_about">
                     <div className="sidebar_about_img text-center">
-                      <img src="/images/about/author.jpg" alt="Viktoria Adkozalova Photo" className="img-fluid"/>
+                      <img src="/images/about/author.jpg" alt="Viktoria Adkozalova" className="img-fluid"/>
                     </div>
                     <div className="sidebar_about_content">
                       <h4 className="text-center sidebar_ab_title">Viktoria Adkozalova</h4>
@@ -35,7 +35,7 @@ export default class Content extends Component {
                   <div className="blog_single_item">
 
                     <h3 className="blog_inner_title">Victoria Adkozalova - Ukrainian artist, works in the symbolism style</h3>
-
+                    <br/>
                     <p>Victoria was born on 3 October, 1987 in Feodosia.</p>
 
                     <p>From early childhood, she beloved fine art and artistic creativity. One of the sources of her inspiration were landscapes painted from
@@ -44,7 +44,7 @@ export default class Content extends Component {
                     <p>In 2002, Victoria graduated from the Aivazovsky Art School, taking the first step in her career.</p>
 
                     <p>The next stage in the formation of Victoria was at the Kherson National Technical University, where she studied design and painting under
-                      the guidance of the famous Ukrainian artist Galina Sorokhan.<br/>
+                      the guidance of the famous <a className="stretched-link text-info" href="https://www.saatchiart.com/sorokhan">Ukrainian artist Galina Sorokhan</a>.<br/>
                       In her student years, Victoria tirelessly shows her creative abilities, taking part in various art exhibitions.</p>
 
                     <p>Since 2009, she has been actively engaged in profession art activities and studied at the National Pedagogical University named after

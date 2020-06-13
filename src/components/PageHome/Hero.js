@@ -13,9 +13,10 @@ export default class Hero extends Component {
                   <div className="banner_content">
                     <h1 className="banner_title">Viktoria<br/>Adkozalova</h1>
                     <ul className="exp_list">
-                      <li className=" wow fadeInUp" data-wow-duration='1s'>Oil</li>
-                      <li className=" wow fadeInUp" data-wow-duration='2s'>Watercolor</li>
-                      <li className=" wow fadeInUp" data-wow-duration='3s'>Graphic</li>
+                      <li className=" wow fadeInUp" data-wow-duration='0.5s'>Oil</li>
+                      <li className=" wow fadeInUp" data-wow-duration='1s'>Acrylic</li>
+                      <li className=" wow fadeInUp" data-wow-duration='1.5s'>Watercolor</li>
+                      <li className=" wow fadeInUp" data-wow-duration='2s'>Graphic</li>
                     </ul>
                   </div>
                 </div>
