@@ -44,7 +44,8 @@ export default class Content extends Component {
                     <p>In 2002, Victoria graduated from the Aivazovsky Art School, taking the first step in her career.</p>
 
                     <p>The next stage in the formation of Victoria was at the Kherson National Technical University, where she studied design and painting under
-                      the guidance of the famous <a className="stretched-link text-info" href="https://www.saatchiart.com/sorokhan">Ukrainian artist Galina Sorokhan</a>.<br/>
+                      the guidance of the famous <a className="stretched-link text-info" href="https://www.saatchiart.com/sorokhan" target={"_blank"}
+                                                    rel="noopener noreferrer">Ukrainian artist Galina Sorokhan</a>.<br/>
                       In her student years, Victoria tirelessly shows her creative abilities, taking part in various art exhibitions.</p>
 
                     <p>Since 2009, she has been actively engaged in profession art activities and studied at the National Pedagogical University named after
