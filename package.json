@@ -20,7 +20,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy-s3": "aws s3 sync build/ s3://adkozalova.com --profile adkozalova.com --delete --exclude \"*.DS_Store\"",
+    "clear-cache": "aws cloudfront create-invalidation --distribution-id=E38A6T3RG6KI1N --path / --profile adkozalova.com",
+    "deploy": "npm run predeploy && npm run deploy-s3 && npm run clear-cache"
   },
   "eslintConfig": {
     "extends": "react-app"
