@@ -9,17 +9,26 @@ export default class Modal extends React.Component {
       width: 0,
       height: 0
     };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
+    this.escFunction = this.escFunction.bind(this);;
+  }
+
+  escFunction(event){
+    if(event.keyCode === 27) {
+      this.closeModal()
+    }
   }
 
   componentDidMount() {
     ReactModal.setAppElement('#root');
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
+    document.addEventListener("keydown", this.escFunction, false);
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
+    document.removeEventListener("keydown", this.escFunction, false);
   }
 
   updateWindowDimensions() {
@@ -59,25 +68,33 @@ export default class Modal extends React.Component {
                 marginRight: '-50%',
                 transform: 'translate(-50%, -50%)',
                 height: (this.state.height - 50) + 'px',
-                maxWidth: '80%',
+                maxWidth: '100%',
                 border: null,
                 backgroundColor: null,
               }
             }}
         >
-          <span
-              className="cursor-pointer"
-              style={{position: 'absolute', right: '0', color: '#fff', fontSize:'40px', fontWeight: '100' }}
-              onClick={this.closeModal}
-          >×</span>
-          <img
-              className="img-fluid"
-              style={{display: 'block', width: 'auto', maxHeight: '100%'}}
-              src={img}
-              title={title}
-              alt={title}
-              onClick={this.closeModal}
-          />
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-11 col-md-11 col-sm-11 col-xs-11">
+                <img
+                    className="img-fluid"
+                    style={{display: 'block', width: 'auto', maxHeight: '100%'}}
+                    src={img}
+                    title={title}
+                    alt={title}
+                    onClick={this.closeModal}
+                />
+              </div>
+              <div className="col-1 col-md-1 col-sm-1 col-xs-1">
+              <span
+                  className="cursor-pointer"
+                  style={{color: '#fff', fontSize: '40px', fontWeight: '100'}}
+                  onClick={this.closeModal}
+              >×</span>
+              </div>
+            </div>
+          </div>
         </ReactModal>
     );
   }

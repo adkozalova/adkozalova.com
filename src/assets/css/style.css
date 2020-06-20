@@ -392,7 +392,7 @@ header.header .navbar .hamburger:hover .bar_icon .bar.bar_3 {
     width: 100%;
 }
 
-header.header .opnen_menu {
+header.header .open_menu {
     position: fixed;
     width: 100%;
     height: 0;
@@ -405,11 +405,11 @@ header.header .opnen_menu {
     transition: all 0.5s;
 }
 
-header.header .opnen_menu .header_main_menu {
+header.header .open_menu .header_main_menu {
     margin-top: 235px;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item {
+header.header .open_menu .header_main_menu .menu_item {
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -419,24 +419,24 @@ header.header .opnen_menu .header_main_menu .menu_item {
     width: 100%;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item::scrollbar {
+header.header .open_menu .header_main_menu .menu_item::scrollbar {
     display: none;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item::-webkit-scrollbar {
+header.header .open_menu .header_main_menu .menu_item::-webkit-scrollbar {
     display: none;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li {
+header.header .open_menu .header_main_menu .menu_item li {
     display: block;
     margin-bottom: 5px;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li:last-child {
+header.header .open_menu .header_main_menu .menu_item li:last-child {
     margin-bottom: 0;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li a {
+header.header .open_menu .header_main_menu .menu_item li a {
     color: #ccc;
     display: inline-block;
     font-size: 40px;
@@ -446,15 +446,15 @@ header.header .opnen_menu .header_main_menu .menu_item li a {
     transition: all 0.5s;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li a:hover {
+header.header .open_menu .header_main_menu .menu_item li a:hover {
     color: #fff;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li a.dropdown-toggle::after {
+header.header .open_menu .header_main_menu .menu_item li a.dropdown-toggle::after {
     display: none;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item {
+header.header .open_menu .header_main_menu .menu_item li.submenu .submenu_item {
     width: 100%;
     max-height: 0;
     overflow: hidden;
@@ -464,15 +464,14 @@ header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item 
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    transition: all 5s;
+    transition: all 2s;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li.submenu:hover .submenu_item {
+header.header .open_menu .header_main_menu .menu_item li.submenu:hover .submenu_item {
     max-height: 1000px;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item li {
-    margin-bottom: 0;
+header.header .open_menu .header_main_menu .menu_item li.submenu .submenu_item li {
     width: 100%;
     display: block;
     margin: 0;
@@ -481,21 +480,21 @@ header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item 
     position: relative;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item li:first-child {
+header.header .open_menu .header_main_menu .menu_item li.submenu .submenu_item li:first-child {
     padding-top: 10px;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item li:last-child {
+header.header .open_menu .header_main_menu .menu_item li.submenu .submenu_item li:last-child {
     padding-bottom: 10px;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item li a {
+header.header .open_menu .header_main_menu .menu_item li.submenu .submenu_item li a {
     font-size: 20px;
     line-height: 30px;
     color: #999999;
 }
 
-header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item li a:hover {
+header.header .open_menu .header_main_menu .menu_item li.submenu .submenu_item li a:hover {
     color: #fff;
 }
 
@@ -608,7 +607,7 @@ header.header .sub_footer .footer_social li a:hover i+i {
     top: 0;
 }
 
-header.header.menu_open .opnen_menu {
+header.header.menu_open .open_menu {
     height: 100%;
     visibility: visible;
     opacity: 1;

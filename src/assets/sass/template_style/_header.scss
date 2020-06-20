@@ -131,7 +131,7 @@ header.header {
         }
     }
     
-    .opnen_menu {
+    .open_menu {
         position: fixed;
         width: 100%;
         height: 0;
@@ -309,7 +309,7 @@ header.header {
     }
     
     &.menu_open {
-        .opnen_menu {
+        .open_menu {
             height: 100%;
             visibility: visible;
             opacity: 1;

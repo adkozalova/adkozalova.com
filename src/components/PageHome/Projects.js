@@ -14,7 +14,7 @@ export default class Projects extends Component {
                 <div className="portfolio_item">
                   <div className="port_img tilt">
                     <Link to="/black-and-white">
-                      <img src="/images/project/black-and-white/black-and-white-main.jpg" alt="Black & White" className="img-fluid"/>
+                      <img src="/images/project/black-and-white/black-and-white-main.jpg" alt="Project Black & White" className="img-fluid"/>
                     </Link>
                   </div>
                   <Link className="exp" to="/black-and-white">
@@ -35,7 +35,7 @@ export default class Projects extends Component {
                 <div className="portfolio_item">
                   <div className="port_img tilt">
                     <Link to="/jazzman">
-                      <img src="/images/project/jazzman/jazzman-main.jpg" alt="img" className="img-fluid"/>
+                      <img src="/images/project/jazzman/jazzman-main.jpg" alt="Project Jazzman" className="img-fluid"/>
                     </Link>
                   </div>
                   <Link className="exp" to="/jazzman">
@@ -55,7 +55,7 @@ export default class Projects extends Component {
                 <div className="portfolio_item">
                   <div className="port_img tilt">
                     <Link to="/sketch">
-                      <img src="/images/project/sketch/sketch-main.jpg" alt="img" className="img-fluid"/>
+                      <img src="/images/project/sketch/sketch-main.jpg" alt="Project Sketch" className="img-fluid"/>
                     </Link>
                   </div>
                   <Link className="exp" to="/sketch">
@@ -75,7 +75,7 @@ export default class Projects extends Component {
                 <div className="portfolio_item">
                   <div className="port_img tilt">
                     <Link to="/watercolor">
-                      <img src="/images/project/watercolor/watercolor-main.jpg" alt="img" className="img-fluid"/>
+                      <img src="/images/project/watercolor/watercolor-main.jpg" alt="Project Watercolor" className="img-fluid"/>
                     </Link>
                   </div>
                   <Link className="exp" to="/watercolor">

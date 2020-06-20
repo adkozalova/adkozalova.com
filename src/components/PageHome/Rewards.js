@@ -40,10 +40,11 @@ export default class Rewards extends Component {
                         country,
                         year
                       } = reward;
+                      const alt = title + ": " + description;
                       return (
                           <div className="row" key={key}>
                             <div className="col-md-4 img_wrap">
-                              <Link to="/rewards"><img className="img-fluid img-thumbnail" src={src} alt={title}/></Link>
+                              <Link to="/rewards"><img className="img-fluid img-thumbnail" src={src} alt={alt}/></Link>
                             </div>
                             <div className="col-md-8 description_wrap">
                               <h3 className="title">{title}</h3>
