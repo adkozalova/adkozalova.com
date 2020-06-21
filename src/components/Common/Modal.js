@@ -10,29 +10,23 @@ export default class Modal extends React.Component {
       height: 0
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
-    this.escFunction = this.escFunction.bind(this);;
-  }
-
-  escFunction(event){
-    if(event.keyCode === 27) {
-      this.closeModal()
-    }
   }
 
   componentDidMount() {
     ReactModal.setAppElement('#root');
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
-    document.addEventListener("keydown", this.escFunction, false);
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
-    document.removeEventListener("keydown", this.escFunction, false);
   }
 
   updateWindowDimensions() {
-    this.setState({width: window.innerWidth, height: window.innerHeight});
+    this.setState({
+      width: window.innerWidth,
+      height: window.innerHeight
+    });
   }
 
   closeModal = () => this.props.onClose();
@@ -43,11 +37,15 @@ export default class Modal extends React.Component {
       img,
       title
     } = this.props;
+    const containerHeightPx = this.state.height + 'px';
+    const contentHeightPx = (this.state.height - 50) + 'px';
     return (
         <ReactModal
+            contentLabel={title}
             isOpen={isOpen}
             onRequestClose={this.closeModal}
             shouldCloseOnOverlayClick={true}
+            shouldCloseOnEsc={true}
             style={{
               overlay: {
                 position: 'fixed',
@@ -67,8 +65,8 @@ export default class Modal extends React.Component {
                 bottom: 'auto',
                 marginRight: '-50%',
                 transform: 'translate(-50%, -50%)',
-                height: (this.state.height - 50) + 'px',
-                maxWidth: '100%',
+                height: containerHeightPx,
+                maxWidth: 'auto',
                 border: null,
                 backgroundColor: null,
               }
@@ -79,7 +77,7 @@ export default class Modal extends React.Component {
               <div className="col-11 col-md-11 col-sm-11 col-xs-11">
                 <img
                     className="img-fluid"
-                    style={{display: 'block', width: 'auto', maxHeight: '100%'}}
+                    style={{height: contentHeightPx}}
                     src={img}
                     title={title}
                     alt={title}
