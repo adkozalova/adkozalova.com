@@ -70,8 +70,6 @@ export default class HeaderMenu extends Component {
                             <ul className="submenu_item">
                               <li><Link to="/black-and-white" onClick={this.onClickClose.bind(this)}>Black & White</Link></li>
                               <li><Link to="/jazzman" onClick={this.onClickClose.bind(this)}>Jazzman</Link></li>
-                              {/*<li><Link to="/watercolor" onClick={this.onClickClose.bind(this)}>Watercolor</Link></li>*/}
-                              {/*<li><Link to="/sketch" onClick={this.onClickClose.bind(this)}>Sketch</Link></li>*/}
                             </ul>
                           </li>
                           <li><Link to="/rewards" onClick={this.onClickClose.bind(this)}>Rewards</Link></li>

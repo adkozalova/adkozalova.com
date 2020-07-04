@@ -61,14 +61,6 @@ export default class App extends Component {
             <ScrollToTop>
             <HeaderMenu/>
             <Switch>
-              {/*<Route path="/watercolor">*/}
-              {/*  <Hero*/}
-              {/*      title="Watercolor"*/}
-              {/*      description="St.Cuthberts Mill Saunders Waterford High white HP. Wet-In-Wet Watercolor Painting."*/}
-              {/*      img="/images/project/watercolor/watercolor-bg.jpg"*/}
-              {/*  />*/}
-              {/*  <Gallery items={Config.ProjectWatercolorItems}/>*/}
-              {/*</Route>*/}
               <Route path="/black-and-white">
                 <Hero
                     title="Black & White"
@@ -77,14 +69,6 @@ export default class App extends Component {
                 />
                 <Gallery items={Config.ProjectBlackAndWhiteItems}/>
               </Route>
-              {/*<Route path="/sketch">*/}
-              {/*  <Hero*/}
-              {/*      title="Sketch"*/}
-              {/*      description="Graphics. Mixed technique."*/}
-              {/*      img="/images/project/sketch/sketch-bg.jpg"*/}
-              {/*  />*/}
-              {/*  <Gallery items={Config.ProjectSketchItems}/>*/}
-              {/*</Route>*/}
               <Route path="/jazzman">
                 <Hero
                     title="Jazzman"

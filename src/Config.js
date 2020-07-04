@@ -113,42 +113,6 @@ export const ProjectJazzmanItems = [
     tags: "oil, 60x70cm"
   },
 ];
-
-// export const ProjectSketchItems = [
-//   {
-//     thumbnail: "/images/project/sketch/sketch-1.jpg",
-//     img: "/images/project/sketch/sketch-1-full.jpg",
-//     title: "Sketch",
-//     tags: "A4"
-//   },
-// ];
-//
-// export const ProjectWatercolorItems = [
-//   {
-//     thumbnail: "/images/project/watercolor/cappuccino.jpg",
-//     img: "/images/project/watercolor/cappuccino-full.jpg",
-//     title: "Cappuccino, 2020",
-//     tags: "24x19cm"
-//   },
-//   {
-//     thumbnail: "/images/project/watercolor/vernal.jpg",
-//     img: "/images/project/watercolor/vernal-full.jpg",
-//     title: "Vernal, 2020",
-//     tags: "16x18cm"
-//   },
-//   {
-//     thumbnail: "/images/project/watercolor/with-chamomile.jpg",
-//     img: "/images/project/watercolor/with-chamomile-full.jpg",
-//     title: "Chamomile, 2020",
-//     tags: "23x15cm"
-//   },
-//   {
-//     thumbnail: "/images/project/watercolor/jazzman.jpg",
-//     img: "/images/project/watercolor/jazzman-full.jpg",
-//     title: "Jazzman, 2020",
-//     tags: "28x36cm"
-//   },
-// ];
 // End Projects
 
 // Rewards
