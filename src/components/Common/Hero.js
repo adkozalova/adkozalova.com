@@ -10,7 +10,8 @@ export default class Hero extends Component {
               <div className="col-md-12 col-12">
                 <div className="banner_content">
                   <h1 className="banner_title">{this.props.title}</h1>
-                  <p className="banner_para">{this.props.description}</p>
+                  <p className="banner_para">{this.props.description1}</p>
+                  <p className="banner_para2">{this.props.description2}</p>
                 </div>
               </div>
             </div>

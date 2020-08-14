@@ -14,6 +14,18 @@ export const Contact = {
 // Projects
 export const ProjectBlackAndWhiteItems = [
   {
+    thumbnail: "/images/project/black-and-white/good-morning.jpg",
+    img: "/images/project/black-and-white/good-morning-full.jpg",
+    title: "Good morning, 2020",
+    tags: "acrylic, 80x60cm"
+  },
+  {
+    thumbnail: "/images/project/black-and-white/summer.jpg",
+    img: "/images/project/black-and-white/summer-full.jpg",
+    title: "Summer, 2020",
+    tags: "acrylic, 120x100cm"
+  },
+  {
     thumbnail: "/images/project/black-and-white/peace.jpg",
     img: "/images/project/black-and-white/peace-full.jpg",
     title: "Peace, 2019",
@@ -83,6 +95,18 @@ export const ProjectJazzmanItems = [
     tags: "oil, 50x80cm"
   },
   {
+    thumbnail: "/images/project/jazzman/vivo.jpg",
+    img: "/images/project/jazzman/vivo-full.jpg",
+    title: "Vivo, 2020",
+    tags: "oil, 80x60cm"
+  },
+  {
+    thumbnail: "/images/project/jazzman/sometimes.jpg",
+    img: "/images/project/jazzman/sometimes-full.jpg",
+    title: "Sometimes, 2020",
+    tags: "acrylic, oil, 80x60cm"
+  },
+  {
     thumbnail: "/images/project/jazzman/pianist.jpg",
     img: "/images/project/jazzman/pianist-full.jpg",
     title: "Pianist, 2020",
@@ -113,6 +137,21 @@ export const ProjectJazzmanItems = [
     tags: "oil, 60x70cm"
   },
 ];
+
+export const ProjectFillingAndLivingItems = [
+  {
+    thumbnail: "/images/project/feeling-and-living/yellow-phone-number.jpg",
+    img: "/images/project/feeling-and-living/yellow-phone-number-full.jpg",
+    title: "Yellow phone number, 2020",
+    tags: "acrylic, enamel, 100x120cm"
+  },
+  {
+    thumbnail: "/images/project/feeling-and-living/yellow-soul.jpg",
+    img: "/images/project/feeling-and-living/yellow-soul-full.jpg",
+    title: "Yellow-soul, 2020",
+    tags: "acrylic, enamel, 120x100cm"
+  },
+]
 // End Projects
 
 // Rewards

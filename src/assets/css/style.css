@@ -959,6 +959,15 @@ header.header.headerFixed {
     padding-left: 5px;
 }
 
+.hero_warp.inner_banner .banner_content .banner_para2 {
+    color: #f6f7fb;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
 .hero_warp.inner_banner .social_link {
     bottom: 80px;
 }

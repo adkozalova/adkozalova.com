@@ -6,3 +6,16 @@ Oil, watercolor, acrylic professional art
 
 - [Facebook](https://www.facebook.com/viktoria.adkozalova)
 - [Instagram](https://www.instagram.com/viktoria_adkozalova)
+
+### Tools
+
+Start application
+
+```
+npm start
+```
+
+Deploy application with cache clear
+```
+npm run deploy
+```

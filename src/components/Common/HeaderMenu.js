@@ -69,6 +69,7 @@ export default class HeaderMenu extends Component {
                             <Link className="not-hide-on-click" to="/">Projects</Link>
                             <ul className="submenu_item">
                               <li><Link to="/black-and-white" onClick={this.onClickClose.bind(this)}>Black & White</Link></li>
+                              <li><Link to="/feeling-and-living" onClick={this.onClickClose.bind(this)}>Feeling & Living</Link></li>
                               <li><Link to="/jazzman" onClick={this.onClickClose.bind(this)}>Jazzman</Link></li>
                             </ul>
                           </li>

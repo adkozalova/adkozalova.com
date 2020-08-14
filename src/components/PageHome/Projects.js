@@ -28,10 +28,29 @@ export default class Projects extends Component {
                     </Link>
                     <p className="catagory">- oil, acrylic, canvas</p>
                   </div>
-
                 </div>
               </div>
               <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus">
+                <div className="portfolio_item">
+                  <div className="port_img tilt">
+                    <Link to="/feeling-and-living">
+                      <img src="/images/project/feeling-and-living/feeling-and-living-main.jpg" alt="Project Feeling & Living" className="img-fluid"/>
+                    </Link>
+                  </div>
+                  <Link className="exp" to="/feeling-and-living">
+                    <span className="exp_inner">
+                      <span className="exp_hover">Explore</span>
+                    </span>
+                  </Link>
+                  <div className="port_text">
+                    <Link to="/feeling-and-living">
+                      <h3 className="port_title">Feeling & Living</h3>
+                    </Link>
+                    <p className="catagory">- oil, acrylic, enamel, canvas</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
                 <div className="portfolio_item">
                   <div className="port_img tilt">
                     <Link to="/jazzman">
@@ -39,9 +58,9 @@ export default class Projects extends Component {
                     </Link>
                   </div>
                   <Link className="exp" to="/jazzman">
-                    <span className="exp_inner">
-                      <span className="exp_hover">Explore</span>
-                    </span>
+                      <span className="exp_inner">
+                        <span className="exp_hover">Explore</span>
+                      </span>
                   </Link>
                   <div className="port_text">
                     <Link to="/jazzman">
