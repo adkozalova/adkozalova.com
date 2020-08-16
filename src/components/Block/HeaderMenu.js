@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from 'react-router-dom';
 import ContactList from "../Common/ContactList";
 import SocialMediaList from "../Common/SocialMediaList";
 
@@ -36,6 +36,10 @@ export default class HeaderMenu extends Component {
   }
 
   render() {
+    const location = useLocation();
+    console.log(location.pathname)
+    const ruLangLink = location.pathname.startWith('/ru') ? location.pathname : 'ru' + location.pathname;
+    const enLangLink = location.pathname.replace('$ru/', '/')
     if (this.state.isMenuOpen) {
       return (
           <header className="header menu_open">
@@ -46,6 +50,10 @@ export default class HeaderMenu extends Component {
                     <Link to="/" className="navbar-brand logo" onClick={this.onClickClose.bind(this)}>
                       <span className="logo_text">Adkozalova</span>
                     </Link>
+                    <div className="select_lang ml-auto">
+                      <Link to={location.pathname.replace('.com/ua', '.com')} className="lang active">EN</Link>
+                      <Link to={window.location.href.replace('.com', '.com/ua')} className="lang">UA</Link>
+                    </div>
                     <button
                         className="navbar-toggler hamburger"
                         type="button"
@@ -99,6 +107,10 @@ export default class HeaderMenu extends Component {
                     <Link to="/" className="navbar-brand logo" onClick={this.onClickClose.bind(this)}>
                       <span className="logo_text">Adkozalova</span>
                     </Link>
+                    <div className="select_lang ml-auto">
+                      <Link to={window.location.href.replace('.com/ua', '.com')} className="lang active">EN</Link>
+                      <Link to={window.location.href.replace('.com', '.com/ua')} className="lang">UA</Link>
+                    </div>
                     <button
                         className="navbar-toggler hamburger"
                         type="button"
