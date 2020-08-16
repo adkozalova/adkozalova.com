@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-import ContactList from "./ContactList";
-import SocialMediaList from "./SocialMediaList";
+import ContactList from "../Common/ContactList";
+import SocialMediaList from "../Common/SocialMediaList";
 
 export default class HeaderMenu extends Component {
 

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import SocialMediaList from "./SocialMediaList";
+import SocialMediaList from "../Common/SocialMediaList";
 
-export default class Hero extends Component {
+export default class HeroPage extends Component {
   render() {
     return (
         <section className="hero_warp inner_banner hero_warp_page" style={{backgroundImage: `url(${this.props.img})`}}>

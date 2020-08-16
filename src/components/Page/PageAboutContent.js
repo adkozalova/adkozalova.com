@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import SocialMediaList from "../Common/SocialMediaList";
 
-export default class Content extends Component {
+export default class PageAboutContent extends Component {
   render() {
     return (
         <section className="blog_wrap blog_single_wrap">

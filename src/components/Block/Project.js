@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import Modal from "./Modal";
+import Modal from "../Common/Modal";
 
-export default class Gallery extends Component {
+export default class Project extends Component {
 
   constructor(props) {
     super(props);

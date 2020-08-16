@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 
-export default class About extends Component {
+export default class AboutShort extends Component {
   render() {
     return (
         <section className="about_wrap">
@@ -16,8 +16,7 @@ export default class About extends Component {
                   <h4>
                     I’m Viktoria, a <a href="https://en.wikipedia.org/wiki/Artist" target={"_blank"} rel="noopener noreferrer">professional artist</a> based in
                     Ukraine.<br/>
-                    Specialize in <a href="https://en.wikipedia.org/wiki/Symbolism_(arts)" target={"_blank"} rel="noopener noreferrer">symbolism</a> and <a
-                      href="https://en.wikipedia.org/wiki/Realism_(arts)" target={"_blank"} rel="noopener noreferrer">realism</a> styles.<br/>
+                    Specialize in <a href="https://en.wikipedia.org/wiki/Symbolism_(arts)" target={"_blank"} rel="noopener noreferrer">symbolism</a> style.<br/>
                     On my works you won't find specific persons, but instead everyone can find their friends, neighbors or even some moments from your own life.
                   </h4>
                 </div>

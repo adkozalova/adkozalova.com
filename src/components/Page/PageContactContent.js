@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import * as Config from './../../Config';
+import * as Config from '../../Config';
 
-export default class Contact extends Component {
+export default class PageContactContent extends Component {
 
   render() {
     return (

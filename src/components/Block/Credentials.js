@@ -22,7 +22,10 @@ export default class Credentials extends Component {
               <div className="col-lg-5 col-md-4 col-sm-12 col-12">
                 <ul className="nav nav-tabs credentials_tab">
                   <li className="nav-item wow fadeInUp">
-                    <a className="nav-link active" data-toggle="tab" href="#GroupExhibitions">Group Exhibitions</a>
+                    <a className="nav-link active" data-toggle="tab" href="#CurrentExhibitions">Current Exhibitions</a>
+                  </li>
+                  <li className="nav-item wow fadeInUp">
+                    <a className="nav-link" data-toggle="tab" href="#GroupExhibitions">Group Exhibitions</a>
                   </li>
                   <li className="nav-item wow fadeInUp">
                     <a className="nav-link" data-toggle="tab" href="#SoloExhibitions">Solo Exhibitions</a>
@@ -45,7 +48,24 @@ export default class Credentials extends Component {
               <div className="col-lg-7 col-md-8 col-sm-12 col-12">
                 <div className="tab-content credentials_tab_content">
 
-                  <div className="tab-pane fade show active" id="GroupExhibitions">
+                  <div className="tab-pane fade show active" id="CurrentExhibitions">
+                    <ul>
+                      <li><span>August 2020</span><a
+                          href="http://www.contemporaryartcuratormagazine.com/online-exhibition-new-horizons/viktoria-adkozalova"
+                          target={"_blank"} rel="noopener noreferrer"
+                      >
+                        Online Exhibition “New Horizons” by Contemporary Art Curator Magazine
+                      </a></li>
+                      <li><span>August 2020</span><a
+                          href="https://www.camelbackgallery.com/figurative2020exhibition?pgid=kdf6heie1-da60118f-c4d0-43b5-9045-cd611519da15"
+                          target={"_blank"} rel="noopener noreferrer"
+                      >
+                        International Juried Painting Competition “Figurative” 2020 Camelback Gallery
+                      </a></li>
+                    </ul>
+                  </div>
+
+                  <div className="tab-pane fade show" id="GroupExhibitions">
                     <ul>
                       <li><span>2020</span>A Look Through the Backstage / Kyiv History Museum - Kyiv, Ukraine</li>
                       <li><span>2019</span>A4, ballpoin, A4 ballpoint pen / Karas Gallery - Kyiv, Ukraine</li>
@@ -109,9 +129,11 @@ export default class Credentials extends Component {
 
                   <div className="tab-pane fade" id="PrivateCollections">
                     <ul>
+                      <li><Country code="us"/></li>
                       <li><Country code="hk"/></li>
                       <li><Country code="fi"/></li>
                       <li><Country code="hu"/></li>
+                      <li><Country code="at"/></li>
                       <li><Country code="de"/></li>
                       <li><Country code="pl"/></li>
                       <li><Country code="ua"/></li>

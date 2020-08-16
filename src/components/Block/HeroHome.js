@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import SocialMediaList from "../Common/SocialMediaList";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-export default class Hero extends Component {
+export default class HeroHome extends Component {
   render() {
     return (
         <div>

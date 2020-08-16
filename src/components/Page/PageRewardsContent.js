@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import * as Config from './../../Config';
+import * as Config from '../../Config';
 import Modal from "../Common/Modal";
 import Country from "../Common/Country";
 
-export default class Content extends Component {
+export default class PageRewardsContent extends Component {
   constructor(props) {
     super(props);
     this.state = {

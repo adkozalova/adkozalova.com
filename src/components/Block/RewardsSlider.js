@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import './../../assets/css/slick.min.css';
+import '../../assets/css/slick.min.css';
 import Country from "../Common/Country";
-import * as Config from './../../Config';
+import * as Config from '../../Config';
 import {Link} from "react-router-dom";
 
-export default class Rewards extends Component {
+export default class RewardsSlider extends Component {
 
   render() {
     const sliderSettings = {

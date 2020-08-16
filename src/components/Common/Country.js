@@ -42,7 +42,7 @@ const countries = {
     name: "Ascension Island",
   },
   "AU": {
-    name: "Australia",
+    name: "AusEtralia",
   },
   "AT": {
     name: "Austria",
