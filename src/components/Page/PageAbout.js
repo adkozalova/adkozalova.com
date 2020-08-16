@@ -9,7 +9,7 @@ export default class PageAbout extends Component {
     return (
         <>
           <HeroPage
-              title="AboutShort Me"
+              title="About Me"
               description1="Pictorial art is a frozen unique moment"
               img="/images/page-hero-bg.jpg"
           />
