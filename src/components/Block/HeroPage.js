@@ -1,23 +1,22 @@
-import React, {Component} from "react";
+import React from "react";
 import SocialMediaList from "../Common/SocialMediaList";
 
-export default class HeroPage extends Component {
-  render() {
-    return (
-        <section className="hero_warp inner_banner hero_warp_page" style={{backgroundImage: `url(${this.props.img})`}}>
-          <div className="container">
-            <div className="row d-flex align-items-center">
-              <div className="col-md-12 col-12">
-                <div className="banner_content">
-                  <h1 className="banner_title">{this.props.title}</h1>
-                  <p className="banner_para">{this.props.description1}</p>
-                  <p className="banner_para2">{this.props.description2}</p>
-                </div>
+export default function HeroPage(props) {
+  const {img, title, description1, description2} = props;
+  return (
+      <section className="hero_warp inner_banner hero_warp_page" style={{backgroundImage: `url(${img})`}}>
+        <div className="container">
+          <div className="row d-flex align-items-center">
+            <div className="col-md-12 col-12">
+              <div className="banner_content">
+                <h1 className="banner_title">{title}</h1>
+                <p className="banner_para">{description1}</p>
+                <p className="banner_para2">{description2}</p>
               </div>
             </div>
           </div>
-          <SocialMediaList className="social_link"/>
-        </section>
-    )
-  }
+        </div>
+        <SocialMediaList className="social_link"/>
+      </section>
+  );
 }

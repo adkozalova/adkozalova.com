@@ -1,81 +1,55 @@
-import React, {Component} from "react";
+import React, {useState} from "react";
 import Modal from "../Common/Modal";
 
-export default class Project extends Component {
+export default function Project(props) {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false,
-      img: null,
-      title: null,
-      tags: null,
-    };
-  }
+  const [modal, setModal] = useState({isOpen: false, img: null, title: null, tags: null});
+  const openModal = (img, title, tags) => setModal({isOpen: true, img: img, title: title, tags: tags})
+  const closeModal = () => setModal({isOpen: false, img: null, title: null, tags: null});
 
-  openModal = (img, title, tags) => {
-    this.setState({
-      isOpen: true,
-      img: img,
-      title: title,
-      tags: tags,
-    });
-  }
-
-  closeModal = () => {
-    this.setState({
-      isOpen: false,
-      img: null,
-      title: null,
-      tags: null,
-    });
-  }
-
-  render() {
-    return (
-        <section className="portfolio_warp portfolio_3_warp" id="portfolio_warp">
-          <div className="port_bg_text">
-            <h1 className="bg_strock_text" data-parallax='{"x": -200}'>Project</h1>
-          </div>
-          <div className="container-fluid">
-            <div className="row portfolio_single_wrap portfolio_3_column">
-              {this.props.items.map((item, key) => {
-                const {
-                  thumbnail,
-                  img,
-                  title,
-                  tags,
-                } = item;
-                return (
-                    <div className="col-md-4 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus_3" key={key}>
-                      <div className="portfolio_item">
-                        <div className="port_img tilt">
-                          <img src={thumbnail} alt={title} className="img-fluid cursor-pointer" onClick={() => this.openModal(img, title, tags)}/>
-                        </div>
-                        <div className="exp cursor-pointer" onClick={() => this.openModal(img, title, tags)}>
+  return (
+      <section className="portfolio_warp portfolio_3_warp" id="portfolio_warp">
+        <div className="port_bg_text">
+          <h1 className="bg_strock_text" data-parallax='{"x": -200}'>Project</h1>
+        </div>
+        <div className="container-fluid">
+          <div className="row portfolio_single_wrap portfolio_3_column">
+            {props.items.map((item, key) => {
+              const {
+                thumbnail,
+                img,
+                title,
+                tags,
+              } = item;
+              return (
+                  <div className="col-md-4 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus_3" key={key}>
+                    <div className="portfolio_item">
+                      <div className="port_img tilt">
+                        <img src={thumbnail} alt={title} className="img-fluid cursor-pointer" onClick={() => openModal(img, title, tags)}/>
+                      </div>
+                      <div className="exp cursor-pointer" onClick={() => openModal(img, title, tags)}>
                           <span className="exp_inner">
                             <span className="exp_hover">Explore</span>
                           </span>
+                      </div>
+                      <div className="port_text">
+                        <div className="cursor-pointer" onClick={() => openModal(img, title, tags)}>
+                          <h3 className="port_title">{title}</h3>
                         </div>
-                        <div className="port_text">
-                          <div className="cursor-pointer" onClick={() => this.openModal(img, title, tags)}>
-                            <h3 className="port_title">{title}</h3>
-                          </div>
-                          <p className="catagory">- {tags}</p>
-                        </div>
+                        <p className="catagory">- {tags}</p>
                       </div>
                     </div>
-                )
-              })}
-              <Modal
-                  isOpen={this.state.isOpen}
-                  onClose={this.closeModal}
-                  img={this.state.img}
-                  title={this.state.title + " | " + this.state.tags}
-              />
-            </div>
+                  </div>
+              )
+            })}
+            <Modal
+                isOpen={modal.isOpen}
+                onClose={closeModal}
+                img={modal.img}
+                title={modal.title + " | " + modal.tags}
+            />
           </div>
-        </section>
-    )
-  }
+        </div>
+      </section>
+  );
 }

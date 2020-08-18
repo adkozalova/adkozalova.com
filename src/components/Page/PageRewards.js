@@ -1,18 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PageRewardsContent from "./PageRewardsContent";
 import HeroPage from "../Block/HeroPage";
 
-export default class PageRewards extends Component {
-  render() {
-    return (
-        <>
-          <HeroPage
-              title="Rewards"
-              description1=""
-              img="/images/page-hero-bg.jpg"
-          />
-          <PageRewardsContent/>
-        </>
-    )
-  }
+export default function PageRewards() {
+  return (
+      <>
+        <HeroPage
+            title="Rewards"
+            description1=""
+            img="/images/page-hero-bg.jpg"
+        />
+        <PageRewardsContent/>
+      </>
+  )
 }

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 // css
 import './assets/css/bootstrap.css';
@@ -26,16 +26,16 @@ import PageProjectFillingAndLiving from "./components/Page/PageProjectFillingAnd
 import PageProjectJazzman from "./components/Page/PageProjectJazzman";
 import PageProjectBlackAndWhite from "./components/Page/PageProjectBlackAndWhite";
 
-export const appendScript = (scriptToAppend) => {
-  const script = document.createElement("script");
-  script.src = scriptToAppend;
-  script.async = false;
-  document.body.appendChild(script);
-}
+export default function App() {
 
-export default class App extends Component {
+  useEffect(() => {
+    function appendScript(scriptToAppend) {
+      const script = document.createElement("script");
+      script.src = scriptToAppend;
+      script.async = false;
+      document.body.appendChild(script);
+    }
 
-  componentDidMount() {
     appendScript('js/jquery-3.3.1.min.js')
     appendScript('js/bootstrap.min.js')
     appendScript('js/isotope.pkgd.min.js')
@@ -44,42 +44,27 @@ export default class App extends Component {
     appendScript('js/parallax-scroll.js')
     appendScript('js/universal-tilt.js')
     appendScript('js/main.js')
-  }
+  }, [])
 
-  render() {
-    return (
-        <div id="top">
-          <Router>
-            <ScrollToTop>
-              <HeaderMenu/>
-              <Switch>
-                <Route path="/black-and-white">
-                  <PageProjectBlackAndWhite/>
-                </Route>
-                <Route path="/jazzman">
-                  <PageProjectJazzman/>
-                </Route>
-                <Route path="/feeling-and-living">
-                  <PageProjectFillingAndLiving/>
-                </Route>
-                <Route path="/rewards">
-                  <PageRewards/>
-                </Route>
-                <Route path="/about">
-                  <PageAbout/>
-                </Route>
-                <Route path="/contacts">
-                  <PageContacts/>
-                </Route>
-                <Route path="/">
-                  <PageHome/>
-                </Route>
-              </Switch>
-              <Footer/>
-            </ScrollToTop>
-          </Router>
-          <GoToTop/>
-        </div>
-    );
-  }
+  const baseRouteUrl = "/:locale(ua|en)?";
+
+  return (
+      <div id="top">
+        <Router>
+          <HeaderMenu/>
+          <Switch>
+            <Route path={baseRouteUrl + "/black-and-white"} component={PageProjectBlackAndWhite}/>
+            <Route path={baseRouteUrl + "/jazzman"} component={PageProjectJazzman}/>
+            <Route path={baseRouteUrl + "/feeling-and-living"} component={PageProjectFillingAndLiving}/>
+            <Route path={baseRouteUrl + "/rewards"} component={PageRewards}/>
+            <Route path={baseRouteUrl + "/about"} component={PageAbout}/>
+            <Route path={baseRouteUrl + "/contacts"} component={PageContacts}/>
+            <Route path={baseRouteUrl + "/"} component={PageHome}/>
+          </Switch>
+          <Footer/>
+          <ScrollToTop/>
+        </Router>
+        <GoToTop/>
+      </div>
+  );
 }

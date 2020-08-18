@@ -1,78 +1,99 @@
-import React, {Component} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
+import {i18nTo} from "../../Util";
 
-export default class Projects extends Component {
-  render() {
-    return (
-        <section className="portfolio_warp" id="projects">
-          <div className="port_bg_text">
-            <h1 className="bg_strock_text" data-parallax='{"x": -200}'>Projects</h1>
-          </div>
-          <div className="container">
-            <div className="row portfolio_single_wrap">
-              <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
-                <div className="portfolio_item">
-                  <div className="port_img tilt">
-                    <Link to="/black-and-white">
-                      <img src="/images/project/black-and-white/black-and-white-main.jpg" alt="Project Black & White" className="img-fluid"/>
-                    </Link>
-                  </div>
-                  <Link className="exp" to="/black-and-white">
+export default function Projects() {
+  const project1 = {
+    title: "Black & White",
+    link: i18nTo("/black-and-white"),
+    img: "/images/project/black-and-white/black-and-white-main.jpg",
+    imgAlt: "Project Black & White",
+    tags: "oil, acrylic, canvas"
+  }
+  const project2 = {
+    title: "Feeling & Living",
+    link: i18nTo("/feeling-and-living"),
+    img: "/images/project/feeling-and-living/feeling-and-living-main.jpg",
+    imgAlt: "Project Feeling & Living",
+    tags: "oil, acrylic, enamel, canvas"
+  }
+  const project3 = {
+    title: "Jazzman",
+    link: i18nTo("/jazzman"),
+    img: "/images/project/jazzman/jazzman-main.jpg",
+    imgAlt: "Project Jazzman",
+    tags: "oil, acrylic, canvas"
+  }
+
+  return (
+      <section className="portfolio_warp" id="projects">
+        <div className="port_bg_text">
+          <h1 className="bg_strock_text" data-parallax='{"x": -200}'>Projects</h1>
+        </div>
+        <div className="container">
+          <div className="row portfolio_single_wrap">
+            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
+              <div className="portfolio_item">
+                <div className="port_img tilt">
+                  <Link to={project1.link}>
+                    <img src={project1.img} alt={project1.imgAlt} className="img-fluid"/>
+                  </Link>
+                </div>
+                <Link className="exp" to={project1.link}>
                       <span className="exp_inner">
                         <span className="exp_hover">Explore</span>
                       </span>
+                </Link>
+                <div className="port_text">
+                  <Link to={project1.link}>
+                    <h3 className="port_title">{project1.title}</h3>
                   </Link>
-                  <div className="port_text">
-                    <Link to="/black-and-white">
-                      <h3 className="port_title">Black & White</h3>
-                    </Link>
-                    <p className="catagory">- oil, acrylic, canvas</p>
-                  </div>
+                  <p className="catagory">- {project1.tags}</p>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus">
-                <div className="portfolio_item">
-                  <div className="port_img tilt">
-                    <Link to="/feeling-and-living">
-                      <img src="/images/project/feeling-and-living/feeling-and-living-main.jpg" alt="Project Feeling & Living" className="img-fluid"/>
-                    </Link>
-                  </div>
-                  <Link className="exp" to="/feeling-and-living">
+            </div>
+            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus">
+              <div className="portfolio_item">
+                <div className="port_img tilt">
+                  <Link to={project2.link}>
+                    <img src={project2.img} alt={project2.imgAlt} className="img-fluid"/>
+                  </Link>
+                </div>
+                <Link className="exp" to={project2.link}>
                     <span className="exp_inner">
                       <span className="exp_hover">Explore</span>
                     </span>
+                </Link>
+                <div className="port_text">
+                  <Link to={project2.link}>
+                    <h3 className="port_title">{project2.title}</h3>
                   </Link>
-                  <div className="port_text">
-                    <Link to="/feeling-and-living">
-                      <h3 className="port_title">Feeling & Living</h3>
-                    </Link>
-                    <p className="catagory">- oil, acrylic, enamel, canvas</p>
-                  </div>
+                  <p className="catagory">- {project2.tags}</p>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
-                <div className="portfolio_item">
-                  <div className="port_img tilt">
-                    <Link to="/jazzman">
-                      <img src="/images/project/jazzman/jazzman-main.jpg" alt="Project Jazzman" className="img-fluid"/>
-                    </Link>
-                  </div>
-                  <Link className="exp" to="/jazzman">
+            </div>
+            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
+              <div className="portfolio_item">
+                <div className="port_img tilt">
+                  <Link to={project3.link}>
+                    <img src={project3.img} alt={project3.imgAlt} className="img-fluid"/>
+                  </Link>
+                </div>
+                <Link className="exp" to={project3.link}>
                       <span className="exp_inner">
                         <span className="exp_hover">Explore</span>
                       </span>
+                </Link>
+                <div className="port_text">
+                  <Link to={project3.link}>
+                    <h3 className="port_title">{project3.title}</h3>
                   </Link>
-                  <div className="port_text">
-                    <Link to="/jazzman">
-                      <h3 className="port_title">Jazzman</h3>
-                    </Link>
-                    <p className="catagory">- oil, acrylic, canvas</p>
-                  </div>
+                  <p className="catagory">- {project3.tags}</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-    )
-  }
+        </div>
+      </section>
+  );
 }
