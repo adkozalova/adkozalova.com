@@ -1,6 +1,8 @@
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
+import translationEN from './translation-en.json';
+import translationUA from './translation-ua.json';
 
 i18n.on('languageChanged', function (lng) {
   const defaultLng = i18n.options.fallbackLng[0]
@@ -53,21 +55,10 @@ export default i18n
 .init({
   resources: {
     en: {
-      translation: {
-        "Oil": "Oil"
-      }
+      translation: translationEN
     },
     ua: {
-      translation: {
-        "Oil": "Олія",
-        "Acrylic": "Акрил",
-        "Graphic": "Графіка",
-        "Watercolor": "Акварель",
-        "Scroll Down": "Вниз",
-        "About Me": "Про мене",
-        "Viktoria": "Вікторія",
-        "Adkozalova": "Адкозалова",
-      }
+      translation: translationUA
     }
   },
   detection: {
@@ -76,8 +67,12 @@ export default i18n
   whitelist: ["en", "ua"],
   fallbackLng: "en",
   debug: true,
-  keySeparator: false, // we do not use keys in form messages.welcome
+  keySeparator: true, // we do not use keys in form messages.welcome
   interpolation: {
-    escapeValue: false // react already safes from xss
+    escapeValue: true // react already safes from xss
+  },
+  react: {
+    transSupportBasicHtmlNodes: true,
+    transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'p'],
   }
 })

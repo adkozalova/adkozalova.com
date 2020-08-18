@@ -1,34 +1,36 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {i18nTo} from "../../Util";
+import {useTranslation} from "react-i18next";
 
 export default function Projects() {
+  const [t] = useTranslation();
   const project1 = {
     title: "Black & White",
     link: i18nTo("/black-and-white"),
     img: "/images/project/black-and-white/black-and-white-main.jpg",
     imgAlt: "Project Black & White",
-    tags: "oil, acrylic, canvas"
+    tags: t("oil, acrylic, canvas")
   }
   const project2 = {
     title: "Feeling & Living",
     link: i18nTo("/feeling-and-living"),
     img: "/images/project/feeling-and-living/feeling-and-living-main.jpg",
     imgAlt: "Project Feeling & Living",
-    tags: "oil, acrylic, enamel, canvas"
+    tags: t("oil, acrylic, enamel, canvas")
   }
   const project3 = {
     title: "Jazzman",
     link: i18nTo("/jazzman"),
     img: "/images/project/jazzman/jazzman-main.jpg",
     imgAlt: "Project Jazzman",
-    tags: "oil, acrylic, canvas"
+    tags: t("oil, acrylic, canvas")
   }
 
   return (
       <section className="portfolio_warp" id="projects">
         <div className="port_bg_text">
-          <h1 className="bg_strock_text" data-parallax='{"x": -200}'>Projects</h1>
+          <h1 className="bg_strock_text" data-parallax='{"x": -200}'>{t("Projects")}</h1>
         </div>
         <div className="container">
           <div className="row portfolio_single_wrap">
@@ -41,7 +43,7 @@ export default function Projects() {
                 </div>
                 <Link className="exp" to={project1.link}>
                       <span className="exp_inner">
-                        <span className="exp_hover">Explore</span>
+                        <span className="exp_hover">{t("Explore")}</span>
                       </span>
                 </Link>
                 <div className="port_text">
@@ -61,7 +63,7 @@ export default function Projects() {
                 </div>
                 <Link className="exp" to={project2.link}>
                     <span className="exp_inner">
-                      <span className="exp_hover">Explore</span>
+                      <span className="exp_hover">{t("Explore")}</span>
                     </span>
                 </Link>
                 <div className="port_text">
@@ -81,7 +83,7 @@ export default function Projects() {
                 </div>
                 <Link className="exp" to={project3.link}>
                       <span className="exp_inner">
-                        <span className="exp_hover">Explore</span>
+                        <span className="exp_hover">{t("Explore")}</span>
                       </span>
                 </Link>
                 <div className="port_text">

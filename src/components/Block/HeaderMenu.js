@@ -4,9 +4,10 @@ import SocialMediaList from "../Common/SocialMediaList";
 import Language from "./Language";
 import {Link} from "react-router-dom";
 import {i18nTo} from "../../Util";
+import {useTranslation} from "react-i18next";
 
 export default function HeaderMenu() {
-
+  const [t] = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -48,8 +49,8 @@ export default function HeaderMenu() {
                         data-target="#header_menu"
                         onClick={() => onClickClose()}
                     >
-                      <span className="m_menu">Menu</span>
-                      <span className="m_close">Close</span>
+                      <span className="m_menu">{t("Menu")}</span>
+                      <span className="m_close">{t("Close")}</span>
                       <span className="bar_icon">
                         <span className="bar bar_1"/>
                         <span className="bar bar_2"/>
@@ -59,18 +60,18 @@ export default function HeaderMenu() {
                     <div className="open_menu">
                       <div className="header_main_menu">
                         <ul className="menu_item">
-                          <li><Link to={i18nTo("/")} onClick={() => onClickClose()}>Home</Link></li>
+                          <li><Link to={i18nTo("/")} onClick={() => onClickClose()}>{t("Home")}</Link></li>
                           <li className="submenu">
-                            <Link className="not-hide-on-click" to="/">Projects</Link>
+                            <Link className="not-hide-on-click" to="/">{t("Projects")}</Link>
                             <ul className="submenu_item">
                               <li><Link to={i18nTo("/black-and-white")} onClick={() => onClickClose()}>Black & White</Link></li>
                               <li><Link to={i18nTo("/feeling-and-living")} onClick={() => onClickClose()}>Feeling & Living</Link></li>
                               <li><Link to={i18nTo("/jazzman")} onClick={() => onClickClose()}>Jazzman</Link></li>
                             </ul>
                           </li>
-                          <li><Link to={i18nTo("/rewards")} onClick={() => onClickClose()}>Rewards</Link></li>
-                          <li><Link to={i18nTo("/about")} onClick={() => onClickClose()}>About me</Link></li>
-                          <li><Link to={i18nTo("/contacts")} onClick={() => onClickClose()}>Contacts</Link></li>
+                          <li><Link to={i18nTo("/rewards")} onClick={() => onClickClose()}>{t("Rewards")}</Link></li>
+                          <li><Link to={i18nTo("/about")} onClick={() => onClickClose()}>{t("About me")}</Link></li>
+                          <li><Link to={i18nTo("/contacts")} onClick={() => onClickClose()}>{t("Contacts")}</Link></li>
                         </ul>
                       </div>
                     </div>
@@ -101,8 +102,8 @@ export default function HeaderMenu() {
                         data-target="#header_menu"
                         onClick={() => onClickOpen()}
                     >
-                      <span className="m_menu">Menu</span>
-                      <span className="m_close">Close</span>
+                      <span className="m_menu">{t("Menu")}</span>
+                      <span className="m_close">{t("Close")}</span>
                       <span className="bar_icon">
                         <span className="bar bar_1"/>
                         <span className="bar bar_2"/>

@@ -16,8 +16,7 @@ export default function HeroHome() {
                   <ul className="exp_list">
                     <li className=" wow fadeInUp" data-wow-duration='0.5s'>{t("Oil")}</li>
                     <li className=" wow fadeInUp" data-wow-duration='1s'>{t("Acrylic")}</li>
-                    <li className=" wow fadeInUp" data-wow-duration='1.5s'>{t("Watercolor")}</li>
-                    <li className=" wow fadeInUp" data-wow-duration='2s'>{t("Graphic")}</li>
+                    <li className=" wow fadeInUp" data-wow-duration='1.5s'>{t("Graphic")}</li>
                   </ul>
                 </div>
               </div>
