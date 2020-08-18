@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Country from "../Common/Country";
+import {Link} from "react-router-dom";
 
 export default function Credentials() {
+  const [activeTab, setActiveTab] = useState("CurrentExhibitions")
+  const onClickTab = (event, tabName) => {
+    event.preventDefault()
+    setActiveTab(tabName)
+  }
   return (
       <section className="credentials_wrap">
 
@@ -21,25 +27,46 @@ export default function Credentials() {
             <div className="col-lg-5 col-md-4 col-sm-12 col-12">
               <ul className="nav nav-tabs credentials_tab">
                 <li className="nav-item wow fadeInUp">
-                  <a className="nav-link active" data-toggle="tab" href="#CurrentExhibitions">Current Exhibitions</a>
+                  <Link to={"#"}
+                        className={"nav-link " + (activeTab === "CurrentExhibitions" ? "active" : "")}
+                        onClick={(event) => onClickTab(event, "CurrentExhibitions")}
+                  >Current Exhibitions</Link>
                 </li>
                 <li className="nav-item wow fadeInUp">
-                  <a className="nav-link" data-toggle="tab" href="#GroupExhibitions">Group Exhibitions</a>
+                  <Link to={"#"}
+                        className={"nav-link " + (activeTab === "GroupExhibitions" ? "active" : "")}
+                        onClick={(event) => onClickTab(event,"GroupExhibitions")}
+                  >Group Exhibitions</Link>
                 </li>
                 <li className="nav-item wow fadeInUp">
-                  <a className="nav-link" data-toggle="tab" href="#SoloExhibitions">Solo Exhibitions</a>
+                  <Link to={"#"}
+                        className={"nav-link " + (activeTab === "SoloExhibitions" ? "active" : "")}
+                        onClick={(event) => onClickTab(event,"SoloExhibitions")}
+                  >Solo Exhibitions</Link>
                 </li>
                 <li className="nav-item wow fadeInUp">
-                  <a className="nav-link" data-toggle="tab" href="#Prizes">Prizes</a>
+                  <Link to={"#"}
+                        className={"nav-link " + (activeTab === "Prizes" ? "active" : "")}
+                        onClick={(event) => onClickTab(event,"Prizes")}
+                  >Prizes</Link>
                 </li>
                 <li className="nav-item wow fadeInUp">
-                  <a className="nav-link" data-toggle="tab" href="#Publications">Publications</a>
+                  <Link to={"#"}
+                        className={"nav-link " + (activeTab === "Publications" ? "active" : "")}
+                        onClick={(event) => onClickTab(event,"Publications")}
+                  >Publications</Link>
                 </li>
                 <li className="nav-item wow fadeInUp">
-                  <a className="nav-link" data-toggle="tab" href="#Residences">Residences</a>
+                  <Link to={"#"}
+                        className={"nav-link " + (activeTab === "Residences" ? "active" : "")}
+                        onClick={(event) => onClickTab(event,"Residences")}
+                  >Residences</Link>
                 </li>
                 <li className="nav-item wow fadeInUp">
-                  <a className="nav-link" data-toggle="tab" href="#PrivateCollections">Private Collections</a>
+                  <Link to={"#"}
+                        className={"nav-link " + (activeTab === "PrivateCollections" ? "active" : "")}
+                        onClick={(event) => onClickTab(event,"PrivateCollections")}
+                  >Private Collections</Link>
                 </li>
               </ul>
             </div>
@@ -47,7 +74,7 @@ export default function Credentials() {
             <div className="col-lg-7 col-md-8 col-sm-12 col-12">
               <div className="tab-content credentials_tab_content">
 
-                <div className="tab-pane fade show active" id="CurrentExhibitions">
+                <div className={"tab-pane fade " + (activeTab === "CurrentExhibitions" ? "show active" : "")} id="CurrentExhibitions">
                   <ul>
                     <li><span>August 2020</span><a
                         href="http://www.contemporaryartcuratormagazine.com/online-exhibition-new-horizons/viktoria-adkozalova"
@@ -64,7 +91,7 @@ export default function Credentials() {
                   </ul>
                 </div>
 
-                <div className="tab-pane fade show" id="GroupExhibitions">
+                <div className={"tab-pane fade " + (activeTab === "GroupExhibitions" ? "show active" : "")} id="GroupExhibitions">
                   <ul>
                     <li><span>2020</span>A Look Through the Backstage / Kyiv History Museum - Kyiv, Ukraine</li>
                     <li><span>2019</span>A4, ballpoin, A4 ballpoint pen / Karas Gallery - Kyiv, Ukraine</li>
@@ -80,7 +107,7 @@ export default function Credentials() {
                   </ul>
                 </div>
 
-                <div className="tab-pane fade" id="SoloExhibitions">
+                <div className={"tab-pane fade " + (activeTab === "SoloExhibitions" ? "show active" : "")} id="SoloExhibitions">
                   <ul>
                     <li><span>2019</span><a
                         href="https://inshe.org/inshe-art-personalnaya-vystavka-rabot-art-professionala-viktorii-adkozalovoj/"
@@ -91,14 +118,14 @@ export default function Credentials() {
                   </ul>
                 </div>
 
-                <div className="tab-pane fade" id="Prizes">
+                <div className={"tab-pane fade " + (activeTab === "Prizes" ? "show active" : "")} id="Prizes">
                   <ul>
                     <li><span>2019</span>WITHOUT BORDERS - First prize - Kyiv, Ukraine</li>
                     <li><span>2018</span>Ukrainian Art Week - First prize - Kyiv, Ukraine</li>
                   </ul>
                 </div>
 
-                <div className="tab-pane fade" id="Publications">
+                <div className={"tab-pane fade " + (activeTab === "Publications" ? "show active" : "")} id="Publications">
                   <ul>
                     <li><span>2020</span><a href="https://www.facebook.com/UAFRA1/posts/2738393589529633" target={"_blank"} rel="noopener noreferrer">
                       UAFRA - Viktoria Adkozalova - ПОГЛЯД КРІЗЬ ЛАШТУНКИ
@@ -120,13 +147,13 @@ export default function Credentials() {
                   </ul>
                 </div>
 
-                <div className="tab-pane fade" id="Residences">
+                <div className={"tab-pane fade " + (activeTab === "Residences" ? "show active" : "")} id="Residences">
                   <ul>
                     <li><span>2018</span>Blockchain Art Hackathon 2.0 International Project / Congress and Exhibition Center "Parkovy" - Kyiv, Ukraine</li>
                   </ul>
                 </div>
 
-                <div className="tab-pane fade" id="PrivateCollections">
+                <div className={"tab-pane fade " + (activeTab === "PrivateCollections" ? "show active" : "")} id="PrivateCollections">
                   <ul>
                     <li><Country code="us"/></li>
                     <li><Country code="hk"/></li>
