@@ -24,7 +24,7 @@ export default function AboutShort() {
               <Link to={aboutLink}><h2 className="about_title wow fadeInUp">{t("About Me")}</h2></Link>
               <div className="about_content">
                 <div className="bg_text">
-                  <h1 className="bg_strock_text" data-parallax='{"x": -150}'>About</h1>
+                  <h1 className="bg_strock_text" data-parallax='{"x": -150}'>{t("About")}</h1>
                 </div>
                 <h4>
                   <Trans i18nKey={"AboutShort.text"}>

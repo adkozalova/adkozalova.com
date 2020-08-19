@@ -2,11 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import '../../assets/css/slick.min.css';
 import Country from "../Common/Country";
-import * as Config from '../../Config';
 import {Link} from "react-router-dom";
 import {i18nTo} from "../../Util";
+import {useTranslation} from "react-i18next";
+import {RewardItems} from "../../Config";
 
 export default function RewardsSlider() {
+  const [t] = useTranslation();
   const sliderSettings = {
     dots: false,
     arrows: false,
@@ -16,23 +18,24 @@ export default function RewardsSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
   }
+  const rewardItems = RewardItems()
   const rewardsLink = i18nTo("/rewards")
   return (
       <section className="rewards_wrap">
         <div className="bg_text">
-          <h1 className="bg_strock_text" data-parallax='{"x": -200}'>Rewards</h1>
+          <h1 className="bg_strock_text" data-parallax='{"x": -200}'>{t('Rewards')}</h1>
         </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 col-md-12 col-sm-12 col-12">
               <div className="rewards_left">
-                <Link to={rewardsLink}><h2 className="rewards_title wow fadeInUp">Rewards</h2></Link>
+                <Link to={rewardsLink}><h2 className="rewards_title wow fadeInUp">{t('Rewards')}</h2></Link>
               </div>
             </div>
             <div className="col-lg-7 col-md-12 col-sm-12 col-12">
               <div className="rewards_slider">
                 <Slider {...sliderSettings}>
-                  {Config.RewardItems.map((reward, key) => {
+                  {rewardItems.map((reward, key) => {
                     const {
                       src,
                       title,

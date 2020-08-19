@@ -3,6 +3,7 @@ import {initReactI18next} from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import translationEN from './translation-en.json';
 import translationUA from './translation-ua.json';
+import translationRU from './translation-ru.json';
 
 i18n.on('languageChanged', function (lng) {
   const defaultLng = i18n.options.fallbackLng[0]
@@ -59,15 +60,18 @@ export default i18n
     },
     ua: {
       translation: translationUA
+    },
+    ru: {
+      translation: translationRU
     }
   },
   detection: {
     order: ["path"],
   },
-  whitelist: ["en", "ua"],
+  whitelist: ["en", "ua", "ru"],
   fallbackLng: "en",
   debug: true,
-  keySeparator: true, // we do not use keys in form messages.welcome
+  keySeparator: false, // we do not use keys in form messages.welcome
   interpolation: {
     escapeValue: true // react already safes from xss
   },

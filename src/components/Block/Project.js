@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import Modal from "../Common/Modal";
+import {useTranslation} from "react-i18next";
 
 export default function Project(props) {
-
+  const [t] = useTranslation();
   const [modal, setModal] = useState({isOpen: false, img: null, title: null, tags: null});
   const openModal = (img, title, tags) => setModal({isOpen: true, img: img, title: title, tags: tags})
   const closeModal = () => setModal({isOpen: false, img: null, title: null, tags: null});
@@ -10,7 +11,7 @@ export default function Project(props) {
   return (
       <section className="portfolio_warp portfolio_3_warp" id="portfolio_warp">
         <div className="port_bg_text">
-          <h1 className="bg_strock_text" data-parallax='{"x": -200}'>Project</h1>
+          <h1 className="bg_strock_text" data-parallax='{"x": -200}'>{t('Project')}</h1>
         </div>
         <div className="container-fluid">
           <div className="row portfolio_single_wrap portfolio_3_column">
@@ -29,7 +30,7 @@ export default function Project(props) {
                       </div>
                       <div className="exp cursor-pointer" onClick={() => openModal(img, title, tags)}>
                           <span className="exp_inner">
-                            <span className="exp_hover">Explore</span>
+                            <span className="exp_hover">{t('Explore')}</span>
                           </span>
                       </div>
                       <div className="port_text">

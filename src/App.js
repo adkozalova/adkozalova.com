@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 // css
 import './assets/css/bootstrap.css';
@@ -25,31 +25,30 @@ import PageRewards from "./components/Page/PageRewards";
 import PageProjectFillingAndLiving from "./components/Page/PageProjectFillingAndLiving";
 import PageProjectJazzman from "./components/Page/PageProjectJazzman";
 import PageProjectBlackAndWhite from "./components/Page/PageProjectBlackAndWhite";
+import {Helmet} from "react-helmet";
+import {useTranslation} from "react-i18next";
 
 export default function App() {
-
-  useEffect(() => {
-    function appendScript(scriptToAppend) {
-      const script = document.createElement("script");
-      script.src = scriptToAppend;
-      script.async = false;
-      document.body.appendChild(script);
-    }
-
-    appendScript('js/jquery-3.3.1.min.js')
-    appendScript('js/bootstrap.min.js')
-    appendScript('js/isotope.pkgd.min.js')
-    appendScript('js/imagesloaded.pkgd.min.js')
-    appendScript('js/wow.js')
-    appendScript('js/parallax-scroll.js')
-    appendScript('js/universal-tilt.js')
-    appendScript('js/main.js')
-  }, [])
-
+  const [t, i18n] = useTranslation();
   const baseRouteUrl = "/:locale(ua|en)?";
-
   return (
       <div id="top">
+        <Helmet>
+          <html lang={i18n.language}/>
+          <title>{t('Adkozalova Viktoria | Official Website')}</title>
+          <meta name="description" content={t('Welcome to the official website of professional artist Viktoria Adkozalova')}/>
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+          <meta name="theme-color" content="#000000"/>
+
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content={"https://adkozalova.com/" + (i18n.language === "en" ? "" : i18n.language)}/>
+          <meta property="og:title" content={t('Adkozalova Viktoria | Official Website')}/>
+          <meta property="og:description" content={t('Welcome to the official website of professional artist Viktoria Adkozalova')}/>
+          <meta property="og:image" content="https://adkozalova.com/images/og-image.png"/>
+          <meta property="og:image:type" content="image/png"/>
+          <meta property="og:image:width" content="300"/>
+          <meta property="og:image:height" content="227"/>
+        </Helmet>
         <Router>
           <HeaderMenu/>
           <Switch>

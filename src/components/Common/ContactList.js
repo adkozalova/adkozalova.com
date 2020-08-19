@@ -1,20 +1,21 @@
 import React from "react";
-import * as Config from './../../Config';
+import {Contact} from "../../Config";
 
 export default function ContactList(props) {
   const {className} = props;
+  const contact = Contact()
   return (
       <ul className={className}>
         <li>
-          <a href={Config.Contact.emailLink}>
-            <span>{Config.Contact.emailTitle}</span>
-            <span>{Config.Contact.emailTitle}</span>
+          <a href={contact.emailLink}>
+            <span>{contact.emailTitle}</span>
+            <span>{contact.emailTitle}</span>
           </a>
         </li>
         <li>
-          <a href={Config.Contact.phoneLink}>
-            <span>{Config.Contact.phoneTitle}</span>
-            <span>{Config.Contact.phoneTitle}</span>
+          <a href={contact.phoneLink}>
+            <span>{contact.phoneTitle}</span>
+            <span>{contact.phoneTitle}</span>
           </a>
         </li>
       </ul>

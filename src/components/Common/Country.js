@@ -1,5 +1,6 @@
 import React from "react";
 import 'flag-icon-css/css/flag-icon.min.css';
+import {useTranslation} from "react-i18next";
 
 const countries = {
   "AF": {
@@ -777,6 +778,7 @@ const countries = {
 
 export default function Country(props) {
   const {code} = props;
+  const [t] = useTranslation();
 
   if (countries[code.toUpperCase()] === undefined) {
     throw new Error("Country code not found - " + code);
@@ -786,7 +788,7 @@ export default function Country(props) {
       <React.Fragment>
         <p className="country">
           <span className={"flag-icon flag-icon-" + code.toLowerCase()} style={{marginRight: "10px"}}></span>
-          {countries[code.toUpperCase()].name}
+          {t(countries[code.toUpperCase()].name)}
         </p>
       </React.Fragment>
   );

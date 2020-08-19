@@ -1,7 +1,9 @@
 import React from "react";
 import SocialMediaList from "../Common/SocialMediaList";
+import {Trans, useTranslation} from "react-i18next";
 
 export default function PageAboutContent() {
+  const [t] = useTranslation();
   return (
       <section className="blog_wrap blog_single_wrap">
         <div className="container">
@@ -14,15 +16,16 @@ export default function PageAboutContent() {
                     <img src="/images/about/author.jpg" alt="Painter Viktoria Adkozalova" className="img-fluid"/>
                   </div>
                   <div className="sidebar_about_content">
-                    <h4 className="text-center sidebar_ab_title">Viktoria Adkozalova</h4>
-                    <p className="text-center sidebar_ab_details">On my works you won't find specific persons, but instead everyone can find their friends,
-                      neighbors or even some moments from your own life.</p>
+                    <h4 className="text-center sidebar_ab_title">{t('Viktoria Adkozalova')}</h4>
+                    <p className="text-center sidebar_ab_details"><Trans>
+                      On my works you won't find specific persons, but instead everyone can find their friends, neighbors or even some moments from your own life.
+                    </Trans></p>
                     <div className="sign text-center">
                       <img src="/images/about/author-signature.png" alt="Painter Viktoria Adkozalova Signature" className="img-fluid"/>
                     </div>
                   </div>
                   <div className="follow">
-                    <h4 className="follow_title text-center">Follow me on</h4>
+                    <h4 className="follow_title text-center">{t('Follow me on')}</h4>
                     <SocialMediaList className="follow_link text-center"/>
                   </div>
                 </div>
@@ -33,8 +36,9 @@ export default function PageAboutContent() {
               <div className="blog_content blog_single_content">
                 <div className="blog_single_item">
 
-                  <h3 className="blog_inner_title">Victoria Adkozalova - Ukrainian artist, works in the symbolism style</h3>
+                  <h3 className="blog_inner_title">{t('Victoria Adkozalova - Ukrainian artist, works in the symbolism style')}</h3>
                   <br/>
+                  <Trans i18nKey={"PageAboutContent.text"}>
                   <p>Victoria was born on 3 October, 1987 in Feodosia.</p>
 
                   <p>From early childhood, she beloved fine art and artistic creativity. One of the sources of her inspiration were landscapes painted from
@@ -53,7 +57,7 @@ export default function PageAboutContent() {
                   <p>Victoria is a participant and winner of various art exhibitions, many of which were organized outside of Ukraine. The theme of the
                     exhibitions is also diverse, which allows us to talk about Victoria as a multifaceted, comprehensively developed artist, familiar with the
                     fullness of the visual genres.</p>
-
+                  </Trans>
                 </div>
               </div>
             </div>

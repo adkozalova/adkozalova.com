@@ -43,7 +43,7 @@ export default function Projects() {
                 </div>
                 <Link className="exp" to={project1.link}>
                       <span className="exp_inner">
-                        <span className="exp_hover">{t("Explore")}</span>
+                        <span className="exp_hover">{t('Explore')}</span>
                       </span>
                 </Link>
                 <div className="port_text">
@@ -63,7 +63,7 @@ export default function Projects() {
                 </div>
                 <Link className="exp" to={project2.link}>
                     <span className="exp_inner">
-                      <span className="exp_hover">{t("Explore")}</span>
+                      <span className="exp_hover">{t('Explore')}</span>
                     </span>
                 </Link>
                 <div className="port_text">
@@ -83,7 +83,7 @@ export default function Projects() {
                 </div>
                 <Link className="exp" to={project3.link}>
                       <span className="exp_inner">
-                        <span className="exp_hover">{t("Explore")}</span>
+                        <span className="exp_hover">{t('Explore')}</span>
                       </span>
                 </Link>
                 <div className="port_text">

@@ -1,36 +1,37 @@
 import React from "react";
-import * as Config from './../../Config';
+import {Contact} from "../../Config";
 
 export default function SocialMediaList(props) {
   const {className} = props;
+  const contact = Contact()
   return (
       <ul className={className}>
         <li>
-          <a href={Config.Contact.fbLink} target={"_blank"} rel="noopener noreferrer">
+          <a href={contact.fbLink} target={"_blank"} rel="noopener noreferrer">
             <i className="fa fa-facebook"/>
             <i className="fa fa-facebook"/>
           </a>
         </li>
         <li>
-          <a href={Config.Contact.instLink} target={"_blank"} rel="noopener noreferrer">
+          <a href={contact.instLink} target={"_blank"} rel="noopener noreferrer">
             <i className="fa fa-instagram"/>
             <i className="fa fa-instagram"/>
           </a>
         </li>
         <li>
-          <a href={Config.Contact.youtubeLink} target={"_blank"} rel="noopener noreferrer">
+          <a href={contact.youtubeLink} target={"_blank"} rel="noopener noreferrer">
             <i className="fa fa-youtube"/>
             <i className="fa fa-youtube"/>
           </a>
         </li>
         <li>
-          <a href={Config.Contact.emailLink}>
+          <a href={contact.emailLink}>
             <i className="fa fa-envelope"/>
             <i className="fa fa-envelope"/>
           </a>
         </li>
         <li>
-          <a href={Config.Contact.phoneLink}>
+          <a href={contact.phoneLink}>
             <i className="fa fa-phone"/>
             <i className="fa fa-phone"/>
           </a>
