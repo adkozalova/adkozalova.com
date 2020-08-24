@@ -1,6 +1,6 @@
 import React from 'react';
-import SocialMediaList from "../Common/SocialMediaList";
-import ContactList from "../Common/ContactList";
+import SocialMediaList from "../Contacts/SocialMediaList";
+import ContactList from "../Contacts/ContactList";
 import {Trans, useTranslation} from "react-i18next";
 
 export default function Footer() {

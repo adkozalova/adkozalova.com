@@ -1,8 +1,8 @@
 import React from 'react';
-import Project from "../Block/Project";
-import HeroPage from "../Block/HeroPage";
+import Project from "../Projects/Project";
+import HeroPage from "../Common/HeroPage";
 import {useTranslation} from "react-i18next";
-import {ProjectFillingAndLivingItems} from "../../Config";
+import {ProjectFillingAndLivingItems} from "../Projects/ProjectsData";
 
 export default function PageProjectFillingAndLiving() {
   const [t] = useTranslation();

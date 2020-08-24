@@ -1,10 +1,10 @@
 import React from "react";
-import {Contact} from '../../Config';
 import {useTranslation} from "react-i18next";
+import ContactsData from "./ContactsData";
 
 export default function PageContactContent() {
   const [t] = useTranslation();
-  const contact = Contact()
+  const contact = ContactsData()
   return (
       <section className="somethings_interesting_wrap">
         <div className="container">

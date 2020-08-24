@@ -1,5 +1,5 @@
 import React from "react";
-import SocialMediaList from "../Common/SocialMediaList";
+import SocialMediaList from "../Contacts/SocialMediaList";
 import {Trans, useTranslation} from "react-i18next";
 
 export default function PageAboutContent() {

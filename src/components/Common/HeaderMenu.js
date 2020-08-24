@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
-import ContactList from "../Common/ContactList";
-import SocialMediaList from "../Common/SocialMediaList";
+import SocialMediaList from "../Contacts/SocialMediaList";
 import Language from "./Language";
 import {Link} from "react-router-dom";
 import {i18nTo} from "../../Util";
@@ -76,7 +75,6 @@ export default function HeaderMenu() {
                       </div>
                     </div>
                     <div className="sub_footer">
-                      <ContactList className="footer_contact text-center"/>
                       <SocialMediaList className="footer_social text-center"/>
                     </div>
                   </nav>

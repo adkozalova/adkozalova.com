@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 // css
 import './assets/css/bootstrap.css';
@@ -15,8 +15,8 @@ import './assets/css/components/hero.css';
 import './assets/css/responsive.css';
 // components
 import ScrollToTop from "./components/Common/ScrollToTop";
-import HeaderMenu from './components/Block/HeaderMenu';
-import Footer from './components/Block/Footer';
+import HeaderMenu from './components/Common/HeaderMenu';
+import Footer from './components/Common/Footer';
 import GoToTop from "./components/Common/GoToTop";
 import PageHome from "./components/Page/PageHome";
 import PageAbout from "./components/Page/PageAbout";
@@ -28,9 +28,26 @@ import PageProjectBlackAndWhite from "./components/Page/PageProjectBlackAndWhite
 import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
 
+export const appendScript = (scriptToAppend) => {
+  const script = document.createElement("script");
+  script.src = scriptToAppend;
+  script.async = false;
+  document.body.appendChild(script);
+}
+
 export default function App() {
   const [t, i18n] = useTranslation();
-  const baseRouteUrl = "/:locale(ua|en)?";
+  useEffect(() => {
+    appendScript('/js/jquery-3.3.1.min.js')
+    appendScript('/js/bootstrap.min.js')
+    appendScript('/js/isotope.pkgd.min.js')
+    appendScript('/js/imagesloaded.pkgd.min.js')
+    appendScript('/js/wow.js')
+    appendScript('/js/parallax-scroll.js')
+    appendScript('/js/universal-tilt.js')
+    appendScript('/js/main.js')
+  })
+  const baseRouteUrl = "/:locale(ua|en|ru)?";
   return (
       <div id="top">
         <Helmet>

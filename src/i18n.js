@@ -1,9 +1,15 @@
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
-import translationEN from './translation-en.json';
-import translationUA from './translation-ua.json';
-import translationRU from './translation-ru.json';
+import translationEN from './locales/translation-en.json';
+import credentialsEN from './locales/credentials-en.json';
+import rewardsEN from './locales/rewards-en.json';
+import translationUA from './locales/translation-ua.json';
+import credentialsUA from './locales/credentials-ua.json';
+import rewardsUA from './locales/rewards-ua.json';
+import translationRU from './locales/translation-ru.json';
+import credentialsRU from './locales/credentials-ru.json';
+import rewardsRU from './locales/rewards-ru.json';
 
 i18n.on('languageChanged', function (lng) {
   const defaultLng = i18n.options.fallbackLng[0]
@@ -56,21 +62,30 @@ export default i18n
 .init({
   resources: {
     en: {
-      translation: translationEN
+      translation: translationEN,
+      credentials: credentialsEN,
+      rewards: rewardsEN,
     },
     ua: {
-      translation: translationUA
+      translation: translationUA,
+      credentials: credentialsUA,
+      rewards: rewardsUA,
     },
     ru: {
-      translation: translationRU
+      translation: translationRU,
+      credentials: credentialsRU,
+      rewards: rewardsRU,
     }
   },
+  ns: ["translation", "credentials", "rewards"],
+  defaultNS: "translation",
+  fallbackNS: ["translation", "credentials", "rewards"],
   detection: {
     order: ["path"],
   },
   whitelist: ["en", "ua", "ru"],
   fallbackLng: "en",
-  debug: true,
+  debug: false,
   keySeparator: false, // we do not use keys in form messages.welcome
   interpolation: {
     escapeValue: true // react already safes from xss

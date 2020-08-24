@@ -1,6 +1,6 @@
 import React from 'react';
-import PageRewardsContent from "./PageRewardsContent";
-import HeroPage from "../Block/HeroPage";
+import PageRewardsContent from "../Rewards/PageRewardsContent";
+import HeroPage from "../Common/HeroPage";
 import {useTranslation} from "react-i18next";
 
 export default function PageRewards() {

@@ -1,6 +1,6 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
-import SocialMediaList from "../Common/SocialMediaList";
+import SocialMediaList from "../Contacts/SocialMediaList";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function HeroHome() {

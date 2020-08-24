@@ -5,7 +5,7 @@ import Country from "../Common/Country";
 import {Link} from "react-router-dom";
 import {i18nTo} from "../../Util";
 import {useTranslation} from "react-i18next";
-import {RewardItems} from "../../Config";
+import RewardsData from "./RewardsData";
 
 export default function RewardsSlider() {
   const [t] = useTranslation();
@@ -18,7 +18,7 @@ export default function RewardsSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
   }
-  const rewardItems = RewardItems()
+  const rewardData = RewardsData()
   const rewardsLink = i18nTo("/rewards")
   return (
       <section className="rewards_wrap">
@@ -35,7 +35,7 @@ export default function RewardsSlider() {
             <div className="col-lg-7 col-md-12 col-sm-12 col-12">
               <div className="rewards_slider">
                 <Slider {...sliderSettings}>
-                  {rewardItems.map((reward, key) => {
+                  {rewardData.map((reward, key) => {
                     const {
                       src,
                       title,

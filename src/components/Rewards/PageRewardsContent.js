@@ -1,18 +1,18 @@
 import React, {useState} from 'react';
 import Modal from "../Common/Modal";
 import Country from "../Common/Country";
-import {RewardItems} from "../../Config";
+import RewardsData from "./RewardsData";
 
 export default function PageRewardsContent() {
   const [modal, setModal] = useState({isOpen: false, img: null, title: null});
   const openModal = (img, title) => setModal({isOpen: true, img: img, title: title})
   const closeModal = () => setModal({isOpen: false, img: null, title: null});
 
-  const rewardItems = RewardItems()
+  const rewardData = RewardsData()
   return (
       <section className="page_rewards">
         <div className="container">
-          {rewardItems.map((reward, key) => {
+          {rewardData.map((reward, key) => {
             const {
               src,
               title,
@@ -21,7 +21,7 @@ export default function PageRewardsContent() {
               year,
             } = reward;
             const alt = title + ": " + description;
-            const isLast = rewardItems.length === key + 1;
+            const isLast = rewardData.length === key + 1;
             return !(key % 2)
                 ? (
                     <div className="row justify-content-center mb-5" key={key}>

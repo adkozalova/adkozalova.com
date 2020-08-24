@@ -1,8 +1,8 @@
 import React from "react";
-import RewardsSlider from "../Block/RewardsSlider";
-import Credentials from "../Block/Credentials";
-import HeroPage from "../Block/HeroPage";
-import PageAboutContent from "./PageAboutContent";
+import RewardsSlider from "../Rewards/RewardsSlider";
+import Credentials from "../Credentials/Credentials";
+import HeroPage from "../Common/HeroPage";
+import PageAboutContent from "../About/PageAboutContent";
 import {useTranslation} from "react-i18next";
 
 export default function PageAbout() {

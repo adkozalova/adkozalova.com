@@ -1,9 +1,9 @@
 import React from "react";
-import {Contact} from "../../Config";
+import ContactsData from "./ContactsData";
 
 export default function ContactList(props) {
   const {className} = props;
-  const contact = Contact()
+  const contact = ContactsData()
   return (
       <ul className={className}>
         <li>

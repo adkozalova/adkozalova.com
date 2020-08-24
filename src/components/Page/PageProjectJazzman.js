@@ -1,8 +1,8 @@
 import React from 'react';
-import Project from "../Block/Project";
-import HeroPage from "../Block/HeroPage";
+import Project from "../Projects/Project";
+import HeroPage from "../Common/HeroPage";
 import {useTranslation} from "react-i18next";
-import {ProjectJazzmanItems} from "../../Config";
+import {ProjectJazzmanItems} from "../Projects/ProjectsData";
 
 export default function PageProjectJazzman() {
   const [t] = useTranslation();

@@ -371,7 +371,7 @@ header.header .open_menu {
 }
 
 header.header .open_menu .header_main_menu {
-    margin-top: 235px;
+    margin-top: 180px;
 }
 
 header.header .open_menu .header_main_menu .menu_item {
@@ -471,7 +471,7 @@ header.header .sub_footer {
     opacity: 0;
     visibility: hidden;
     background: #000;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     transition: all 0.5s;
 }
 

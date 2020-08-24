@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroPage from "../Block/HeroPage";
-import PageContactContent from "./PageContactContent";
+import HeroPage from "../Common/HeroPage";
+import PageContactContent from "../Contacts/PageContactContent";
 import {useTranslation} from "react-i18next";
 
 export default function PageContacts() {

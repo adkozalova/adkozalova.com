@@ -1,5 +1,5 @@
 import React from "react";
-import SocialMediaList from "../Common/SocialMediaList";
+import SocialMediaList from "../Contacts/SocialMediaList";
 
 export default function HeroPage(props) {
   const {img, title, description1, description2} = props;
