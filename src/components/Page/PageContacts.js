@@ -1,18 +1,19 @@
-import React, {Component} from 'react';
-import HeroPage from "../Block/HeroPage";
-import PageContactContent from "./PageContactContent";
+import React from 'react';
+import HeroPage from "../Common/HeroPage";
+import PageContactContent from "../Contacts/PageContactContent";
+import {useTranslation} from "react-i18next";
 
-export default class PageContacts extends Component {
-  render() {
-    return (
-        <>
-          <HeroPage
-              title="Contacts"
-              description1="A symbol always reflects the reality"
-              img="/images/page-hero-bg.jpg"
-          />
-          <PageContactContent/>
-        </>
-    )
-  }
+export default function PageContacts() {
+  const [t] = useTranslation();
+  return (
+      <>
+        <HeroPage
+            title={t("Contacts")}
+            description1={t("A symbol always reflects the essence")}
+            description2=""
+            img="/images/page-hero-bg.jpg"
+        />
+        <PageContactContent/>
+      </>
+  )
 }

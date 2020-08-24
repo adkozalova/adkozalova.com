@@ -16,7 +16,28 @@ This file contains the styling for the actual tempalte, this is the file you nee
 
 /*Base font*/
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('../fonts/FuturaPT/FuturaPT-Book.eot');
+    src: url('../fonts/FuturaPT/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaPT/FuturaPT-Book.woff') format('woff'),
+    url('../fonts/FuturaPT/FuturaPT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT Heavy';
+    src: url('../fonts/FuturaPT/FuturaPT-Heavy.eot');
+    src: url('../fonts/FuturaPT/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaPT/FuturaPT-Heavy.woff') format('woff'),
+    url('../fonts/FuturaPT/FuturaPT-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .primary-color {
     color: #ffffff;
 }
@@ -40,11 +61,11 @@ p {
 }
 
 .pop {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: normal;
@@ -82,62 +103,6 @@ a.link:hover {
     color: rgba(23, 24, 25, 0.6) !important;
 }
 
-@font-face {
-    font-family: 'futura_bdcn_btbold';
-    src: url("../fonts/futura/futura_bold_font.woff2") format("woff2"), url("../fonts/futura/futura_bold_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futurabook';
-    src: url("../fonts/futura/futura_book_font.woff2") format("woff2"), url("../fonts/futura/futura_book_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_xblk_btextra_black';
-    src: url("../fonts/futura/futura_extra_black_font.woff2") format("woff2"), url("../fonts/futura/futura_extra_black_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futuraheavy';
-    src: url("../fonts/futura/futura_heavy_font.woff2") format("woff2"), url("../fonts/futura/futura_heavy_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futuralight';
-    src: url("../fonts/futura/futura_light_bt.woff2") format("woff2"), url("../fonts/futura/futura_light_bt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_ltcn_btlight';
-    src: url("../fonts/futura/futura_light_font.woff2") format("woff2"), url("../fonts/futura/futura_light_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futuramedium';
-    src: url("../fonts/futura/futura_medium_bt.woff2") format("woff2"), url("../fonts/futura/futura_medium_bt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_xblk_btextra_black';
-    src: url("../fonts/futura/futura_xblk_bt.woff2") format("woff2"), url("../fonts/futura/futura_xblk_bt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -154,7 +119,7 @@ a:hover {
 }
 
 body {
-    font: 400 16px/28px 'Poppins', sans-serif;
+    font: 500 16px/28px 'Montserrat', sans-serif;
     letter-spacing: 0;
     color: #677294;
     overflow-x: hidden;
@@ -215,7 +180,7 @@ button:hover {
     font-size: 220px;
     color: transparent;
     font-weight: normal;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     letter-spacing: 3px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
     line-height: 220px;
@@ -284,7 +249,7 @@ header.header .navbar .logo .logo_text {
     font-size: 25px;
     font-weight: normal;
     line-height: 40px;
-    font-family: "futurabook";
+    font-family: "Futura PT Book";
     letter-spacing: 2px;
 }
 
@@ -305,8 +270,8 @@ header.header .navbar .select_lang {
 header.header .navbar .select_lang a {
     color: #f6f7fb;
     font-size: 18px;
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
     opacity: 0.4;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -325,8 +290,8 @@ header.header .navbar .select_lang a+a {
 header.header .navbar .hamburger {
     color: #f6f7fb;
     font-size: 18px;
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 4px;
     display: flex;
     align-items: center;
@@ -406,7 +371,7 @@ header.header .open_menu {
 }
 
 header.header .open_menu .header_main_menu {
-    margin-top: 235px;
+    margin-top: 180px;
 }
 
 header.header .open_menu .header_main_menu .menu_item {
@@ -441,8 +406,8 @@ header.header .open_menu .header_main_menu .menu_item li a {
     display: inline-block;
     font-size: 40px;
     line-height: 54px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
     transition: all 0.5s;
 }
 
@@ -506,7 +471,7 @@ header.header .sub_footer {
     opacity: 0;
     visibility: hidden;
     background: #000;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     transition: all 0.5s;
 }
 
@@ -522,10 +487,10 @@ header.header .sub_footer .footer_contact li {
 header.header .sub_footer .footer_contact li a {
     display: inline-block;
     color: #bbbbbb;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.5s;
     height: 28px;
     position: relative;
@@ -665,7 +630,7 @@ header.header.headerFixed {
     color: #333333;
     font-size: 90px;
     font-weight: normal;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     letter-spacing: 1px;
     display: inline-block;
     position: relative;
@@ -698,19 +663,19 @@ header.header.headerFixed {
 .about_wrap .about_content .bg_text .bg_strock_text {
     font-weight: normal;
     font-size: 350px;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     color: white;
-    text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
     letter-spacing: 10px;
     line-height: 290px;
 }
 
 .about_wrap .about_content h4 {
     color: #171819;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 35px;
     line-height: 65px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .about_wrap .about_content h4 a {
@@ -823,7 +788,7 @@ header.header.headerFixed {
     font-size: 160px;
     line-height: 160px;
     font-weight: normal;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     margin-bottom: 10px;
 }
 
@@ -915,8 +880,8 @@ header.header.headerFixed {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
     font-size: 11px;
     letter-spacing: 2px;
 }
@@ -990,9 +955,9 @@ header.header.headerFixed {
     color: #fff;
     font-size: 13px;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: relative;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .hero_warp.blog_single_banner .banner_content .post_info li+li {
@@ -1145,7 +1110,7 @@ header.header.headerFixed {
 
 .portfolio_item .port_text .port_title {
     font-size: 45px;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     line-height: 50px;
     color: #fff;
     font-weight: normal;
@@ -1154,7 +1119,7 @@ header.header.headerFixed {
 .portfolio_item .port_text .catagory {
     text-transform: uppercase;
     font-size: 12px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 40px;
     letter-spacing: 2px;
     color: #fff;
@@ -1382,7 +1347,7 @@ header.header.headerFixed {
 
 .portfolio_single_title {
     font-size: 35px;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     line-height: 60px;
     color: #333;
     font-weight: normal;
@@ -1398,8 +1363,8 @@ header.header.headerFixed {
 .project_summary_list li {
     display: block;
     color: #888888;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     font-size: 20px;
 }
 
@@ -1441,16 +1406,16 @@ header.header.headerFixed {
 
 .project_summary_list li b {
     color: #171819;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     margin-right: 5px;
 }
 
 .single_body .portfolio_para {
     color: #171819;
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     line-height: 30px;
     margin-bottom: 50px;
 }
@@ -1514,7 +1479,7 @@ header.header.headerFixed {
     color: #333333;
     font-size: 55px;
     font-weight: normal;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     letter-spacing: 1px;
     max-width: 790px;
     width: 100%;
@@ -1541,17 +1506,17 @@ header.header.headerFixed {
     color: #171819;
     font-size: 18px;
     line-height: 50px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
 
 .somethings_interesting_wrap .interesting_item .interesting_content p {
     color: #171819;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: .75px;
@@ -1598,7 +1563,7 @@ header.header.headerFixed {
     color: #333333;
     font-size: 55px;
     font-weight: normal;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     letter-spacing: 2px;
     margin-bottom: 55px;
 }
@@ -1628,9 +1593,9 @@ header.header.headerFixed {
 
 .contact_form .form-group .form-control {
     color: #333333;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 30px;
     border: 1px solid #c1c1c1;
     box-shadow: none;
@@ -1667,9 +1632,9 @@ header.header.headerFixed {
 
 .contact_form .form-group .sibmit_btn {
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 30px;
     color: #fff;
     background-color: transparent;
@@ -1797,7 +1762,7 @@ header.header.headerFixed {
     font-size: 35px;
     line-height: 60px;
     font-weight: normal;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     margin-bottom: 5px;
     color: #333333;
 }
@@ -1821,9 +1786,9 @@ header.header.headerFixed {
     color: #171819;
     font-size: 13px;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: relative;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .blog_single_item .blog_post .post_content .post_info li span {
@@ -1859,8 +1824,8 @@ header.header.headerFixed {
     color: #171819;
     font-size: 16px;
     line-height: 30px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 20px;
 }
 
@@ -1869,8 +1834,8 @@ header.header.headerFixed {
     color: rgba(23, 24, 25, 0.5);
     font-size: 14px;
     line-height: 20px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
@@ -1916,8 +1881,8 @@ header.header.headerFixed {
     background: transparent;
     color: #333333;
     font-size: 16px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
     transition: all 0.5s;
     border: 1px solid transparent;
 }
@@ -1968,7 +1933,7 @@ header.header.headerFixed {
     font-size: 20px;
     line-height: 24px;
     font-weight: normal;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     margin-bottom: 28px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -1994,8 +1959,8 @@ header.header.headerFixed {
     color: #646c84;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
 }
 
 .widget ul li a:hover {
@@ -2030,8 +1995,8 @@ header.header.headerFixed {
     color: #171819;
     font-size: 14px;
     line-height: 22px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
 
 .widget .media .media-body .tn_tittle a:hover {
@@ -2041,8 +2006,8 @@ header.header.headerFixed {
 .widget .media .media-body .recent_post_meta li,
 .widget .media .media-body .recent_post_meta li a {
     color: rgba(23, 24, 25, 0.5);
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
 }
 
@@ -2089,15 +2054,15 @@ header.header.headerFixed {
     color: #333333;
     font-size: 20px;
     line-height: 24px;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     margin-bottom: 20px;
 }
 
 .widget.widget_about .sidebar_about_content .sidebar_ab_details {
     color: #171819;
     font-size: 14px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
     line-height: 27px;
 }
 
@@ -2109,7 +2074,7 @@ header.header.headerFixed {
     color: #333333;
     font-size: 20px;
     line-height: 24px;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     margin-bottom: 25px;
 }
 
@@ -2170,8 +2135,8 @@ header.header.headerFixed {
     color: #171819;
     font-size: 16px;
     line-height: 30px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 25px;
 }
 
@@ -2184,7 +2149,7 @@ header.header.headerFixed {
     color: #333333;
     font-size: 24px;
     line-height: 36px;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     margin-bottom: 0;
 }
 
@@ -2196,7 +2161,7 @@ header.header.headerFixed {
     color: #333333;
     font-size: 35px;
     line-height: 60px;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
 }
 
 .blog_single_content .blog_sing_share {
@@ -2209,7 +2174,7 @@ header.header.headerFixed {
     font-size: 20px;
     line-height: 26px;
     display: inline-block;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     margin-bottom: 25px;
 }
 
@@ -2291,26 +2256,26 @@ header.header.headerFixed {
 .blog_single_content .author_about .media .media-body .author_name {
     color: #051441;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 24px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .blog_single_content .author_about .media .media-body .author_info {
     color: #abb0bb;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 24px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 17px;
 }
 
 .blog_single_content .author_about .media .media-body .author_details {
     color: #666;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 15px;
 }
 
@@ -2319,16 +2284,16 @@ header.header.headerFixed {
     font-size: 36px;
     line-height: 40px;
     font-weight: 500;
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
     margin-bottom: 40px;
 }
 
 .blog_single_content .post_ago {
     color: #999;
     font-size: 12px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 9px;
-    font-weight: 400;
+    font-weight: 500;
     padding-left: 10px;
     position: relative;
 }
@@ -2381,27 +2346,27 @@ header.header.headerFixed {
 .comment-list li .media .media-body .reply_body .author_name {
     color: #333;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 22px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 10px;
 }
 
 .comment-list li .media .media-body .reply_body .author_details {
     color: #666666;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 15px;
 }
 
 .comment-list li .media .media-body .reply_body .reply_link {
     color: rgba(23, 24, 25, 0.6);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: relative;
     text-transform: uppercase;
 }
@@ -2466,7 +2431,7 @@ header.header.headerFixed {
     font-size: 25px;
     font-weight: normal;
     line-height: 40px;
-    font-family: "futurabook";
+    font-family: "Futura PT Book";
     letter-spacing: 2px;
 }
 
@@ -2484,7 +2449,7 @@ header.header.headerFixed {
 .footer .footer_content .footer_title {
     color: #f6f7fb;
     font-size: 50px;
-    font-family: "futurabook";
+    font-family: "Futura PT Book";
     line-height: 55px;
     letter-spacing: 1px;
     font-weight: normal;
@@ -2494,7 +2459,7 @@ header.header.headerFixed {
 }
 
 .footer .footer_content .footer_title span {
-    font-family: "futuraheavy";
+    font-family: "Futura PT Heavy";
 }
 
 .footer ul {
@@ -2515,10 +2480,10 @@ header.header.headerFixed {
 .footer .footer_contact li a {
     display: inline-block;
     color: #bbbbbb;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.5s;
     height: 28px;
     position: relative;
@@ -2599,9 +2564,9 @@ header.header.headerFixed {
 
 .footer .footer_copy_right {
     color: #848892;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 13px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 28px;
 }
 

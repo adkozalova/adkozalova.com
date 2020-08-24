@@ -1,4 +1,4 @@
-# Portfolio web site - [adkozalova.com](https://adkozalova.com)
+# Portfolio web-site - [adkozalova.com](https://adkozalova.com)
 
 ### Adkozalova Viktoria
 
@@ -18,4 +18,9 @@ npm start
 Deploy application with cache clear
 ```
 npm run deploy
+```
+
+Generate translations
+```
+i18next 'src/*.js' 'src/components/**/*.js'
 ```

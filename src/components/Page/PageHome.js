@@ -1,22 +1,20 @@
-import React, {Component} from 'react';
-import PageHomeProjects from "../Block/Projects";
-import Credentials from "../Block/Credentials";
-import RewardsSlider from "../Block/RewardsSlider";
-import Partners from "../Block/Partners";
-import AboutShort from "../Block/AboutShort";
-import HeroHome from "../Block/HeroHome";
+import React from 'react';
+import PageHomeProjects from "../Projects/Projects";
+import Credentials from "../Credentials/Credentials";
+import RewardsSlider from "../Rewards/RewardsSlider";
+import Partners from "../Partners/Partners";
+import AboutShort from "../About/AboutShort";
+import HeroHome from "../Home/HeroHome";
 
-export default class PageRewardsContent extends Component {
-  render() {
-    return (
-        <>
-          <HeroHome/>
-          <PageHomeProjects/>
-          <AboutShort/>
-          <Credentials/>
-          <RewardsSlider/>
-          <Partners/>
-        </>
-    )
-  }
+export default function PageRewardsContent() {
+  return (
+      <>
+        <HeroHome/>
+        <PageHomeProjects/>
+        <AboutShort/>
+        <Credentials/>
+        <RewardsSlider/>
+        <Partners/>
+      </>
+  )
 }
