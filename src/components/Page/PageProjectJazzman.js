@@ -10,7 +10,7 @@ export default function PageProjectJazzman() {
       <>
         <HeroPage
             title="Jazzman"
-            description1={t("Modern art. Author's technique. Oil, acrylic on canvas.")}
+            description1={t("Author's technique. Oil, acrylic on canvas.")}
             description2={t("Jazz is freedom, in music and life. It consists of weightlessness and continuous forward movement sensations. "
                 + "On these artworks, the main one is a musician who connects with his instrument like is one whole. "
                 + "The colored ragged background emphasizes freedom.")}

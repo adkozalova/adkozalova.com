@@ -10,7 +10,7 @@ export default function PageProjectBlackAndWhite() {
       <>
         <HeroPage
             title="Black & White"
-            description1={t('Symbolism style. Author\'s technique. Oil, acrylic on canvas.')}
+            description1={t("Author's technique. Oil, acrylic on canvas.")}
             description2={t("The main line in the author’s works is the image of a woman. "
                 + "The paintings are done in black & white colors similar to old photos, like a memory or an accidentally remembered fragment. This art is about that nothing happens by chance in the world. "
                 + "Everything that has happened and will happen can extremely change our life, our plans, and ourselves.  You need to be more attentive to life.  Be thankful for everything that happens. "
