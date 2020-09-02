@@ -54,9 +54,7 @@ export default function PageAboutContent() {
                   <p>Since 2009, she has been actively engaged in profession art activities and studied at the National Pedagogical University named after
                     Drahomanov with a degree in Musical Art.</p>
 
-                  <p>Victoria is a participant and winner of various art exhibitions, many of which were organized outside of Ukraine. The theme of the
-                    exhibitions is also diverse, which allows us to talk about Victoria as a multifaceted, comprehensively developed artist, familiar with the
-                    fullness of the visual genres.</p>
+                  <p>Victoria is a participant and winner of various international art exhibitions and competitions.</p>
                   </Trans>
                 </div>
               </div>

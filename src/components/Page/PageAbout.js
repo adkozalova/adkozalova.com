@@ -11,7 +11,7 @@ export default function PageAbout() {
       <>
         <HeroPage
             title={t("About Me")}
-            description1={t("Pictorial art is a frozen unique moment")}
+            description1={t("Pictorial art is a frozen, unique moment")}
             description2=""
             img="/images/page-hero-bg.jpg"
         />

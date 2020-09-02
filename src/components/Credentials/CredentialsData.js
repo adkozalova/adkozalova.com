@@ -36,11 +36,21 @@ export default function CredentialsData() {
     "categoriesData": {
       "CurrentExhibitions": [
         {
+          date: t('September') + " 2020",
+          link: "https://www.lightspacetime.art/patterns-art-exhibition-2020-painting-other-media/#gallery/4ec056f8ac32a45893d8714964ae7c3c/38216",
+          title: formatTitle(
+              t("International juried painting competition"),
+              "Patterns",
+              "Light Space & Time Online Art Gallery"
+          ),
+          location: null
+        },
+        {
           date: t('August') + " 2020",
           link: "http://www.contemporaryartcuratormagazine.com/online-exhibition-new-horizons/viktoria-adkozalova",
           title: formatTitle(
               t("Online exhibition"),
-              t("New Horizons"),
+              "New Horizons",
               t("Contemporary Art Curator Magazine")
           ),
           location: null
@@ -50,8 +60,8 @@ export default function CredentialsData() {
           link: "https://www.camelbackgallery.com/figurative2020exhibition?pgid=kdf6heie1-da60118f-c4d0-43b5-9045-cd611519da15",
           title: formatTitle(
               t("International juried painting competition"),
-              t("Figurative 2020"),
-              t("Camelback Gallery"),
+              "Figurative 2020",
+              "Camelback Gallery",
           ),
           location: null
         },
