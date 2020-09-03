@@ -4,9 +4,9 @@ import {useTranslation} from "react-i18next";
 
 export default function Project(props) {
   const [t] = useTranslation();
-  const [modal, setModal] = useState({isOpen: false, img: null, title: null, tags: null});
-  const openModal = (img, title, tags) => setModal({isOpen: true, img: img, title: title, tags: tags})
-  const closeModal = () => setModal({isOpen: false, img: null, title: null, tags: null});
+  const [modal, setModal] = useState({isOpen: false, img: null, imgDownload: null, title: null, tags: null});
+  const openModal = (img, imgDownload, title, tags) => setModal({isOpen: true, img: img, imgDownload: imgDownload, title: title, tags: tags})
+  const closeModal = () => setModal({isOpen: false, img: null, imgDownload: null, title: null, tags: null});
 
   return (
       <section className="portfolio_warp portfolio_3_warp" id="portfolio_warp">
@@ -19,6 +19,7 @@ export default function Project(props) {
               const {
                 thumbnail,
                 img,
+                imgDownload,
                 title,
                 tags,
               } = item;
@@ -26,15 +27,17 @@ export default function Project(props) {
                   <div className="col-md-4 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus_3" key={key}>
                     <div className="portfolio_item">
                       <div className="port_img tilt">
-                        <img src={thumbnail} alt={title} className="img-fluid cursor-pointer" onClick={() => openModal(img, title, tags)}/>
+                        <img src={thumbnail} alt={modal.title + " - " + modal.tags} className="img-fluid cursor-pointer"
+                             onClick={() => openModal(img, imgDownload, title, tags)}
+                        />
                       </div>
-                      <div className="exp cursor-pointer" onClick={() => openModal(img, title, tags)}>
+                      <div className="exp cursor-pointer" onClick={() => openModal(img, imgDownload, title, tags)}>
                           <span className="exp_inner">
                             <span className="exp_hover">{t('Explore')}</span>
                           </span>
                       </div>
                       <div className="port_text">
-                        <div className="cursor-pointer" onClick={() => openModal(img, title, tags)}>
+                        <div className="cursor-pointer" onClick={() => openModal(img, imgDownload, title, tags)}>
                           <h3 className="port_title">{title}</h3>
                         </div>
                         <p className="catagory">- {tags}</p>
@@ -47,7 +50,8 @@ export default function Project(props) {
                 isOpen={modal.isOpen}
                 onClose={closeModal}
                 img={modal.img}
-                title={modal.title + " | " + modal.tags}
+                imgDownload={modal.imgDownload}
+                title={modal.title + " - " + modal.tags}
             />
           </div>
         </div>

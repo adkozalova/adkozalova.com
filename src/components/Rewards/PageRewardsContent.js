@@ -26,7 +26,7 @@ export default function PageRewardsContent() {
                 ? (
                     <div className="row justify-content-center mb-5" key={key}>
                       <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <img src={src} alt={alt} className="img-fluid img-thumbnail" onClick={() => openModal(src, alt)}/>
+                        <img src={src} alt={alt} className="img-fluid img-thumbnail cursor-pointer" onClick={() => openModal(src, alt)}/>
                       </div>
                       <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
                         <h2>{title}</h2>
@@ -45,7 +45,7 @@ export default function PageRewardsContent() {
                         <p className="year">{year}</p>
                       </div>
                       <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <img src={src} alt={alt} className="img-fluid img-thumbnail" onClick={() => openModal(src, alt)}/>
+                        <img src={src} alt={alt} className="img-fluid img-thumbnail cursor-pointer" onClick={() => openModal(src, alt)}/>
                       </div>
                     </div>
                 )

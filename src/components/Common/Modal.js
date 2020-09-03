@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import ReactModal from 'react-modal';
+import {useTranslation} from "react-i18next";
 
 export default function Modal(props) {
 
-  const {isOpen, img, title, onClose} = props;
+  const {isOpen, img, imgDownload, title, onClose} = props;
+  const [t] = useTranslation();
   const [modalSize, setModal] = useState({width: window.innerWidth, height: window.innerHeight});
 
   useEffect(() => {
@@ -42,7 +44,10 @@ export default function Modal(props) {
               bottom: 'auto',
               marginRight: '-50%',
               transform: 'translate(-50%, -50%)',
-              height: modalSize.height + 'px',
+              padding: '0px',
+              paddingTop: '20px',
+              height: modalSize.height > modalSize.width ? 'auto' : modalSize.height + 'px',
+              width: modalSize.height > modalSize.width ? modalSize.width + 'px' : 'auto',
               maxWidth: 'auto',
               border: null,
               backgroundColor: null,
@@ -51,10 +56,14 @@ export default function Modal(props) {
       >
         <div className="container-fluid">
           <div className="row">
-            <div className="col-11 col-md-11 col-sm-11 col-xs-11">
+            <div className="col-1 col-md-1 col-sm-1 col-xs-1"/>
+            <div className="col-10 col-md-10 col-sm-10 col-xs-10">
               <img
                   className="img-fluid"
-                  style={{height: (modalSize.height - 50) + 'px'}}
+                  style={{
+                    height: (modalSize.height > modalSize.width ? 'auto' : modalSize.height - 50 + 'px'),
+                    width: (modalSize.height > modalSize.width ? modalSize.width - 50 + 'px' : 'auto')
+                  }}
                   src={img}
                   title={title}
                   alt={title}
@@ -62,11 +71,18 @@ export default function Modal(props) {
               />
             </div>
             <div className="col-1 col-md-1 col-sm-1 col-xs-1">
-              <span
-                  className="cursor-pointer"
-                  style={{color: '#fff', fontSize: '40px', fontWeight: '100'}}
-                  onClick={onClose}
-              >×</span>
+              <div className={"row"}>
+                <i className="fa fa-times cursor-pointer" style={{color: '#fff', fontSize: '23px'}} onClick={onClose}/>
+              </div>
+              {imgDownload !== null && imgDownload !== undefined
+                  ? (
+                      <div className={"row mt-4"}>
+                        <a href={imgDownload} download={title + ".jpg"} className="fa fa-download" title={t("Download full size")}
+                           style={{color: '#fff', fontSize: '20px'}}/>
+                      </div>
+                  )
+                  : ("")
+              }
             </div>
           </div>
         </div>
