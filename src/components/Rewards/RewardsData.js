@@ -4,6 +4,13 @@ export default function RewardsData() {
   const [t] = useTranslation("rewards");
   return [
     {
+      src: "/images/rewards/reward-camelback-08-2020.jpg",
+      title: t("Finalist Award"),
+      description: t("International Juried Painting Competition - CAMELBACK GALLERY \"Figurative\""),
+      country: ["eu"],
+      year: t("Aug") + " 2020"
+    },
+    {
       src: "/images/rewards/reward-2.jpg",
       title: t("Certificate"),
       description: t("Participant of the art exhibition - UAFRA \"Look through the backstage\""),
