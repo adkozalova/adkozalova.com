@@ -30,8 +30,8 @@ export default function AboutShort() {
                   <Trans i18nKey={"AboutShort.text"}>
                     I’m Viktoria, a <a href={links.artist} target={"_blank"} rel="noopener noreferrer">professional artist</a> based in
                     Ukraine.<br/>
-                    Specialize in <a href={links.symbolism} target={"_blank"} rel="noopener noreferrer">symbolism</a> style.<br/>
-                    On my works you won't find specific persons, but instead everyone can find their friends, neighbors or even some moments from your own life.
+                    As I specialize in <a href={links.symbolism} target={"_blank"} rel="noopener noreferrer">symbolism</a> style, in my works you won't find
+                    specific persons. Instead, everyone will recognize their friends, neighbors or even some moments from their own life.
                   </Trans>
                 </h4>
               </div>
