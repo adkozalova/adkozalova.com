@@ -4,6 +4,20 @@ export default function RewardsData() {
   const [t] = useTranslation("rewards");
   return [
     {
+      src: "/images/rewards/reward-uafra-sansara-09-2020.jpg",
+      title: t("Certificate"),
+      description: t("Participant of the art exhibition - UAFRA \"SANSARA\""),
+      country: ["ua"],
+      year: t("Sep") + " 2020"
+    },
+    {
+      src: "/images/rewards/reward-lightspacetime-4th-patterns-09-2020.jpg",
+      title: t("Special Recognition"),
+      description: t("International Juried Painting Competition - Light Space & Time Online Art Gallery \"4th Patterns Art Exhibition\""),
+      country: ["eu"],
+      year: t("Sep") + " 2020"
+    },
+    {
       src: "/images/rewards/reward-camelback-08-2020.jpg",
       title: t("Finalist Award"),
       description: t("International Juried Painting Competition - CAMELBACK GALLERY \"Figurative\""),

@@ -69,10 +69,35 @@ export default function CredentialsData() {
       "GroupExhibitions": [
         {
           date: "2020",
+          link: "http://www.kyivhistorymuseum.org/uk/exhibition-projects/odnogo-dnya-pislya-mizhnarodniy-mistetskiy-proyekt-one-day-international-art-project.html",
+          title: formatTitle(
+              t("International project"),
+              "ONE DAY AFTER",
+              t("Kyiv History Museum")
+          ),
+          location: formatLocation(
+              t("Kyiv History Museum"),
+              t("Kyiv, Ukraine")
+          )
+        },
+        {
+          date: "2020",
+          title: formatTitle(
+              "Contemporary women`s art fest",
+              "SANSARA",
+              "UAFRA"
+          ),
+          location: formatLocation(
+              t("Institute of Contemporary Art Problems"),
+              t("Kyiv, Ukraine")
+          )
+        },
+        {
+          date: "2020",
           title: formatTitle(
               t("International project"),
               t("A Look Through the Backstage"),
-              t("UAFRA")
+              "UAFRA"
           ),
           location: formatLocation(
               t("Kyiv History Museum"),
@@ -94,9 +119,9 @@ export default function CredentialsData() {
         {
           date: "2019",
           title: formatTitle(
-              t("Contemporary women`s art fest"),
+              "Contemporary women`s art fest",
               t("Agenda"),
-              t("UAFRA"),
+              "UAFRA",
           ),
           location: formatLocation(
               t("Institute of Contemporary Art Problems"),
@@ -106,9 +131,9 @@ export default function CredentialsData() {
         {
           date: "2019",
           title: formatTitle(
-              t("Contemporary women`s art fest"),
+              "Contemporary women`s art fest",
               t("Windows"),
-              t("UAFRA"),
+              "UAFRA",
           ),
           location: formatLocation(
               t("Kyiv History Museum"),
@@ -249,7 +274,7 @@ export default function CredentialsData() {
           title: formatTitle(
               t("International project"),
               t("A Look Through the Backstage"),
-              t("UAFRA"),
+              "UAFRA",
           ),
           location: formatLocation(
               t("Kyiv History Museum"),
@@ -270,7 +295,7 @@ export default function CredentialsData() {
           date: "2019",
           link: "https://www.youtube.com/watch?v=Bri9OkdlIWw",
           title: formatTitle(
-              t("Contemporary women`s art fest"),
+              "Contemporary women`s art fest",
               t("Agenda"),
               t("Dmitro Subotenko"),
           ),

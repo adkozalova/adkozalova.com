@@ -5,6 +5,13 @@ import {useTranslation} from "react-i18next";
 
 export default function Projects() {
   const [t] = useTranslation();
+  const project0 = {
+    title: t("FRAGILE"),
+    link: i18nTo("/personal-art-project-fragile"),
+    img: "/images/project/personal-exhibition-fragile/fragile-main.jpg",
+    imgAlt: "Personal art project - FRAGILE",
+    tags: t("08.10.2020-28.10.2020")
+  }
   const project1 = {
     title: "Black & White",
     link: i18nTo("/black-and-white"),
@@ -34,7 +41,31 @@ export default function Projects() {
         </div>
         <div className="container">
           <div className="row portfolio_single_wrap">
+
+            {/*project0*/}
             <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
+              <div className="portfolio_item">
+                <div className="port_img tilt">
+                  <Link to={project0.link}>
+                    <img src={project0.img} alt={project0.imgAlt} className="img-fluid"/>
+                  </Link>
+                </div>
+                <a className="exp" href={"https://www.facebook.com/events/1665819606925345"} target={"_blank"} rel="noopener noreferrer">
+                  <span className="exp_inner">
+                    <span className="exp_hover">{t('Facebook')}</span>
+                  </span>
+                </a>
+                <div className="port_text">
+                  <Link to={project0.link}>
+                    <h3 className="port_title">{project0.title}</h3>
+                  </Link>
+                  <p className="catagory">- {project0.tags}</p>
+                </div>
+              </div>
+            </div>
+
+            {/*project1*/}
+            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus">
               <div className="portfolio_item">
                 <div className="port_img tilt">
                   <Link to={project1.link}>
@@ -42,9 +73,9 @@ export default function Projects() {
                   </Link>
                 </div>
                 <Link className="exp" to={project1.link}>
-                      <span className="exp_inner">
-                        <span className="exp_hover">{t('Explore')}</span>
-                      </span>
+                  <span className="exp_inner">
+                    <span className="exp_hover">{t('Explore')}</span>
+                  </span>
                 </Link>
                 <div className="port_text">
                   <Link to={project1.link}>
@@ -54,7 +85,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus">
+
+            {/*project2*/}
+            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
               <div className="portfolio_item">
                 <div className="port_img tilt">
                   <Link to={project2.link}>
@@ -62,9 +95,9 @@ export default function Projects() {
                   </Link>
                 </div>
                 <Link className="exp" to={project2.link}>
-                    <span className="exp_inner">
-                      <span className="exp_hover">{t('Explore')}</span>
-                    </span>
+                  <span className="exp_inner">
+                    <span className="exp_hover">{t('Explore')}</span>
+                  </span>
                 </Link>
                 <div className="port_text">
                   <Link to={project2.link}>
@@ -74,7 +107,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
+
+            {/*project3*/}
+            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus">
               <div className="portfolio_item">
                 <div className="port_img tilt">
                   <Link to={project3.link}>
@@ -82,9 +117,9 @@ export default function Projects() {
                   </Link>
                 </div>
                 <Link className="exp" to={project3.link}>
-                      <span className="exp_inner">
-                        <span className="exp_hover">{t('Explore')}</span>
-                      </span>
+                  <span className="exp_inner">
+                    <span className="exp_hover">{t('Explore')}</span>
+                  </span>
                 </Link>
                 <div className="port_text">
                   <Link to={project3.link}>
@@ -94,6 +129,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
