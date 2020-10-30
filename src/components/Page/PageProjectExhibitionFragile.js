@@ -2,6 +2,8 @@ import React from 'react';
 import HeroPage from "../Common/HeroPage";
 import {useTranslation} from "react-i18next";
 import ProjectExhibitionFragileContent from "../Projects/ProjectExhibitionFragile/ProjectExhibitionFragileContent";
+import {ProjectFragileItems} from "../Projects/ProjectsData";
+import Project from "../Projects/Project";
 
 export default function PageProjectExhibitionFragile() {
   const [t] = useTranslation();
@@ -14,6 +16,7 @@ export default function PageProjectExhibitionFragile() {
             img="/images/project/black-and-white/black-and-white-bg.jpg"
         />
         <ProjectExhibitionFragileContent/>
+        <Project items={ProjectFragileItems()}/>
       </>
   )
 }

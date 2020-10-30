@@ -185,3 +185,150 @@ export const ProjectFillingAndLivingItems = () => {
     },
   ]
 }
+
+export const ProjectFragileItems = () => {
+  const [t] = useTranslation();
+  const basePath = "/images/project/personal-exhibition-fragile/"
+  return [
+    {
+      thumbnail: basePath + "gift-full.jpg",
+      img: basePath + "gift-full.jpg",
+      imgDownload: basePath + "gift-full.jpg",
+      title: "Gift, 2020",
+      tags: t("acrylic") + ", 100x90cm"
+    },
+    {
+      thumbnail: basePath + "installation-fragile-full.jpg",
+      img: basePath + "installation-fragile-full.jpg",
+      imgDownload: basePath + "installation-fragile-full.jpg",
+      title: "Installation FRAGILE, 2020",
+      tags: t("acrylic") + ", " + t("window frame")
+    },
+    {
+      thumbnail: basePath + "beyond-full.jpg",
+      img: basePath + "beyond-full.jpg",
+      imgDownload: basePath + "beyond-full.jpg",
+      title: "Beyond, 2020",
+      tags: t("oil") + ", 100x80cm"
+    },
+    {
+      thumbnail: basePath + "breakfast-full.jpg",
+      img: basePath + "breakfast-full.jpg",
+      imgDownload: basePath + "breakfast-full.jpg",
+      title: "Breakfast, 2020",
+      tags: t("acrylic") + ", " + t("enamel") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "bright-moment-full.jpg",
+      img: basePath + "bright-moment-full.jpg",
+      imgDownload: basePath + "bright-moment-full.jpg",
+      title: "Bright moment, 2019",
+      tags: t("oil") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "earrings-full.jpg",
+      img: basePath + "earrings-full.jpg",
+      imgDownload: basePath + "earrings-full.jpg",
+      title: "Earrings, 2020",
+      tags: t("acrylic") + ", " + t("spray paint") + ", " + t("enamel") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "ethereal-full.jpg",
+      img: basePath + "ethereal-full.jpg",
+      imgDownload: basePath + "ethereal-full.jpg",
+      title: "Ethereal, 2020",
+      tags: t("oil") + ", " + t("acrylic") + ", 100x100cm"
+    },
+    {
+      thumbnail: basePath + "insomnia-full.jpg",
+      img: basePath + "insomnia-full.jpg",
+      imgDownload: basePath + "insomnia-full.jpg",
+      title: "Insomnia, 2020",
+      tags: t("oil") + ", " + t("acrylic") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "magician-full.jpg",
+      img: basePath + "magician-full.jpg",
+      imgDownload: basePath + "magician-full.jpg",
+      title: "Magician, 2020",
+      tags: t("acrylic") + ", 110x90cm"
+    },
+    {
+      thumbnail: basePath + "installation-good-morning-full.jpg",
+      img: basePath + "installation-good-morning-full.jpg",
+      imgDownload: basePath + "installation-good-morning-full.jpg",
+      title: "Installation Good morning, 2020",
+      tags: t("acrylic") + ", " + t("textile")
+    },
+    {
+      thumbnail: basePath + "nocturne-full.jpg",
+      img: basePath + "nocturne-full.jpg",
+      imgDownload: basePath + "nocturne-full.jpg",
+      title: "Nocturne, 2020",
+      tags: t("acrylic") + ", " + t("gold foil") + ", " + t("enamel") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "near-the-window-full.jpg",
+      img: basePath + "near-the-window-full.jpg",
+      imgDownload: basePath + "near-the-window-full.jpg",
+      title: "Near the window, 2020",
+      tags: t("acrylic") + ", 100x100cm"
+    },
+    {
+      thumbnail: basePath + "meeting-full.jpg",
+      img: basePath + "meeting-full.jpg",
+      imgDownload: basePath + "meeting-full.jpg",
+      title: "Meeting, 2019",
+      tags: t("oil") + ", 70x80cm"
+    },
+    {
+      thumbnail: basePath + "oriental-tea-full.jpg",
+      img: basePath + "oriental-tea-full.jpg",
+      imgDownload: basePath + "oriental-tea-full.jpg",
+      title: "Oriental tea, 2020",
+      tags: t("acrylic") + ", 80x60cm"
+    },
+    {
+      thumbnail: basePath + "peace-full.jpg",
+      img: basePath + "peace-full.jpg",
+      imgDownload: basePath + "peace-full.jpg",
+      title: "Peace, 2019",
+      tags: t("oil") + ", 100x120cm"
+    },
+    {
+      thumbnail: basePath + "summer-full.jpg",
+      img: basePath + "summer-full.jpg",
+      imgDownload: basePath + "summer-full.jpg",
+      title: "Summer, 2020",
+      tags: t("acrylic") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "sun-full.jpg",
+      img: basePath + "sun-full.jpg",
+      imgDownload: basePath + "sun-full.jpg",
+      title: "Sun, 2020",
+      tags: t("acrylic") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "tempest-full.jpg",
+      img: basePath + "tempest-full.jpg",
+      imgDownload: basePath + "tempest-full.jpg",
+      title: "Tempest, 2020",
+      tags: t("acrylic") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "thursday-full.jpg",
+      img: basePath + "thursday-full.jpg",
+      imgDownload: basePath + "thursday-full.jpg",
+      title: "Thursday, 2020",
+      tags: t("acrylic") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "victory-full.jpg",
+      img: basePath + "victory-full.jpg",
+      imgDownload: basePath + "victory-full.jpg",
+      title: "Victory, 2020",
+      tags: t("acrylic") + ", 120x100cm"
+    },
+  ]
+}
