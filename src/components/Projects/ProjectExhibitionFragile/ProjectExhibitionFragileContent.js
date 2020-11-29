@@ -22,7 +22,7 @@ export default function ProjectExhibitionFragileContent() {
                   </div>
 
                   <Trans i18nKey={"ProjectExhibitionFragileContent.text"}>
-                    <p>From October 8 in Ornament Art Space (Kyiv, 53 Vasyl Tyutyunnyka Street) the art project of the artist Victoria
+                    <p>From October 8 in Ornament Art Space (Kyiv, 53 Vasyl Tyutyunnyka Street) the art project of the artist Viktoria
                       Adkozalova "FRAGILE" will be presented.</p>
 
                     <p>The exposition of the exhibition is a combination of paintings and installations. The artist explores the feelings associated with the

@@ -69,6 +69,18 @@ export default function CredentialsData() {
       "GroupExhibitions": [
         {
           date: "2020",
+          title: formatTitle(
+              t("International competition-exhibition"),
+              t("Ukrainian Art Week"),
+              t("Pearls of the Mediterranean"),
+          ),
+          location: formatLocation(
+              t("Museum of outstanding figures of Ukrainian culture"),
+              t("Kyiv, Ukraine")
+          )
+        },
+        {
+          date: "2020",
           link: "http://www.kyivhistorymuseum.org/uk/exhibition-projects/odnogo-dnya-pislya-mizhnarodniy-mistetskiy-proyekt-one-day-international-art-project.html",
           title: formatTitle(
               t("International project"),
@@ -226,6 +238,18 @@ export default function CredentialsData() {
         },
       ],
       "SoloExhibitions": [
+        {
+          date: "2020",
+          link: "/personal-art-project-fragile",
+          title: formatTitle(
+              t("Solo art project"),
+              t("FRAGILE")
+          ),
+          location: formatLocation(
+              t("Ornament Art Space"),
+              t("Kyiv, Ukraine")
+          )
+        },
         {
           date: "2019",
           link: "https://inshe.org/inshe-art-personalnaya-vystavka-rabot-art-professionala-viktorii-adkozalovoj/",

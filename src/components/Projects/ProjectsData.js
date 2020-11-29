@@ -330,5 +330,61 @@ export const ProjectFragileItems = () => {
       title: "Victory, 2020",
       tags: t("acrylic") + ", 120x100cm"
     },
+    {
+      thumbnail: basePath + "a-dream-full.jpg",
+      img: basePath + "a-dream-full.jpg",
+      imgDownload: basePath + "a-dream-full.jpg",
+      title: "A dream, 2020",
+      tags: t("oil") + ", 110x90cm"
+    },
+    {
+      thumbnail: basePath + "birch-full.jpg",
+      img: basePath + "birch-full.jpg",
+      imgDownload: basePath + "birch-full.jpg",
+      title: "Birch, 2020",
+      tags: t("acrylic") + ", 80x60cm"
+    },
+    {
+      thumbnail: basePath + "fall-full.jpg",
+      img: basePath + "fall-full.jpg",
+      imgDownload: basePath + "fall-full.jpg",
+      title: "Fall, 2020",
+      tags: t("acrylic") + ", " + t("enamel") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "weekdays-full.jpg",
+      img: basePath + "weekdays-full.jpg",
+      imgDownload: basePath + "weekdays-full.jpg",
+      title: "Weekdays, 2020",
+      tags: t("acrylic") + ", 90x50cm"
+    },
+  ]
+}
+
+export const ProjectShadowsOfUnforgottenAncestors = () => {
+  const [t] = useTranslation();
+  const basePath = "/images/project/shadows-of-unforgotten-ancestors/"
+  return [
+    {
+      thumbnail: basePath + "cachalots-family-full.jpg",
+      img: basePath + "cachalots-family-full.jpg",
+      imgDownload: basePath + "cachalots-family-full.jpg",
+      title: "Cachalot's family, 2020",
+      tags: t("acrylic") + ", 120x90cm"
+    },
+    {
+      thumbnail: basePath + "shadows-of-unforgotten-ancestors-full.jpg",
+      img: basePath + "shadows-of-unforgotten-ancestors-full.jpg",
+      imgDownload: basePath + "shadows-of-unforgotten-ancestors-full.jpg",
+      title: "Shadows of unforgotten ancestors, 2020",
+      tags: t("acrylic") + ", 120x100cm"
+    },
+    {
+      thumbnail: basePath + "the-king-fisher-full.jpg",
+      img: basePath + "the-king-fisher-full.jpg",
+      imgDownload: basePath + "the-king-fisher-full.jpg",
+      title: "The King Fisher, 2020",
+      tags: t("acrylic") + ", 120x90cm"
+    },
   ]
 }

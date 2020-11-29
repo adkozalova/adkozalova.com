@@ -64,6 +64,7 @@ export default function HeaderMenu() {
                             <Link className="not-hide-on-click" to="/">{t("Projects")}</Link>
                             <ul className="submenu_item">
                               <li><Link to={i18nTo("/personal-art-project-fragile")} onClick={() => onClickClose()}>Art Project FRAGILE</Link></li>
+                              <li><Link to={i18nTo("/shadows-of-unforgotten-ancestors")} onClick={() => onClickClose()}>Shadows Of Unforgotten Ancestors</Link></li>
                               <li><Link to={i18nTo("/black-and-white")} onClick={() => onClickClose()}>Black & White</Link></li>
                               <li><Link to={i18nTo("/feeling-and-living")} onClick={() => onClickClose()}>Feeling & Living</Link></li>
                               <li><Link to={i18nTo("/jazzman")} onClick={() => onClickClose()}>Jazzman</Link></li>

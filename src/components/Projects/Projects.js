@@ -13,20 +13,27 @@ export default function Projects() {
     tags: t("08.10.2020-28.10.2020")
   }
   const project1 = {
+    title: "Shadows Of Unforgotten Ancestors",
+    link: i18nTo("/shadows-of-unforgotten-ancestors"),
+    img: "/images/project/shadows-of-unforgotten-ancestors/shadows-of-unforgotten-ancestors-main.jpg",
+    imgAlt: "Project Shadows Of Unforgotten Ancestors",
+    tags: t("oil, acrylic, canvas")
+  }
+  const project2 = {
     title: "Black & White",
     link: i18nTo("/black-and-white"),
     img: "/images/project/black-and-white/black-and-white-main.jpg",
     imgAlt: "Project Black & White",
     tags: t("oil, acrylic, canvas")
   }
-  const project2 = {
+  const project3 = {
     title: "Feeling & Living",
     link: i18nTo("/feeling-and-living"),
     img: "/images/project/feeling-and-living/feeling-and-living-main.jpg",
     imgAlt: "Project Feeling & Living",
     tags: t("oil, acrylic, enamel, canvas")
   }
-  const project3 = {
+  const project4 = {
     title: "Jazzman",
     link: i18nTo("/jazzman"),
     img: "/images/project/jazzman/jazzman-main.jpg",
@@ -126,6 +133,28 @@ export default function Projects() {
                     <h3 className="port_title">{project3.title}</h3>
                   </Link>
                   <p className="catagory">- {project3.tags}</p>
+                </div>
+              </div>
+            </div>
+
+            {/*project4*/}
+            <div className="col-md-6 col-sm-12 col-xs-12 portfolio_single_item">
+              <div className="portfolio_item">
+                <div className="port_img tilt">
+                  <Link to={project4.link}>
+                    <img src={project4.img} alt={project4.imgAlt} className="img-fluid"/>
+                  </Link>
+                </div>
+                <Link className="exp" to={project4.link}>
+                  <span className="exp_inner">
+                    <span className="exp_hover">{t('Explore')}</span>
+                  </span>
+                </Link>
+                <div className="port_text">
+                  <Link to={project4.link}>
+                    <h3 className="port_title">{project4.title}</h3>
+                  </Link>
+                  <p className="catagory">- {project4.tags}</p>
                 </div>
               </div>
             </div>
