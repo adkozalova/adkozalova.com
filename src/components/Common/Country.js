@@ -777,7 +777,7 @@ const countries = {
 };
 
 export default function Country(props) {
-  const {code} = props;
+  const {code, onlyFlag} = props;
   const [t] = useTranslation();
 
   if (countries[code.toUpperCase()] === undefined) {
@@ -788,7 +788,7 @@ export default function Country(props) {
       <React.Fragment>
         <p className="country">
           <span className={"flag-icon flag-icon-" + code.toLowerCase()} style={{marginRight: "10px"}}></span>
-          {t(countries[code.toUpperCase()].name)}
+          {onlyFlag ? " " : t(countries[code.toUpperCase()].name)}
         </p>
       </React.Fragment>
   );

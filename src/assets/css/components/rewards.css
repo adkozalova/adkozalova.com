@@ -1,5 +1,5 @@
 .rewards_wrap {
-    background: url(/images/rewards/reward_bg.jpg) no-repeat scroll top left/cover;
+    background: url(../../images/rewards/reward_bg.jpg) no-repeat scroll top left/cover;
     position: relative;
     padding: 155px 0 95px;
     z-index: 10;

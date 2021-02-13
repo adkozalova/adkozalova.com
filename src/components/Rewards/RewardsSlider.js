@@ -52,7 +52,7 @@ export default function RewardsSlider() {
                           <div className="col-md-8 description_wrap">
                             <h3 className="title">{title}</h3>
                             <p className="description">{description}</p>
-                            <h5 className="country">{country.map(countryCode => <Country code={countryCode}/>)}</h5>
+                            <h5 className="country">{country.map(countryCode => <Country code={countryCode} onlyFlag={true}/>)}</h5>
                             <h6 className="year">{year}</h6>
                           </div>
                         </div>

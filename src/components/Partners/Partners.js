@@ -9,7 +9,7 @@ export default function Partners() {
             <div className="col-lg-4 col-md-4 col-sm-6 col-12">
               <div className="partner_single_item wow fadeInUp">
                 <a href="https://inshe.org/" target={"_blank"} rel="noopener noreferrer">
-                  <img src="/images/partner/inshe-logo.png" alt="icon"/>
+                  <img src={require("./../../assets/images/partner/inshe-logo.png")} alt="icon"/>
                 </a>
               </div>
             </div>
