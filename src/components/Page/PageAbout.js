@@ -13,7 +13,7 @@ export default function PageAbout() {
             title={t("About Me")}
             description1={t("Pictorial art is a frozen, unique moment")}
             description2=""
-            img="/images/page-hero-bg.jpg"
+            img={require("./../../assets/images/page-hero-bg.jpg").default}
         />
         <PageAboutContent/>
         <RewardsSlider/>

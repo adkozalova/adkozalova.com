@@ -17,7 +17,7 @@ export default function PageContactContent() {
             <div className="col-lg-4 col-md-4 col-sm-12 col-12">
               <div className="interesting_item">
                 <div className="interesting_icon" data-wow-delay="0.2s">
-                  <a href={contact.fbLink}><img src="/images/icon/fb-big.png" alt="Facebook" width="73px" height="73px"/></a>
+                  <a href={contact.fbLink}><img src={require("./../../assets/images/icon/fb-big.png").default} alt="Facebook" width="73px" height="73px"/></a>
                 </div>
                 <div className="interesting_content" data-wow-delay="0.4s">
                   <h4>{t('Facebook')}</h4>
@@ -28,7 +28,7 @@ export default function PageContactContent() {
             <div className="col-lg-4 col-md-4 col-sm-12 col-12">
               <div className="interesting_item">
                 <div className="interesting_icon" data-wow-delay="0.4s">
-                  <a href={contact.phoneLink}><img src="/images/icon/phone-big.png" alt="Phone" width="73px" height="73px"/></a>
+                  <a href={contact.phoneLink}><img src={require("./../../assets/images/icon/phone-big.png").default} alt="Phone" width="73px" height="73px"/></a>
                 </div>
                 <div className="interesting_content" data-wow-delay="0.6s">
                   <h4>{t('Phone')}</h4>
@@ -42,7 +42,7 @@ export default function PageContactContent() {
             <div className="col-lg-4 col-md-4 col-sm-12 col-12">
               <div className="interesting_item">
                 <div className="interesting_icon" data-wow-delay="0.6s">
-                  <a href={contact.instLink}><img src="/images/icon/inst-big.png" alt="Instagram" width="73px" height="73px"/></a>
+                  <a href={contact.instLink}><img src={require("./../../assets/images/icon/inst-big.png").default} alt="Instagram" width="73px" height="73px"/></a>
                 </div>
                 <div className="interesting_content" data-wow-delay="0.8s">
                   <h4>{t('Instagram')}</h4>

@@ -11,7 +11,7 @@ export default function PageRewards() {
             title={t("Rewards")}
             description1=""
             description2=""
-            img="/images/page-hero-bg.jpg"
+            img={require("./../../assets/images/page-hero-bg.jpg").default}
         />
         <PageRewardsContent/>
       </>

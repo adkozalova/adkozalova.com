@@ -363,7 +363,7 @@ export const ProjectFragileItems = () => {
 
 export const ProjectShadowsOfUnforgottenAncestors = () => {
   const [t] = useTranslation();
-  const basePath = "/images/project/shadows-of-unforgotten-ancestors/"
+  const basePath = "project/shadows-of-unforgotten-ancestors/"
   return [
     {
       thumbnail: basePath + "cachalots-family-full.jpg",

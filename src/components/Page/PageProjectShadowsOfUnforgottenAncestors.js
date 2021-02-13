@@ -12,7 +12,7 @@ export default function PageProjectShadowsOfUnforgottenAncestors() {
             title="Shadows Of Unforgotten Ancestors"
             description1={t("Author's technique. Acrylic on canvas.")}
             description2={t("As an artist, I am concerned about the topic of extinction of species, since they are an integral part of our nature, create the beauty of this world")}
-            img="/images/project/shadows-of-unforgotten-ancestors/shadows-of-unforgotten-ancestors-bg.jpg"
+            img={require("./../../assets/images/project/shadows-of-unforgotten-ancestors/shadows-of-unforgotten-ancestors-bg.jpg").default}
         />
         <Project items={ProjectShadowsOfUnforgottenAncestors()}/>
       </>
