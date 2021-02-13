@@ -27,7 +27,7 @@ export default function Project(props) {
                   <div className="col-md-4 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus_3" key={key}>
                     <div className="portfolio_item">
                       <div className="port_img tilt">
-                        <img src={require(`./../../assets/images/${thumbnail}?resize&sizes[]=300&sizes[]=600&sizes[]=1000`).default} alt={title + " - " + tags} className="img-fluid cursor-pointer"
+                        <img src={thumbnail} alt={title + " - " + tags} className="img-fluid cursor-pointer"
                              onClick={() => openModal(img, imgDownload, title, tags)}
                              style={{maxWidth: '300px'}}
                         />

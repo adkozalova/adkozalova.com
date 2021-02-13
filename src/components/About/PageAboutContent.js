@@ -13,7 +13,7 @@ export default function PageAboutContent() {
               <div className="blog_sidebar">
                 <div className="widget sidebar-widget widget_about">
                   <div className="sidebar_about_img text-center">
-                    <img src={require("./../../assets/images/about/author.jpg").default} alt="Painter Viktoria Adkozalova" className="img-fluid"/>
+                    <img src={require("./../../assets/images/about/author.jpg")} alt="Painter Viktoria Adkozalova" className="img-fluid"/>
                   </div>
                   <div className="sidebar_about_content">
                     <h4 className="text-center sidebar_ab_title">{t('Viktoria Adkozalova')}</h4>
@@ -22,7 +22,7 @@ export default function PageAboutContent() {
                       life.
                     </Trans></p>
                     <div className="sign text-center">
-                      <img src={require("./../../assets/images/about/author-signature.png").default} alt="Painter Viktoria Adkozalova Signature" className="img-fluid"/>
+                      <img src={require("./../../assets/images/about/author-signature.png")} alt="Painter Viktoria Adkozalova Signature" className="img-fluid"/>
                     </div>
                   </div>
                   <div className="follow">

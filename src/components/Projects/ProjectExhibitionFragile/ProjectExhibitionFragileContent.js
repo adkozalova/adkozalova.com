@@ -17,7 +17,7 @@ export default function ProjectExhibitionFragileContent() {
                     <a className="stretched-link text-info" href="https://www.facebook.com/events/1665819606925345/"
                        target={"_blank"}
                        rel="noopener noreferrer">
-                      <img src={require("./../../../assets/images/project/personal-exhibition-fragile/gallery.jpg").default} className="img-fluid"
+                      <img src={require("./../../../assets/images/project/personal-exhibition-fragile/gallery.jpg?width=1500")} className="img-fluid"
                            alt="Personal art project Fragile"/>
                     </a>
                   </div>

@@ -11,7 +11,7 @@ export default function PageContacts() {
             title={t("Contacts")}
             description1={t("A symbol always reflects the essence")}
             description2=""
-            img={require("./../../assets/images/page-hero-bg.jpg").default}
+            img={require("./../../assets/images/page-hero-bg.jpg")}
         />
         <PageContactContent/>
       </>

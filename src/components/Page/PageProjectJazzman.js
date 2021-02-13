@@ -14,7 +14,7 @@ export default function PageProjectJazzman() {
             description2={t("Jazz is freedom, in music and life. It consists of weightlessness and continuous forward movement sensations. "
                 + "On these artworks, the main one is a musician who connects with his instrument like is one whole. "
                 + "The colored ragged background emphasizes freedom.")}
-            img={require("./../../assets/images/project/jazzman/jazzman-bg.jpg").default}
+            img={require("./../../assets/images/project/jazzman/jazzman-bg.jpg")}
         />
         <Project items={ProjectJazzmanItems()}/>
       </>
