@@ -4,6 +4,20 @@ export default function RewardsData() {
   const [t] = useTranslation("rewards");
   return [
     {
+      src: require("./../../assets/images/rewards/iavpoa-certificate-2021.jpg"),
+      title: t("Certificate"),
+      description: t("1st international biennale of installation and sculpture - IAVPOA \"Modified Routine\" "),
+      country: ["eu"],
+      year: t("Feb") + " 2021"
+    },
+    {
+      src: require("./../../assets/images/rewards/camelback-gallery-cert-bronze-2021.jpg"),
+      title: t("Certificate"),
+      description: t("International Juried Painting Competition - Camelback Gallery \"Black And White\""),
+      country: ["eu"],
+      year: t("Feb") + " 2021"
+    },
+    {
       src: require("./../../assets/images/rewards/reward-uafra-sansara-09-2020.jpg"),
       title: t("Certificate"),
       description: t("Participant of the art exhibition - UAFRA \"SANSARA\""),

@@ -239,6 +239,18 @@ export default function CredentialsData() {
       ],
       "SoloExhibitions": [
         {
+          date: "2021",
+          link: "https://www.facebook.com/manufacturaart/posts/2887920904801876",
+          title: formatTitle(
+              t("Solo art exhibition"),
+              t("Alone")
+          ),
+          location: formatLocation(
+              t("Manufactura Art Space"),
+              t("Kyiv, Ukraine")
+          )
+        },
+        {
           date: "2020",
           link: "/personal-art-project-fragile",
           title: formatTitle(
@@ -292,6 +304,26 @@ export default function CredentialsData() {
         },
       ],
       "Publications": [
+        {
+          date: "2021",
+          link: "https://www.altiba9.com/art-magazine-issue07",
+          title: formatTitle(
+              t("International Art Magazine"),
+              t("ISSUE07"),
+              "AL-TIBA9",
+          ),
+          location: null
+        },
+        {
+          date: "2021",
+          link: "https://issuu.com/landescapeartpress/docs/vol-57/4",
+          title: formatTitle(
+              t("International Art Magazine"),
+              t("Special Edition"),
+              "LandEscape Art Review",
+          ),
+          location: null
+        },
         {
           date: "2020",
           link: "https://www.facebook.com/UAFRA1/posts/2738393589529633",

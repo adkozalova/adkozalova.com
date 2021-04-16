@@ -62,7 +62,8 @@ export default function Modal(props) {
                   className="img-fluid"
                   style={{
                     height: (modalSize.height > modalSize.width ? 'auto' : modalSize.height - 50 + 'px'),
-                    width: (modalSize.height > modalSize.width ? modalSize.width - 50 + 'px' : 'auto')
+                    width: (modalSize.height > modalSize.width ? modalSize.width - 50 + 'px' : 'auto'),
+                    objectFit: "contain" // we need this to have proportional size of the image
                   }}
                   src={img}
                   title={title}

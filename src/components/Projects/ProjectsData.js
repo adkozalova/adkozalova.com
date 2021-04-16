@@ -163,6 +163,20 @@ export const ProjectFillingAndLivingItems = () => {
   const [t] = useTranslation();
   return [
     {
+      thumbnail: require("./../../assets/images/project/feeling-and-living/dream.jpg?width=400"),
+      img: require("./../../assets/images/project/feeling-and-living/dream.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/feeling-and-living/dream.jpg?original"),
+      title: "Dream, 2021",
+      tags: t("acrylic") + ", 100x100cm"
+    },
+    {
+      thumbnail: require("./../../assets/images/project/feeling-and-living/silence.jpg?width=400"),
+      img: require("./../../assets/images/project/feeling-and-living/silence.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/feeling-and-living/silence.jpg?original"),
+      title: "Silence, 2021",
+      tags: t("acrylic") + ", 120x100cm"
+    },
+    {
       thumbnail: require("./../../assets/images/project/feeling-and-living/earrings-full.jpg?width=400"),
       img: require("./../../assets/images/project/feeling-and-living/earrings-full.jpg?width=1500"),
       imgDownload: require("./../../assets/images/project/feeling-and-living/earrings-full.jpg?original"),
@@ -363,6 +377,55 @@ export const ProjectFragileItems = () => {
 export const ProjectShadowsOfUnforgottenAncestors = () => {
   const [t] = useTranslation();
   return [
+    {
+      thumbnail: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/polar-bears.jpg?width=400"),
+      img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/polar-bears.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/polar-bears.jpg?original"),
+      title: "Polar bears, 2021",
+      tags: t("acrylic") + ", 120x100cm"
+    },
+    {
+      thumbnail: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/painted-dog.jpg?width=400"),
+      img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/painted-dog.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/painted-dog.jpg?original"),
+      title: "Painted dog, 2021",
+      tags: t("acrylic") + ", 90x100cm"
+    },
+    {
+      thumbnail: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/manatees.jpg?width=400"),
+      img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/manatees.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/manatees.jpg?original"),
+      title: "Manatees, 2021",
+      tags: t("acrylic") + ", 100x120cm"
+    },
+    {
+      thumbnail: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/zubr.jpg?width=400"),
+      img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/zubr.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/zubr.jpg?original"),
+      title: "Zubr, 2021",
+      tags: t("acrylic") + ", 100x120cm"
+    },
+    {
+      thumbnail: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/elephant-tortoise.jpg?width=400"),
+      img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/elephant-tortoise.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/elephant-tortoise.jpg?original"),
+      title: "Elephant tortoise, 2021",
+      tags: t("acrylic") + ", 100x120cm"
+    },
+    {
+      thumbnail: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/elephant.jpg?width=400"),
+      img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/elephant.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/elephant.jpg?original"),
+      title: "Elephant, 2021",
+      tags: t("acrylic") + ", 100x120cm"
+    },
+    {
+      thumbnail: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/rhino.jpg?width=400"),
+      img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/rhino.jpg?width=1500"),
+      imgDownload: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/rhino.jpg?original"),
+      title: "Rhino, 2021",
+      tags: t("acrylic") + ", 100x120cm"
+    },
     {
       thumbnail: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/cachalots-family-full.jpg?width=400"),
       img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/cachalots-family-full.jpg?width=1500"),
