@@ -383,7 +383,7 @@ export default function CredentialsData() {
         },
       ],
       "PrivateCollections": [
-        "us", "hk", "fi", "hu", "at", "de", "pl", "ua", "ru"
+        "us", "hk", "fi", "hu", "at", "de", "pl", "ua", "ch"
       ]
     }
   }
