@@ -7,7 +7,7 @@ export default function HeroHome() {
   const [t] = useTranslation();
   return (
       <div>
-        <section className="hero_warp">
+        <section className="hero_warp" style={{backgroundImage: `url(${require("./../../assets/images/hero_bg.jpg")})`}}>
           <div className="container">
             <div className="row d-flex align-items-center height_vh">
               <div className="col-md-12 col-12">

@@ -1,5 +1,5 @@
 import React from "react";
-import 'flag-icon-css/css/flag-icon.min.css';
+import 'flag-icons/css/flag-icons.min.css';
 import {useTranslation} from "react-i18next";
 
 const countries = {
@@ -787,7 +787,7 @@ export default function Country(props) {
   return (
       <React.Fragment>
         <p className="country">
-          <span className={"flag-icon flag-icon-" + code.toLowerCase()} style={{marginRight: "10px"}}></span>
+          <span className={"fi fi-" + code.toLowerCase()} style={{marginRight: "10px"}}></span>
           {onlyFlag ? " " : t(countries[code.toUpperCase()].name)}
         </p>
       </React.Fragment>

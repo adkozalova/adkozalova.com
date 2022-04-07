@@ -6,7 +6,7 @@ import {Trans, useTranslation} from "react-i18next";
 export default function Footer() {
   const [t] = useTranslation();
   return (
-      <footer className="footer">
+      <footer className="footer" style={{backgroundImage: `url(${require("./../../assets/images/footer_bg.jpg")})`}}>
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-12">

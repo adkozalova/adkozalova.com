@@ -21,7 +21,7 @@ export default function RewardsSlider() {
   const rewardData = RewardsData()
   const rewardsLink = i18nTo("/rewards")
   return (
-      <section className="rewards_wrap">
+      <section className="rewards_wrap" style={{backgroundImage: `url(${require("./../../assets/images/rewards/reward_bg.jpg")})`}}>
         <div className="bg_text">
           <h1 className="bg_strock_text" data-parallax='{"x": -200}'>{t('Rewards')}</h1>
         </div>
