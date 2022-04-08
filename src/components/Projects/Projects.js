@@ -8,35 +8,35 @@ export default function Projects() {
   const project0 = {
     title: t("FRAGILE"),
     link: i18nTo("/personal-art-project-fragile"),
-    img: require("./../../assets/images/project/personal-exhibition-fragile/fragile-main.jpg?width=500"),
+    img: require("./../../assets/images/project/personal-exhibition-fragile/fragile-main-500.jpg"),
     imgAlt: "Personal art project - FRAGILE",
     tags: t("08.10.2020-28.10.2020")
   }
   const project1 = {
     title: "Shadows Of Unforgotten Ancestors",
     link: i18nTo("/shadows-of-unforgotten-ancestors"),
-    img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/shadows-of-unforgotten-ancestors-main.jpg?width=500"),
+    img: require("./../../assets/images/project/shadows-of-unforgotten-ancestors/shadows-of-unforgotten-ancestors-main-500.jpg"),
     imgAlt: "Project Shadows Of Unforgotten Ancestors",
     tags: t("oil, acrylic, canvas")
   }
   const project2 = {
     title: "Black & White",
     link: i18nTo("/black-and-white"),
-    img: require("./../../assets/images/project/black-and-white/black-and-white-main.jpg?width=500"),
+    img: require("../../assets/images/project/black-and-white/black-and-white-main-500.jpg"),
     imgAlt: "Project Black & White",
     tags: t("oil, acrylic, canvas")
   }
   const project3 = {
     title: "Feeling & Living",
     link: i18nTo("/feeling-and-living"),
-    img: require("./../../assets/images/project/feeling-and-living/feeling-and-living-main.jpg?width=500"),
+    img: require("./../../assets/images/project/feeling-and-living/feeling-and-living-main-500.jpg"),
     imgAlt: "Project Feeling & Living",
     tags: t("oil, acrylic, enamel, canvas")
   }
   const project4 = {
     title: "Jazzman",
     link: i18nTo("/jazzman"),
-    img: require("./../../assets/images/project/jazzman/jazzman-main.jpg?width=500"),
+    img: require("./../../assets/images/project/jazzman/jazzman-main-500.jpg"),
     imgAlt: "Project Jazzman",
     tags: t("oil, acrylic, canvas")
   }

@@ -7,7 +7,6 @@
     "flag-icons": "^6.2.0",
     "i18next": "^19.9.2",
     "i18next-browser-languagedetector": "^6.1.4",
-    "optimized-images-loader": "^0.4.0",
     "react": "^16.14.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.14.0",
@@ -45,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
     "react-app-rewired": "^2.2.1"
   }
 }
