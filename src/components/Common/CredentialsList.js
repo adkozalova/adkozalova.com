@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 
-import Country from "../Common/Country";
+import Country from "./Country";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import CredentialsData from "../Data/CredentialsData";
 
-export default function Credentials() {
+export default function CredentialsList() {
     const [t] = useTranslation("translations", "credentials");
     const {defaultCategory, categories, categoriesData} = CredentialsData()
     const [activeTab, setActiveTab] = useState(defaultCategory)

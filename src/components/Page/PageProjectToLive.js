@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from "../Projects/Project";
+import ProjectBlock from "./Block/ProjectBlock";
 import HeroPage from "../Common/HeroPage";
 import {useTranslation} from "react-i18next";
 import ProjectsData from "../Data/ProjectsData";
@@ -16,7 +16,7 @@ export default function PageProjectToLive() {
                     + "The colored ragged background emphasizes freedom.")}
                 img={require("./../../assets/images/project/to-live/bg.jpg")}
             />
-            <Project items={ProjectsData().toLive}/>
+            <ProjectBlock items={ProjectsData().toLive}/>
         </>
     )
 }

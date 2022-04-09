@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import Modal from "../Common/Modal";
+import Modal from "../../Common/Modal";
 import {useTranslation} from "react-i18next";
 
-export default function Project(props) {
+export default function ProjectBlock(props) {
     const [t] = useTranslation();
     const [modal, setModal] = useState({isOpen: false, img: null, imgDownload: null, title: null, tags: null});
     const openModal = (img, imgDownload, title, tags) => setModal({isOpen: true, img: img, imgDownload: imgDownload, title: title, tags: tags})

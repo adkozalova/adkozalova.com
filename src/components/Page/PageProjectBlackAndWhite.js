@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from "../Projects/Project";
+import ProjectBlock from "./Block/ProjectBlock";
 import HeroPage from "../Common/HeroPage";
 import {useTranslation} from "react-i18next";
 import ProjectsData from "../Data/ProjectsData";
@@ -17,7 +17,7 @@ export default function PageProjectBlackAndWhite() {
                     + "The main task facing the author is to carefully preserve the sensations, subtle feelings, and life itself in its unsurpassed moments.")}
                 img={require("./../../assets/images/project/black-and-white/black-and-white-bg.jpg")}
             />
-            <Project items={ProjectsData().blackAndWhite}/>
+            <ProjectBlock items={ProjectsData().blackAndWhite}/>
         </>
     )
 }

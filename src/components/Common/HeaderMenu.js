@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import SocialMediaList from "../Contacts/SocialMediaList";
+import SocialMediaList from "./SocialMediaList";
 import Language from "./Language";
 import {Link} from "react-router-dom";
 import {i18nTo} from "../../Util";

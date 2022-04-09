@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import '../../assets/css/slick.min.css';
-import Country from "../Common/Country";
+import Country from "./Country";
 import {Link} from "react-router-dom";
 import {i18nTo} from "../../Util";
 import {useTranslation} from "react-i18next";
@@ -21,7 +21,7 @@ export default function RewardsSlider() {
     const rewardData = RewardsData()
     const rewardsLink = i18nTo("/rewards")
     return (
-        <section className="rewards_wrap" style={{backgroundImage: `url(${require("./../../assets/images/rewards/reward_bg.jpg")})`}}>
+        <section className="rewards_wrap" style={{backgroundImage: `url(${require("../../assets/images/rewards/reward_bg.jpg")})`}}>
             <div className="bg_text">
                 <h1 className="bg_strock_text" data-parallax='{"x": -200}'>{t('Rewards')}</h1>
             </div>
