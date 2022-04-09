@@ -14,6 +14,8 @@ import './assets/css/components/credentials.css';
 import './assets/css/components/hero.css';
 import './assets/css/responsive.css';
 // components
+import {Helmet} from "react-helmet";
+import {useTranslation} from "react-i18next";
 import ScrollToTop from "./components/Common/ScrollToTop";
 import HeaderMenu from './components/Common/HeaderMenu';
 import Footer from './components/Common/Footer';
@@ -25,10 +27,9 @@ import PageRewards from "./components/Page/PageRewards";
 import PageProjectFillingAndLiving from "./components/Page/PageProjectFillingAndLiving";
 import PageProjectJazzman from "./components/Page/PageProjectJazzman";
 import PageProjectBlackAndWhite from "./components/Page/PageProjectBlackAndWhite";
-import {Helmet} from "react-helmet";
-import {useTranslation} from "react-i18next";
 import PageProjectExhibitionFragile from "./components/Page/PageProjectExhibitionFragile";
 import PageProjectShadowsOfUnforgottenAncestors from "./components/Page/PageProjectShadowsOfUnforgottenAncestors";
+import PageProjectToLive from "./components/Page/PageProjectToLive";
 
 export const appendScript = (scriptToAppend) => {
   const script = document.createElement("script");
@@ -76,6 +77,7 @@ export default function App() {
             <Route path={baseRouteUrl + "/feeling-and-living"} component={PageProjectFillingAndLiving}/>
             <Route path={baseRouteUrl + "/personal-art-project-fragile"} component={PageProjectExhibitionFragile}/>
             <Route path={baseRouteUrl + "/shadows-of-unforgotten-ancestors"} component={PageProjectShadowsOfUnforgottenAncestors}/>
+            <Route path={baseRouteUrl + "/to-live"} component={PageProjectToLive}/>
             <Route path={baseRouteUrl + "/rewards"} component={PageRewards}/>
             <Route path={baseRouteUrl + "/about"} component={PageAbout}/>
             <Route path={baseRouteUrl + "/contacts"} component={PageContacts}/>

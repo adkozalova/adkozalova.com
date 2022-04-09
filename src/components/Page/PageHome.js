@@ -7,14 +7,14 @@ import AboutShort from "../About/AboutShort";
 import HeroHome from "../Home/HeroHome";
 
 export default function PageRewardsContent() {
-  return (
-      <>
-        <HeroHome/>
-        <PageHomeProjects/>
-        <AboutShort/>
-        <Credentials/>
-        <RewardsSlider/>
-        <Partners/>
-      </>
-  )
+    return (
+        <>
+            <HeroHome/>
+            <PageHomeProjects/>
+            <AboutShort/>
+            <Credentials/>
+            <RewardsSlider/>
+            <Partners/>
+        </>
+    )
 }

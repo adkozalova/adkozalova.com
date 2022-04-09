@@ -7,6 +7,10 @@ Oil, watercolor, acrylic professional art
 - [Facebook](https://www.facebook.com/viktoria.adkozalova)
 - [Instagram](https://www.instagram.com/viktoria_adkozalova)
 
+### Dimensions
+
+WIDTH x HEIGHT
+
 ### Tools
 
 Start application
