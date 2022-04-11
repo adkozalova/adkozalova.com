@@ -50,7 +50,7 @@ export function PageContactContentBlock() {
                             </div>
                             <div className="interesting_content" data-wow-delay="0.6s">
                                 <h4>{t('Phone')}</h4>
-                                <p>{t('Viber or WatsApp')} <a href={contact.phoneLink}><span>{contact.phoneTitle}</span>
+                                <p>{t('Viber or WhatsApp')} <a href={contact.phoneLink}><span>{contact.phoneTitle}</span>
                                     <span>{contact.phoneTitle}</span></a>
                                 </p>
                                 <p>{t('Email')} <a href={contact.emailLink}><span>{contact.emailTitle}</span> <span>{contact.emailTitle}</span></a>

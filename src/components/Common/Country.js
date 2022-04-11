@@ -567,9 +567,6 @@ const countries = {
     "RO": {
         name: "Romania",
     },
-    "RU": {
-        name: "Russian Federation",
-    },
     "RW": {
         name: "Rwanda",
     },

@@ -122,6 +122,17 @@
     .portfolio_warp {
         padding-top: 75px;
     }
+    .portfolio_item .port_text,
+    .portfolio_3_column .portfolio_item .port_text {
+        left: -60px;
+        bottom: auto;
+        top: 100px;
+    }
+    .portfolio_item .port_text .port_title_big,
+    .portfolio_3_column .portfolio_item .port_text .port_title_big{
+        font-size: 36px;
+        line-height: 30px;
+    }
     .hero_warp .social_link {
         max-width: 720px;
     }
@@ -430,6 +441,14 @@
     .portfolio_3_column .portfolio_item .port_text .port_title {
         font-size: 22px;
         line-height: 26px;
+    }
+    .portfolio_item .port_text .port_title_big,
+    .portfolio_3_column .portfolio_item .port_text .port_title_big{
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .portfolio_item .port_text .category {
+        display: none;
     }
     .single_body .portfolio_para {
         margin-bottom: 30px;

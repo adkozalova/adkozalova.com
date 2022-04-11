@@ -4,7 +4,7 @@ import {useTranslation} from "react-i18next";
 
 export default function Modal(props) {
 
-    const {isOpen, img, imgDownload, title, onClose} = props;
+    const {isOpen, img, original, title, onClose} = props;
     const [t] = useTranslation();
     const [modalSize, setModal] = useState({width: window.innerWidth, height: window.innerHeight});
 
@@ -75,10 +75,10 @@ export default function Modal(props) {
                         <div className={"row"}>
                             <i className="fa fa-times cursor-pointer" style={{color: '#fff', fontSize: '23px'}} onClick={onClose}/>
                         </div>
-                        {imgDownload !== null && imgDownload !== undefined
+                        {original !== null && original !== undefined
                             ? (
                                 <div className={"row mt-4"}>
-                                    <a href={imgDownload} download={title + ".jpg"} className="fa fa-download" title={t("Download full size")}
+                                    <a href={original} download={title + ".jpg"} className="fa fa-download" title={t("Download full size")}
                                        style={{color: '#fff', fontSize: '20px'}}/>
                                 </div>
                             )

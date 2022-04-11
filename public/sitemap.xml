@@ -2,66 +2,81 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <lastmod>2022-04-08</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <loc>https://adkozalova.com/</loc>
     <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/"/>
   </url>
   <url>
-    <lastmod>2022-04-08</lastmod>
-    <loc>https://adkozalova.com/personal-art-project-fragile</loc>
-    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/personal-art-project-fragile"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru/personal-art-project-fragile"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/personal-art-project-fragile"/>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/artworks-gallery</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/artworks-gallery"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/artworks-gallery"/>
   </url>
   <url>
-    <lastmod>2022-04-08</lastmod>
-    <loc>https://adkozalova.com/shadows-of-unforgotten-ancestors</loc>
-    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/shadows-of-unforgotten-ancestors"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru/shadows-of-unforgotten-ancestors"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/shadows-of-unforgotten-ancestors"/>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/art-projects</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/art-projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/art-projects"/>
   </url>
   <url>
-    <lastmod>2022-04-08</lastmod>
-    <loc>https://adkozalova.com/black-and-white</loc>
-    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/black-and-white"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru/black-and-white"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/black-and-white"/>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/art-projects/fragile</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/art-projects/fragile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/art-projects/fragile"/>
   </url>
   <url>
-    <lastmod>2022-04-08</lastmod>
-    <loc>https://adkozalova.com/feeling-and-living</loc>
-    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/feeling-and-living"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru/feeling-and-living"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/feeling-and-living"/>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/art-projects/alone</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/art-projects/alone"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/art-projects/alone"/>
   </url>
   <url>
-    <lastmod>2022-04-08</lastmod>
-    <loc>https://adkozalova.com/jazzman</loc>
-    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/jazzman"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru/jazzman"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/jazzman"/>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/art-projects/shadows-of-unforgotten-ancestors</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/art-projects/shadows-of-unforgotten-ancestors"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/art-projects/shadows-of-unforgotten-ancestors"/>
   </url>
   <url>
-    <lastmod>2022-04-08</lastmod>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/publications-and-media</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/publications-and-media"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/publications-and-media"/>
+  </url>
+  <url>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/publications-and-media/landescape-art-review-2021</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/publications-and-media/landescape-art-review-2021"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/publications-and-media/landescape-art-review-2021"/>
+  </url>
+  <url>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/publications-and-media/al-tiba9-issue07</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/publications-and-media/al-tiba9-issue07"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/publications-and-media/al-tiba9-issue07"/>
+  </url>
+  <url>
+    <lastmod>2022-04-12</lastmod>
+    <loc>https://adkozalova.com/publications-and-media/art-masters-part-5</loc>
+    <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/publications-and-media/art-masters-part-5"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/publications-and-media/art-masters-part-5"/>
+  </url>
+  <url>
+    <lastmod>2022-04-12</lastmod>
     <loc>https://adkozalova.com/about</loc>
     <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/about"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru/about"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/about"/>
   </url>
   <url>
-    <lastmod>2022-04-08</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <loc>https://adkozalova.com/rewards</loc>
     <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/rewards"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru/rewards"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/rewards"/>
   </url>
   <url>
-    <lastmod>2022-04-08</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <loc>https://adkozalova.com/contacts</loc>
     <xhtml:link rel="alternate" hreflang="ua" href="https://adkozalova.com/ua/contacts"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://adkozalova.com/ru/contacts"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://adkozalova.com/contacts"/>
   </url>
 </urlset>

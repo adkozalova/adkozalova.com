@@ -46,31 +46,34 @@ export default function HeaderMenu() {
                                     type="button"
                                     data-toggle="collapse"
                                     data-target="#header_menu"
-                                    onClick={() => onClickClose()}
-                                >
+                                    onClick={() => onClickClose()}>
                                     <span className="m_menu">{t("Menu")}</span>
                                     <span className="m_close">{t("Close")}</span>
                                     <span className="bar_icon">
-                        <span className="bar bar_1"/>
-                        <span className="bar bar_2"/>
-                        <span className="bar bar_3"/>
-                    </span>
+                                        <span className="bar bar_1"/>
+                                        <span className="bar bar_2"/>
+                                        <span className="bar bar_3"/>
+                                    </span>
                                 </button>
                                 <div className="open_menu">
                                     <div className="header_main_menu">
                                         <ul className="menu_item">
                                             <li><Link to={i18nTo("/")} onClick={() => onClickClose()}>{t("Home")}</Link></li>
+                                            <li><Link to={i18nTo("/artworks-gallery")} onClick={() => onClickClose()}>{t("Artworks gallery")}</Link></li>
                                             <li className="submenu">
-                                                <Link className="not-hide-on-click" to="/">{t("Projects")}</Link>
+                                                <Link to="/art-projects" onClick={() => onClickClose()}>{t("Art projects")}</Link>
                                                 <ul className="submenu_item">
-                                                    <li><Link to={i18nTo("/personal-art-project-fragile")} onClick={() => onClickClose()}>Art Project
-                                                        FRAGILE</Link></li>
-                                                    <li><Link to={i18nTo("/shadows-of-unforgotten-ancestors")} onClick={() => onClickClose()}>Shadows
-                                                        Of Unforgotten Ancestors</Link></li>
-                                                    <li><Link to={i18nTo("/black-and-white")} onClick={() => onClickClose()}>Black & White</Link></li>
-                                                    <li><Link to={i18nTo("/feeling-and-living")} onClick={() => onClickClose()}>Feeling &
-                                                        Living</Link></li>
-                                                    <li><Link to={i18nTo("/jazzman")} onClick={() => onClickClose()}>Jazzman</Link></li>
+                                                    <li><Link to={i18nTo("/art-projects/shadows-of-unforgotten-ancestors")} onClick={() => onClickClose()}>Shadows Of Unforgotten Ancestors</Link></li>
+                                                    <li><Link to={i18nTo("/art-projects/alone")} onClick={() => onClickClose()}>Alone</Link></li>
+                                                    <li><Link to={i18nTo("/art-projects/fragile")} onClick={() => onClickClose()}>FRAGILE</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li className="submenu">
+                                                <Link to="/publications-and-media" onClick={() => onClickClose()}>{t("Publications & media")}</Link>
+                                                <ul className="submenu_item">
+                                                    <li><Link to={i18nTo("/publications-and-media/landescape-art-review-2021")} onClick={() => onClickClose()}>LandEscape Art Review, 2021</Link></li>
+                                                    <li><Link to={i18nTo("/publications-and-media/al-tiba9-issue07")} onClick={() => onClickClose()}>Al-Tiba9, ISSUE07</Link></li>
+                                                    <li><Link to={i18nTo("/publications-and-media/art-masters-part-5")} onClick={() => onClickClose()}>ART masters, Part V</Link></li>
                                                 </ul>
                                             </li>
                                             <li><Link to={i18nTo("/rewards")} onClick={() => onClickClose()}>{t("Rewards")}</Link></li>
@@ -108,10 +111,10 @@ export default function HeaderMenu() {
                                     <span className="m_menu">{t("Menu")}</span>
                                     <span className="m_close">{t("Close")}</span>
                                     <span className="bar_icon">
-                        <span className="bar bar_1"/>
-                        <span className="bar bar_2"/>
-                        <span className="bar bar_3"/>
-                    </span>
+                                        <span className="bar bar_1"/>
+                                        <span className="bar bar_2"/>
+                                        <span className="bar bar_3"/>
+                                    </span>
                                 </button>
                             </nav>
                         </div>

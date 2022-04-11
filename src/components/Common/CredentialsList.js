@@ -69,8 +69,7 @@ function Item(props) {
         return (
             <li>
                 <span>{item.date}</span>
-                {item.title} {item.location === null || item.location === undefined ? "" : <i className="fa fa-map-marker ml-1"
-                                                                                              aria-hidden="true"/>}&nbsp;{item.location}
+                {item.title} {item.location === null || item.location === undefined ? "" : <i className="fa fa-map-marker ml-1" aria-hidden="true"/>}&nbsp;{item.location}
             </li>
         )
     } else {
@@ -78,8 +77,7 @@ function Item(props) {
             <li>
                 <span>{item.date}</span>
                 <a href={item.link} target={"_blank"} rel="noopener noreferrer">{item.title}</a>
-                {item.location === null || item.location === undefined ? "" : <i className="fa fa-map-marker ml-1"
-                                                                                 aria-hidden="true"/>}&nbsp;{item.location}
+                {item.location === null || item.location === undefined ? "" : <i className="fa fa-map-marker ml-1" aria-hidden="true"/>}&nbsp;{item.location}
             </li>
         )
     }

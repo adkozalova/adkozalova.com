@@ -27,50 +27,65 @@ const formatLocation = (place, address) => {
 export const Data = () => {
     const [t] = useTranslation();
     return {
-        defaultCategory: "CurrentExhibitions",
+        defaultCategory: "SoloExhibitions",
         categories: {
-            "CurrentExhibitions": t("Current Exhibitions"),
-            "GroupExhibitions": t("Group Exhibitions"),
             "SoloExhibitions": t("Solo Exhibitions"),
+            "GroupExhibitions": t("Group Exhibitions"),
             "Prizes": t("Prizes"),
-            "Publications": t("Publications"),
-            "Residences": t("Residences"),
             "PrivateCollections": t("Private Collections"),
         },
         categoriesData: {
-            "CurrentExhibitions": [
-                {
-                    date: t('September') + " 2020",
-                    link: "https://www.lightspacetime.art/patterns-art-exhibition-2020-painting-other-media/#gallery/4ec056f8ac32a45893d8714964ae7c3c/38216",
-                    title: formatTitle(
-                        t("International juried painting competition"),
-                        "Patterns",
-                        "Light Space & Time Online Art Gallery"
-                    ),
-                    location: null
-                },
-                {
-                    date: t('August') + " 2020",
-                    link: "http://www.contemporaryartcuratormagazine.com/online-exhibition-new-horizons/viktoria-adkozalova",
-                    title: formatTitle(
-                        t("Online exhibition"),
-                        "New Horizons",
-                        t("Contemporary Art Curator Magazine")
-                    ),
-                    location: null
-                },
-                {
-                    date: t('August') + " 2020",
-                    link: "https://www.camelbackgallery.com/figurative2020exhibition?pgid=kdf6heie1-da60118f-c4d0-43b5-9045-cd611519da15",
-                    title: formatTitle(
-                        t("International juried painting competition"),
-                        "Figurative 2020",
-                        "Camelback Gallery",
-                    ),
-                    location: null
-                },
-            ],
             "GroupExhibitions": [
+                {
+                    date: "2021",
+                    link: "https://portal11.com.ua/vystavka-nominantiv-premiyi-portal-art-prize-2021-na-temu-what-is-blue/",
+                    title: formatTitle(
+                        t("International competition-exhibition"),
+                        "Portal Art Prize 2021 - What Is Blue",
+                        t("Portal 11 Gallery"),
+                    ),
+                    location: formatLocation(
+                        "Portal 11 Gallery",
+                        t("Kyiv, Ukraine")
+                    )
+                },
+                {
+                    date: "2021",
+                    title: formatTitle(
+                        t("International collective exhibition"),
+                        "Femininity",
+                        t("Timax Auction House"),
+                    ),
+                    location: formatLocation(
+                        "Space Ukraine",
+                        t("Kyiv, Ukraine")
+                    )
+                },
+                {
+                    date: "2021",
+                    title: formatTitle(
+                        "Contemporary women`s art fest",
+                        "OUT & ABOUT",
+                        "UAFRA"
+                    ),
+                    location: formatLocation(
+                        t("Institute of Contemporary Art Problems"),
+                        t("Kyiv, Ukraine")
+                    )
+                },
+                {
+                    date: "2020",
+                    link: "https://portal11.com.ua/vystavka-nominantiv-premiyi-portal-art-prize-2020-chudovyj-novyj-svit/",
+                    title: formatTitle(
+                        t("International competition-exhibition"),
+                        "Portal Art Prize 2020 - \"A wonderful new world?\"",
+                        t("Portal 11 Gallery"),
+                    ),
+                    location: formatLocation(
+                        "Portal 11 Gallery",
+                        t("Kyiv, Ukraine")
+                    )
+                },
                 {
                     date: "2020",
                     title: formatTitle(
@@ -243,6 +258,18 @@ export const Data = () => {
             ],
             "SoloExhibitions": [
                 {
+                    date: "2022",
+                    link: "https://portal11.com.ua/vystavka-viktoriyi-adkozalovoyi-tini-nezabutyh-predkiv/",
+                    title: formatTitle(
+                        t("Solo art exhibition"),
+                        t("Shadows of unforgotten ancestors")
+                    ),
+                    location: formatLocation(
+                        t("Portal 11 Gallery"),
+                        t("Kyiv, Ukraine")
+                    )
+                },
+                {
                     date: "2021",
                     link: "https://www.facebook.com/manufacturaart/posts/2887920904801876",
                     title: formatTitle(
@@ -256,7 +283,7 @@ export const Data = () => {
                 },
                 {
                     date: "2020",
-                    link: "/personal-art-project-fragile",
+                    link: "/art-projects/fragile",
                     title: formatTitle(
                         t("Solo art project"),
                         t("FRAGILE")
@@ -303,85 +330,6 @@ export const Data = () => {
                     ),
                     location: formatLocation(
                         t("National House of Artist of Ukraine"),
-                        t("Kyiv, Ukraine")
-                    )
-                },
-            ],
-            "Publications": [
-                {
-                    date: "2021",
-                    link: "https://www.altiba9.com/art-magazine-issue07",
-                    title: formatTitle(
-                        t("International Art Magazine"),
-                        t("ISSUE07"),
-                        "AL-TIBA9",
-                    ),
-                    location: null
-                },
-                {
-                    date: "2021",
-                    link: "https://issuu.com/landescapeartpress/docs/vol-57/4",
-                    title: formatTitle(
-                        t("International Art Magazine"),
-                        t("Special Edition"),
-                        "LandEscape Art Review",
-                    ),
-                    location: null
-                },
-                {
-                    date: "2020",
-                    link: "https://www.facebook.com/UAFRA1/posts/2738393589529633",
-                    title: formatTitle(
-                        t("International project"),
-                        t("A Look Through the Backstage"),
-                        "UAFRA",
-                    ),
-                    location: formatLocation(
-                        t("Kyiv History Museum"),
-                        t("Kyiv, Ukraine"),
-                    )
-                },
-                {
-                    date: "2020",
-                    link: "http://culturetrend-magazine.com/adkozalova",
-                    title: formatTitle(
-                        t("Magazine"),
-                        t("CultureTrend"),
-                        null
-                    ),
-                    location: null
-                },
-                {
-                    date: "2019",
-                    link: "https://www.youtube.com/watch?v=Bri9OkdlIWw",
-                    title: formatTitle(
-                        "Contemporary women`s art fest",
-                        t("Agenda"),
-                        t("Dmitro Subotenko"),
-                    ),
-                    location: null
-                },
-                {
-                    date: "2019",
-                    link: "https://inshe.org/inshe-art-1934-j-mezhdunarodnyj-master-klass-art-professional-dekabr-2019-goda-video/",
-                    title: formatTitle(
-                        t("1934th International master class"),
-                        t("ART PROFESSIONAL"),
-                        t("INSHE Art"),
-                    ),
-                    location: null
-                },
-            ],
-            "Residences": [
-                {
-                    date: "2018",
-                    title: formatTitle(
-                        t("VR art, 1 week residence"),
-                        t("Blockchain Art Hackathon 2.0"),
-                        t("Blockchain Art"),
-                    ),
-                    location: formatLocation(
-                        t("Congress and Exhibition Center \"Parkovy\""),
                         t("Kyiv, Ukraine")
                     )
                 },

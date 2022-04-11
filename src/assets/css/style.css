@@ -1114,7 +1114,15 @@ header.header.headerFixed {
     font-weight: normal;
 }
 
-.portfolio_item .port_text .catagory {
+.portfolio_item .port_text .port_title_big {
+    font-size: 85px;
+    font-family: "Futura PT Heavy";
+    line-height: 50px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.portfolio_item .port_text .category {
     text-transform: uppercase;
     font-size: 12px;
     font-family: "Montserrat", sans-serif;
@@ -1123,14 +1131,14 @@ header.header.headerFixed {
     color: #fff;
 }
 
-.portfolio_item .port_text .catagory a {
+.portfolio_item .port_text .category a {
     color: #fff;
     position: relative;
     display: inline-block;
     line-height: 20px;
 }
 
-.portfolio_item .port_text .catagory a:before {
+.portfolio_item .port_text .category a:before {
     position: absolute;
     content: "";
     bottom: 0;
@@ -1141,7 +1149,7 @@ header.header.headerFixed {
     transition: all 0.5s;
 }
 
-.portfolio_item .port_text .catagory a:hover:before {
+.portfolio_item .port_text .category a:hover:before {
     right: auto;
     left: 0;
     width: 100%;

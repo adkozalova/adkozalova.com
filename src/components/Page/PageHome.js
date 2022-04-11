@@ -1,20 +1,20 @@
 import React from 'react';
-import PageHomeProjects from "./Block/ProjectsBlock";
+import {i18nTo} from "../../Util";
+import {Trans, useTranslation} from "react-i18next";
+import {Link} from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import CredentialsList from "../Common/CredentialsList";
 import RewardsSlider from "../Common/RewardsSlider";
 import PartnersBlock from "../Common/PartnersBlock";
-import {Trans, useTranslation} from "react-i18next";
-import {i18nTo} from "../../Util";
-import {Link} from "react-router-dom";
 import SocialMediaList from "../Common/SocialMediaList";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import GalleryItemWide from "../Common/GalleryItemWide";
 
-export default function PageRewardsContent() {
+export default function PageHome() {
     return (
         <>
-            <PageHomeHeroBlock/>
-            <PageHomeProjects/>
-            <PageHomeAboutBlock/>
+            <Hero/>
+            <Projects/>
+            <About/>
             <CredentialsList/>
             <RewardsSlider/>
             <PartnersBlock/>
@@ -22,7 +22,7 @@ export default function PageRewardsContent() {
     )
 }
 
-export function PageHomeHeroBlock() {
+export function Hero() {
     const [t] = useTranslation();
     return (
         <div>
@@ -52,7 +52,45 @@ export function PageHomeHeroBlock() {
     );
 }
 
-export function PageHomeAboutBlock() {
+export function Projects() {
+    const [t] = useTranslation();
+    return (
+        <section className="portfolio_warp" id="projects">
+            <div className="port_bg_text">
+                <h1 className="bg_strock_text" data-parallax='{"x": -200}'>{t("Projects")}</h1>
+            </div>
+            <div className="container">
+                <div className="row portfolio_single_wrap">
+
+                    <GalleryItemWide project={{
+                        title: t('Artworks Gallery'),
+                        link: i18nTo("/artworks-gallery"),
+                        img: require("../../assets/images/artwork/menu.jpg"),
+                        imgAlt: "Artworks Gallery",
+                        tags: t('painting & graphics')
+                    }}/>
+                    <GalleryItemWide project={{
+                        title: t('Art Projects'),
+                        link: i18nTo("/art-projects"),
+                        img: require("../../assets/images/art-project/menu.jpg"),
+                        imgAlt: "Art Projects",
+                        tags: t('exhibitions, events, residences')
+                    }}/>
+                    <GalleryItemWide project={{
+                        title: t('Publications & Media'),
+                        link: i18nTo("/publications-and-media"),
+                        img: require("../../assets/images/publication/menu.jpg"),
+                        imgAlt: "Publications & Media",
+                        tags: t('articles, publications, videos & mentions')
+                    }} isLast={true}/>
+
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export function About() {
     const [t] = useTranslation();
     const aboutLink = i18nTo("/about");
     return (

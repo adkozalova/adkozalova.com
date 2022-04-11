@@ -7,9 +7,9 @@ import rewardsEN from './locales/rewards-en.json';
 import translationUA from './locales/translation-ua.json';
 import credentialsUA from './locales/credentials-ua.json';
 import rewardsUA from './locales/rewards-ua.json';
-import translationRU from './locales/translation-ru.json';
-import credentialsRU from './locales/credentials-ru.json';
-import rewardsRU from './locales/rewards-ru.json';
+import translationDE from './locales/translation-de.json';
+import credentialsDE from './locales/credentials-de.json';
+import rewardsDE from './locales/rewards-de.json';
 
 i18n.on('languageChanged', function (lng) {
   const defaultLng = i18n.options.fallbackLng[0]
@@ -71,10 +71,10 @@ export default i18n
       credentials: credentialsUA,
       rewards: rewardsUA,
     },
-    ru: {
-      translation: translationRU,
-      credentials: credentialsRU,
-      rewards: rewardsRU,
+    de: {
+      translation: translationDE,
+      credentials: credentialsDE,
+      rewards: rewardsDE,
     }
   },
   ns: ["translation", "credentials", "rewards"],
@@ -83,9 +83,9 @@ export default i18n
   detection: {
     order: ["path"],
   },
-  whitelist: ["en", "ua", "ru"],
+  whitelist: ["en", "ua"],
   fallbackLng: "en",
-  debug: false,
+  debug: true,
   keySeparator: false, // we do not use keys in form messages.welcome
   interpolation: {
     escapeValue: true // react already safes from xss
