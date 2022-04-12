@@ -25,7 +25,7 @@ const formatLocation = (place, address) => {
 }
 
 export const Data = () => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(["translations", "credentials"]);
     return {
         defaultCategory: "SoloExhibitions",
         categories: {

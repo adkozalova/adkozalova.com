@@ -6,7 +6,7 @@ import {useTranslation} from "react-i18next";
 import CredentialsData from "../Data/CredentialsData";
 
 export default function CredentialsList() {
-    const [t] = useTranslation("translations", "credentials");
+    const [t] = useTranslation(["translations", "credentials"]);
     const {defaultCategory, categories, categoriesData} = CredentialsData()
     const [activeTab, setActiveTab] = useState(defaultCategory)
     const onClickTab = (event, tabName) => {
