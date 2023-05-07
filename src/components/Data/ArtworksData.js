@@ -11,6 +11,23 @@ export function ArtworksDataFindAll(artworksToFind) {
 export const Data = () => {
     const [t] = useTranslation();
     return [
+        {
+            thumbnail: require("../../assets/images/artwork/to-live/daydreams-400.jpg"),
+            img: require("../../assets/images/artwork/to-live/daydreams-1500.jpg"),
+            original: require("../../assets/images/artwork/to-live/daydreams-0.jpg"),
+            title: "Daydreams, 2023",
+            tags: t("acrylic") + ", " + t("oil") + ", " + t("gold foil") + ", 80x100cm",
+            collection: "To Live"
+        },
+        {
+            thumbnail: require("../../assets/images/artwork/to-live/bloomed-400.jpg"),
+            img: require("../../assets/images/artwork/to-live/bloomed-1500.jpg"),
+            original: require("../../assets/images/artwork/to-live/bloomed-0.jpg"),
+            title: "Bloomed, 2022",
+            tags: t("acrylic") + ", " + t("oil") + ", " + t("gold foil") + ", 100x80cm",
+            collection: "To Live"
+        },
+
         // #StandWithUkraine
         {
             thumbnail: require("../../assets/images/artwork/to-live/guardian-of-ukraine-400.jpg"),

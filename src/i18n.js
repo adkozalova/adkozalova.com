@@ -13,7 +13,7 @@ import rewardsDE from './locales/rewards-de.json';
 
 i18n.on('languageChanged', function (lng) {
   const defaultLng = i18n.options.fallbackLng[0]
-  const availableLngs = i18n.options.whitelist
+  const availableLngs = i18n.options.supportedLngs
   const pathname = window.location.pathname
 
   // no change if default language is enabled
@@ -82,8 +82,9 @@ export default i18n
   fallbackNS: ["translation", "credentials", "rewards"],
   detection: {
     order: ["path"],
+    lookupFromPathIndex: 0,
   },
-  whitelist: ["en", "ua"],
+  supportedLngs: ["en", "de", "ua"],
   fallbackLng: "en",
   debug: true,
   keySeparator: false, // we do not use keys in form messages.welcome

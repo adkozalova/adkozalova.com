@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 // css
 import './assets/css/bootstrap.css';
 import './assets/css/font-awesome.min.css';
@@ -53,7 +53,7 @@ export default function App() {
         appendScript('/js/universal-tilt.js')
         appendScript('/js/main.js')
     })
-    const baseRouteUrl = "/:locale(ua|en|de)?";
+    const baseRouteUrl = "/:locale?";
     return (
         <div id="top">
             <Helmet>
@@ -74,28 +74,21 @@ export default function App() {
             </Helmet>
             <Router>
                 <HeaderMenu/>
-                <Switch>
-                    <Route exact path={baseRouteUrl + "/"} component={PageHome}/>
-                    <Route exact path={baseRouteUrl + "/artworks-gallery"} component={PageArtworksGallery}/>
-                    <Route exact path={baseRouteUrl + "/art-projects"} component={PageArtProjects}/>
-                    <Route exact path={baseRouteUrl + "/art-projects/alone"} component={PageArtProjectAlone}/>
-                    <Route exact path={baseRouteUrl + "/art-projects/fragile"} component={PageArtProjectFragile}/>
-                    <Route exact path={baseRouteUrl + "/art-projects/shadows-of-unforgotten-ancestors"} component={PageArtProjectShadowsOfUnforgottenAncestors}/>
-                    <Route exact path={baseRouteUrl + "/publications-and-media"} component={PagePublicationsAndMedia}/>
-                    <Route exact path={baseRouteUrl + "/publications-and-media/landescape-art-review-2021"} component={PagePublicationLandEscapeArtReview2021}/>
-                    <Route exact path={baseRouteUrl + "/publications-and-media/al-tiba9-issue07"} component={PagePublicationAlTiba9Issue07}/>
-                    <Route exact path={baseRouteUrl + "/publications-and-media/art-masters-part-5"} component={PagePublicationArtMastersPart5}/>
-                    <Route exact path={baseRouteUrl + "/rewards"} component={PageRewards}/>
-                    <Route exact path={baseRouteUrl + "/about"} component={PageAbout}/>
-                    <Route exact path={baseRouteUrl + "/contacts"} component={PageContacts}/>
-                    {/* added temporally to support old URLs, will be removed */}
-                    <Redirect exact from={baseRouteUrl + "/black-and-white"} to={baseRouteUrl + "/artworks-gallery"}/>
-                    <Redirect exact from={baseRouteUrl + "/jazzman"} to={baseRouteUrl + "/artworks-gallery"}/>
-                    <Redirect exact from={baseRouteUrl + "/feeling-and-living"} to={baseRouteUrl + "/artworks-gallery"}/>
-                    <Redirect exact from={baseRouteUrl + "/shadows-of-unforgotten-ancestors"} to={baseRouteUrl + "/artworks-gallery"}/>
-                    <Redirect exact from={baseRouteUrl + "/personal-art-project-fragile"} to={baseRouteUrl + "/art-projects/fragile"}/>
-                    {/**/}
-                </Switch>
+                <Routes>
+                    <Route exact path={baseRouteUrl + "/"} element={<PageHome />}/>
+                    <Route exact path={baseRouteUrl + "/artworks-gallery"} element={<PageArtworksGallery />}/>
+                    <Route exact path={baseRouteUrl + "/art-projects"} element={<PageArtProjects />}/>
+                    <Route exact path={baseRouteUrl + "/art-projects/alone"} element={<PageArtProjectAlone />}/>
+                    <Route exact path={baseRouteUrl + "/art-projects/fragile"} element={<PageArtProjectFragile />}/>
+                    <Route exact path={baseRouteUrl + "/art-projects/shadows-of-unforgotten-ancestors"} element={<PageArtProjectShadowsOfUnforgottenAncestors />}/>
+                    <Route exact path={baseRouteUrl + "/publications-and-media"} element={<PagePublicationsAndMedia />}/>
+                    <Route exact path={baseRouteUrl + "/publications-and-media/landescape-art-review-2021"} element={<PagePublicationLandEscapeArtReview2021 />}/>
+                    <Route exact path={baseRouteUrl + "/publications-and-media/al-tiba9-issue07"} element={<PagePublicationAlTiba9Issue07 />}/>
+                    <Route exact path={baseRouteUrl + "/publications-and-media/art-masters-part-5"} element={<PagePublicationArtMastersPart5 />}/>
+                    <Route exact path={baseRouteUrl + "/rewards"} element={<PageRewards  />}/>
+                    <Route exact path={baseRouteUrl + "/about"} element={<PageAbout />}/>
+                    <Route exact path={baseRouteUrl + "/contacts"} element={<PageContacts />}/>
+                </Routes>
                 <Footer/>
                 <ScrollToTop/>
             </Router>

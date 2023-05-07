@@ -11,7 +11,7 @@ export default function Language() {
     return (
         <div className="select_lang ml-auto">
             <Link to={"#"} className={i18n.language === "en" ? "lang active" : "lang"} onClick={() => changeLanguage("en")}>EN</Link>
-            {/*<Link to={"#"} className={i18n.language === "de" ? "lang active" : "lang"} onClick={() => changeLanguage("de")}>DE</Link>*/}
+            <Link to={"#"} className={i18n.language === "de" ? "lang active" : "lang"} onClick={() => changeLanguage("de")}>DE</Link>
             <Link to={"#"} className={i18n.language === "ua" ? "lang active" : "lang"} onClick={() => changeLanguage("ua")}>UA</Link>
         </div>
     );
