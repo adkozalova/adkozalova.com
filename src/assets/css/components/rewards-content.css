@@ -1,7 +1,8 @@
 .page_rewards {
     padding: 60px 0 65px;
     color: #333333;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
 }
 
 .page_rewards h2 {

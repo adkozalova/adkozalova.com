@@ -25,8 +25,8 @@
 .rewards_wrap .rewards_left .rewards_title {
     color: #fff;
     font-size: 90px;
-    font-weight: normal;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     letter-spacing: 2px;
     display: inline-block;
     position: relative;

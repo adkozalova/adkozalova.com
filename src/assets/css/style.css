@@ -16,23 +16,16 @@ This file contains the styling for the actual tempalte, this is the file you nee
 
 /*Base font*/
 
+/*
+License: These fonts are licensed under the Open Font License.
+https://fonts.google.com/specimen/Montserrat/about?query=Montserrat
+*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-
-@font-face {
-    font-family: 'Futura PT Book';
-    src: url('../fonts/FuturaPT/FuturaPT-Book.woff2') format('woff2'),
-    url('../fonts/FuturaPT/FuturaPT-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura PT Heavy';
-    src: url('../fonts/FuturaPT/FuturaPT-Heavy.woff2') format('woff2'),
-    url('../fonts/FuturaPT/FuturaPT-Heavy.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+/*
+License: These fonts are licensed under the Open Font License.
+https://fonts.google.com/specimen/Kumbh+Sans/about
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 .primary-color {
     color: #ffffff;
@@ -175,8 +168,8 @@ button:hover {
 .bg_strock_text {
     font-size: 220px;
     color: transparent;
-    font-weight: normal;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     letter-spacing: 3px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
     line-height: 220px;
@@ -243,9 +236,9 @@ header.header .navbar .logo .logo_text {
     color: #f6f7fb;
     position: relative;
     font-size: 25px;
-    font-weight: normal;
     line-height: 40px;
-    font-family: "Futura PT Book";
+    font-weight: normal;
+    font-family: "Kumbh Sans", sans-serif;
     letter-spacing: 2px;
 }
 
@@ -625,8 +618,8 @@ header.header.headerFixed {
 .about_wrap .about_title {
     color: #333333;
     font-size: 90px;
-    font-weight: normal;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     letter-spacing: 1px;
     display: inline-block;
     position: relative;
@@ -656,16 +649,16 @@ header.header.headerFixed {
     z-index: -1;
 }
 
+
 .about_wrap .about_content .bg_text .bg_strock_text {
-    font-weight: normal;
     font-size: 350px;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     color: white;
     text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
     letter-spacing: 10px;
     line-height: 290px;
 }
-
 .about_wrap .about_content h4 {
     color: #171819;
     font-family: "Montserrat", sans-serif;
@@ -783,8 +776,8 @@ header.header.headerFixed {
     color: #f6f7fb;
     font-size: 160px;
     line-height: 160px;
-    font-weight: normal;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     margin-bottom: 10px;
 }
 
@@ -1104,18 +1097,18 @@ header.header.headerFixed {
 
 .portfolio_item .port_text .port_title {
     font-size: 45px;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     line-height: 50px;
     color: #fff;
-    font-weight: normal;
 }
 
 .portfolio_item .port_text .port_title_big {
     font-size: 85px;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     line-height: 50px;
     color: #fff;
-    font-weight: normal;
 }
 
 .portfolio_item .port_text .category {
@@ -1349,10 +1342,10 @@ header.header.headerFixed {
 
 .portfolio_single_title {
     font-size: 35px;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     line-height: 60px;
     color: #333;
-    font-weight: normal;
     margin-bottom: 5px;
 }
 
@@ -1480,8 +1473,8 @@ header.header.headerFixed {
 .somethings_interesting_wrap .title {
     color: #333333;
     font-size: 55px;
-    font-weight: normal;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     letter-spacing: 1px;
     max-width: 790px;
     width: 100%;
@@ -1564,8 +1557,8 @@ header.header.headerFixed {
 .contact_form_wrap .contact_form_title {
     color: #333333;
     font-size: 55px;
-    font-weight: normal;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     letter-spacing: 2px;
     margin-bottom: 55px;
 }
@@ -1763,8 +1756,8 @@ header.header.headerFixed {
 .blog_single_item .blog_post .post_content .post_title {
     font-size: 35px;
     line-height: 60px;
-    font-weight: normal;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     margin-bottom: 5px;
     color: #333333;
 }
@@ -1934,8 +1927,8 @@ header.header.headerFixed {
     color: #333;
     font-size: 20px;
     line-height: 24px;
-    font-weight: normal;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     margin-bottom: 28px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -2056,7 +2049,8 @@ header.header.headerFixed {
     color: #333333;
     font-size: 20px;
     line-height: 24px;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     margin-bottom: 20px;
 }
 
@@ -2076,7 +2070,8 @@ header.header.headerFixed {
     color: #333333;
     font-size: 20px;
     line-height: 24px;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     margin-bottom: 25px;
 }
 
@@ -2151,7 +2146,8 @@ header.header.headerFixed {
     color: #333333;
     font-size: 24px;
     line-height: 36px;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     margin-bottom: 0;
 }
 
@@ -2163,7 +2159,8 @@ header.header.headerFixed {
     color: #333333;
     font-size: 35px;
     line-height: 60px;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
 }
 
 .blog_single_content .blog_sing_share {
@@ -2176,7 +2173,8 @@ header.header.headerFixed {
     font-size: 20px;
     line-height: 26px;
     display: inline-block;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     margin-bottom: 25px;
 }
 
@@ -2285,8 +2283,8 @@ header.header.headerFixed {
     color: #222222;
     font-size: 36px;
     line-height: 40px;
-    font-weight: 500;
-    font-family: "Futura PT Heavy";
+    font-weight: 600;
+    font-family: "Kumbh Sans", sans-serif;
     margin-bottom: 40px;
 }
 
@@ -2431,9 +2429,9 @@ header.header.headerFixed {
     color: #f6f7fb;
     position: relative;
     font-size: 25px;
-    font-weight: normal;
     line-height: 40px;
-    font-family: "Futura PT Book";
+    font-weight: normal;
+    font-family: "Kumbh Sans", sans-serif;
     letter-spacing: 2px;
 }
 
@@ -2451,17 +2449,17 @@ header.header.headerFixed {
 .footer .footer_content .footer_title {
     color: #f6f7fb;
     font-size: 50px;
-    font-family: "Futura PT Book";
+    font-weight: normal;
+    font-family: "Kumbh Sans", sans-serif;
     line-height: 55px;
     letter-spacing: 1px;
-    font-weight: normal;
     max-width: 542px;
     width: 100%;
     margin: 0 auto 60px;
 }
 
 .footer .footer_content .footer_title span {
-    font-family: "Futura PT Heavy";
+    font-family: "Kumbh Sans", sans-serif;
 }
 
 .footer ul {
