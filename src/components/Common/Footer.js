@@ -36,7 +36,7 @@ export default function Footer() {
                             <SocialMediaList className="footer_social text-center wow fadeInUp"/>
 
                             <p className="footer_copy_right text-center wow fadeInUp">
-                                {t("Copyright")} © 2023 <a href="https://adkozalova.com/">Adkozalova.com</a> | {t("All rights reserved")}
+                                {t("Copyright")} © 2024 <a href="https://adkozalova.com/">Adkozalova.com</a> | {t("All rights reserved")}
                             </p>
                         </div>
                     </div>

@@ -20,20 +20,16 @@ This file contains the styling for the actual tempalte, this is the file you nee
 
 @font-face {
     font-family: 'Futura PT Book';
-    src: url('../fonts/FuturaPT/FuturaPT-Book.eot');
-    src: url('../fonts/FuturaPT/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/FuturaPT/FuturaPT-Book.woff') format('woff'),
-    url('../fonts/FuturaPT/FuturaPT-Book.ttf') format('truetype');
+    src: url('../fonts/FuturaPT/FuturaPT-Book.woff2') format('woff2'),
+    url('../fonts/FuturaPT/FuturaPT-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT Heavy';
-    src: url('../fonts/FuturaPT/FuturaPT-Heavy.eot');
-    src: url('../fonts/FuturaPT/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/FuturaPT/FuturaPT-Heavy.woff') format('woff'),
-    url('../fonts/FuturaPT/FuturaPT-Heavy.ttf') format('truetype');
+    src: url('../fonts/FuturaPT/FuturaPT-Heavy.woff2') format('woff2'),
+    url('../fonts/FuturaPT/FuturaPT-Heavy.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
